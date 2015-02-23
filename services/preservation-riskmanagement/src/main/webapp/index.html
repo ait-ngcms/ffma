@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+  	<title>FFMA Preservation Riskmanagement</title>
+  	<link href="ffmastyle.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<div id="wrapper"> 
+	<div id="container"> 
+	
+		<!--<div id="banner"> 
+			<h1>FFMA</h1> 
+			<h2>File Format Metadata Aggregator for Digital Preservation</h2> 
+		</div> -->
+
+		<div id="mainblock"> 
+					<div id="content"> 
+						
+						
+						<!-- Box for the Service Description -->
+						<div class="box"> 
+							<h2>File Format Metadata Aggregator for Digital Preservation</h2>
+							
+							<div class="box mezzi"> 
+							 	<h3>Preservation Risk Management</h3>
+									<div class="left"><img src="img/notification-icon.png" height="64"/></div>
+									<p>The services aims at mitigating the risk of digital obsolescence by 
+									providing risk management reports to content providers - which is done 
+									by analyzing the contributed content. The service performs object 
+									inspection and statistical analysis of the content formats at hand to 
+									categorize them based on their preservation risk. Service makes use of 
+									available preservation community resources such as technical 
+									registries (like PRONOM) for policy extraction.<br/> 
+									The service addresses the problem of:   
+									<ul>
+										<li> Format obsolescence and limited support for proprietary formats</li>
+										<li> Unstructured and unknown digital collections</li>
+										<li> Automated collection profiling and recommendation of fine-tuned preservation actions</li>
+									</ul>
+									</p>
+							</div>
+														
+							<table width="100%">
+    							<tr>
+        							<th>Method</th>
+        							<th>Response type</th>
+        							<th>Path</th>
+        							<th>Function</th>
+    							</tr>
+    							<tr>
+        							<td>GET</td>
+        							<td>TEXT</td>
+								    <td><a href="rest/component">/ffma/preservation-riskmanagement/rest/component</A></td>
+            						<td>Display the name of the current component</td>
+    							</tr>
+								<tr>
+								    <td></td>
+								    <td></td>
+								    <td><big><b>Evaluation of software and vendor that support preservation plan for particular file format</b></big></td>
+								    <td></td>
+								</tr>
+								<tr>
+								    <td>GET</td>
+								    <td>HTML</td>
+								    <td>
+								        <form action="rest/loddataanalysis/dipformatid/html" method="get">
+								            <div>
+								                <label for='dipformatid_name'>Extension:</label><br/>
+								                <input id="dipformatid_name" name="name" size="30" type="text"/><br/>
+								                <input type="submit" value="Retrieve DipFormatId"/>
+								            </div>
+								        </form>
+								    </td>
+								    <td>Retrieve DipFormatId object for file format extension</td>
+								</tr>
+								<tr>
+								    <td>GET</td>
+								    <td>HTML</td>
+								    <td>
+								        <form action="rest/loddataanalysis/software/html" method="get">
+								            <div>
+								                <label for='software_name'>Extension:</label><br/>
+								                <input id="software_name" name="name" size="30" type="text"/><br/>
+								                <input type="submit" value="Retrieve Software"/>
+								            </div>
+								        </form>
+								    </td>
+								    <td>Retrieve software for file format extension</td>
+								</tr>
+								<tr>
+								    <td>GET</td>
+								    <td>HTML</td>
+								    <td>
+								        <form action="rest/loddataanalysis/vendor/html" method="get">
+								            <div>
+								                <label for='vendor_name'>Extension:</label><br/>
+								                <input id="vendor_name" name="name" size="30" type="text"/><br/>
+								                <input type="submit" value="Retrieve Vendors"/>
+								            </div>
+								        </form>
+								    </td>
+								    <td>Retrieve vendors for file format extension</td>
+								</tr>
+								<tr>
+								    <td></td>
+								    <td></td>
+								    <td><big><b>File format preservation risks evaluation</b></big></td>
+								    <td></td>
+								</tr>
+								<tr>
+								    <td>GET</td>
+								    <td>HTML</td>
+								    <td>
+								        <form action="rest/loddataanalysis/html/riskscorereport" method="get">
+								            <div>
+								                <label for='collectionid_name'>File format extension:</label><br/>
+								                <input id="collectionid_name" name="name" size="30" type="text"/><br/>
+								                <label for='config_name'>Configuration (metric names separated by comma):</label><br/>
+								                <input id="config_name" name="configName" size="30" type="text"/><br/>
+								                <label for='classification_name'>Classifications property file name:</label><br/>
+								                <input id="classification_name" name="classificationName" size="30" type="text"/><br/>
+								                <input type="submit" value="Generate risk score report"/>
+								            </div>
+								        </form>
+								    </td>
+								    <td>Generate risk score report for file format that comprises risk levels</td>
+								</tr>
+    							<tr>
+        							<td>GET</td>
+        							<td>PLAIN TEXT</td>
+        							<td>/ffma/preservation-riskmanagement/rest/loddataanalysis/checkdataexist</td>
+        							<td>This method informs client about existence of LOD data in service database. If data is not existing. It checks if following collections exist in database and contain data: 1. file extension collections PronomFileFormat, DBPediaFileFormat and FreebaseFileFormat; 2. summarized over all LOD repositories LOD formats, software and vendors collections (LODFormat, LODSoftware and LODVendor); 3. file formats mapping collection DipFormatId (contains unique generated DIP identifier and maps file formats identifiers and descriptions from all LOD repositories; contains mapping to DipSoftwareId collection); 4. software mapping collection DipSoftwareId (contains unique generated DIP identifier and maps software identifiers and description from all LOD repositories; contains mapping to DipFormatId collection); 5. vendor mapping collection DipVendorId (contains unique generated DIP identifier and maps vendor identifiers and description from all LOD repositories; contains mapping to DipFormatId collection). The output is information about data existence - a list of existing collections. This list should contain collections: initial file format collections from different repositories [PronomFileFormat, DBPediaFileFormat, FreebaseFileFormat], retrieved preservation rich data like format, software and vendor [LODFormat, LODSoftware, LODVendor] and mapping between repository IDs to enable search [DipFormatId, DipSoftwareId and DipVendorId]</td>
+    							</tr>
+    							<tr>
+        							<td>GET</td>
+        							<td>XML/JSON</td>
+        							<td>/ffma/preservation-riskmanagement/rest/loddataanalysis/storeallextensions/{type}/{updateformats}/{updateloddata}</td>
+        							<td>This method retrieves LOD data from LOD repositories and store in database. type - The type of storing. Retrieve data from all LOD repositories if type is 'All' or use repository name. overwriteRepositoryFormats - Overwrite repository formats collections FreebaseFileFormat, DBPediaFileFormat and PronomFileFormat if true. overwriteLodData - Overwrite summarized LOD data collections LODFormat, LODSoftware and LODVendor if true. The output is the list of updated collections</td>
+    							</tr>
+    							<tr>
+        							<td>GET</td>
+        							<td>XML/JSON</td>
+        							<td>/ffma/preservation-riskmanagement/rest/loddataanalysis/software/{ext}</td>
+        							<td>This method retrieves associated software for particular file format extension. ext - The file format extension. The output is a list of LODSoftware objects.</td>
+    							</tr>
+    							<tr>
+        							<td>GET</td>
+        							<td>XML/JSON</td>
+        							<td>/ffma/preservation-riskmanagement/rest/loddataanalysis/vendor/{ext}</td>
+        							<td>This method retrieves associated vendors for particular file format extension. ext - The file format extension. The output is a list of LODVendor objects.</td>
+    							</tr>
+    							<tr>
+        							<td>GET</td>
+        							<td>PLAIN TEXT</td>
+        							<td>/ffma/preservation-riskmanagement/rest/loddataanalysis/csv/{type}/{ext}</td>
+        							<td>This method retrieves preservation statistics for particular type and file format extension. Type 1 - all statistics; (All); Type 2 - references to LOD repository descriptions (PRONOM/DBPEDIA/FREEBASE); (ReferencesToLodRepositories); Type 3 - textual format descriptions; (TextualFormatDescriptions); Type 4 - software and Vendors supporting the given format. (SoftwareAndVendorsForFormat). type - The type of the preservation statistic report. ext - The file format extension. The output is a report in CSV format.</td>
+    							</tr>
+    						</table>
+					
+					</div>	<!-- end of box -->	
+						
+													 
+						</div> <!-- end of content --> 
+					</div> <!-- end of mainblock --> 
+			
+			<hr /> 
+	
+	<p>Build date: </p>
+	
+ <!-- end of container --> 
+</div> <!-- end of wrapper -->
+
+
+</body>
+</html>

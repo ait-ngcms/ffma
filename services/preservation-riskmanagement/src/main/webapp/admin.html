@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+  	<title>FFMA Preservation Riskmanagement</title>
+  	<link href="ffmastyle.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<div id="wrapper"> 
+	<div id="container"> 
+	
+		<div id="banner"> 
+			<h1>FFMA</h1> 
+			<h2>File Format Metadata Aggregator Solution for the Digital Preservation</h2> 
+		</div> 
+
+		<div id="mainblock"> 
+					<div id="content"> 
+						
+						
+						<!-- Box for the Service Description -->
+						<div class="box"> 
+							<h2>Preservation Risk Management</h2>
+							
+							<div class="box mezzi"> 
+							 	<h3>Component Installation</h3>
+									<div class="left"><img src="img/notification-icon.png" height="64"/></div>
+									<p>To use the service utilize following links.<br/> 
+									These links accomplish database collection initialization tasks:   
+									<ul>
+										<li> Retrieval of overall format information from Linked Open Data (LOD) repositories like Freebase, Pronom, DBPedia and AIT</li>
+										<li> Retrieval of rich data for aggregated formats and creation of LODFormat, LODSoftware and LODVendors collections</li>
+										<li> Mapping creation between file formats, associated software and vendors. This mapping is stored in collectins DipFormatId, DipSoftwareId and DipVendorId</li>
+									</ul>
+									</p>
+							</div>
+							<div class="box mezzi"> 
+							 	<h3>Component Testing</h3>
+									<div class="left"><img src="img/notification-icon.png" height="64"/></div>
+									<p>To use the service utilize following links.<br/> 
+									These links accomplish database collection testing tasks:   
+									<ul>
+										<li> Checking of database collections existence. The result of the method should contain following collections: PronomFileFormat, DBPediaFileFormat, FreebaseFileFormat, LODFormat, LODSoftware, LODVendor, DipFormatId, DipSoftwareId, DipVendorId
+In case of missing collections fill missing data applying storeAllExtensions() method. Internet connection is necessary for this step to enable MQL, SPARQL and HTTP queries. </li>
+										<li> Different functionality tests are described in index.html file of this component</li>
+									</ul>
+									</p>
+							</div>
+														
+							<table width="100%">
+    							<tr>
+        							<th>Function</th>
+        							<th>Run</th>
+        							<th>Test</th>
+    							</tr>
+    							<tr>
+        							<td>Initialize Freebase collections</td>
+        							<td><a href="/ffma/preservation-riskmanagement/rest/loddataanalysis/storeallextensions/Freebase/true/true" target="_new">Start initialization</a>
+        							<td><a href="/ffma/preservation-riskmanagement/rest/loddataanalysis/checkdataexist" target="_new">Check</td>
+    							</tr>
+    							<tr>
+        							<td>Initialize Pronom collections</td>
+        							<td><a href="/ffma/preservation-riskmanagement/rest/loddataanalysis/storeallextensions/Pronom/true/true" target="_new">Start initialization</a>
+        							<td><a href="/ffma/preservation-riskmanagement/rest/loddataanalysis/checkdataexist" target="_new">Check</td>
+    							</tr>
+    							<tr>
+        							<td>Initialize DBPedia collections</td>
+        							<td><a href="/ffma/preservation-riskmanagement/rest/loddataanalysis/storeallextensions/DBPedia/true/true" target="_new">Start initialization</a>
+        							<td><a href="/ffma/preservation-riskmanagement/rest/loddataanalysis/checkdataexist" target="_new">Check</td>
+    							</tr>
+    							<tr>
+        							<td>Initialize AIT collections</td>
+        							<td><a href="/ffma/preservation-riskmanagement/rest/loddataanalysis/storeallextensions/AIT/true/true" target="_new">Start initialization</a>
+        							<td><a href="/ffma/preservation-riskmanagement/rest/loddataanalysis/checkdataexist" target="_new">Check</td>
+    							</tr>
+    						</table>
+						
+					</div>	<!-- end of box -->	
+													 
+						</div> <!-- end of content --> 
+					</div> <!-- end of mainblock --> 
+
+			<hr /> 
+	
+	<p>Build date: BUILD_DATE</p>
+	
+ <!-- end of container --> 
+</div> <!-- end of wrapper -->
+
+
+</body>
+</html>

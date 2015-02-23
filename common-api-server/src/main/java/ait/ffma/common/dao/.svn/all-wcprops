@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/dme_intern/!svn/ver/158/projects/common-api-server/src/main/java/ait/ffma/common/dao
+END
+BaseFfmaDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/dme_intern/!svn/ver/158/projects/common-api-server/src/main/java/ait/ffma/common/dao/BaseFfmaDao.java
+END
+DataStoreDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/dme_intern/!svn/ver/158/projects/common-api-server/src/main/java/ait/ffma/common/dao/DataStoreDao.java
+END
+DataStoreDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/dme_intern/!svn/ver/158/projects/common-api-server/src/main/java/ait/ffma/common/dao/DataStoreDaoImpl.java
+END
+FfmaDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/dme_intern/!svn/ver/158/projects/common-api-server/src/main/java/ait/ffma/common/dao/FfmaDao.java
+END

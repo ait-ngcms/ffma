@@ -1,0 +1,77 @@
+10
+
+dir
+159
+https://172.20.30.1/svn/dme_intern/projects/services/preservation-riskmanagement/src/main/java/ait/ffma/service/preservation/riskmanagement
+https://172.20.30.1/svn/dme_intern
+
+
+
+2012-10-26T17:11:17.428021Z
+158
+graf
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2c418a1a-fea4-4b27-839f-12b668491aac
+
+PreservationRiskmanagementConfiguration.java
+file
+
+
+
+
+2012-10-26T17:54:46.270364Z
+8b0b41c73e5abf647a46a453cd3debb2
+2012-10-26T17:11:17.428021Z
+158
+graf
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+281
+
+dao
+dir
+
+mappingregistry
+dir
+
+domain
+dir
+
+api
+dir
+
+web
+dir
+

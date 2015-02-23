@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/dme_intern/!svn/ver/158/projects/common-datamodel/src/main/java/ait/ffma/common/exception
+END
+FfmaTechnicalRuntimeException.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/dme_intern/!svn/ver/158/projects/common-datamodel/src/main/java/ait/ffma/common/exception/FfmaTechnicalRuntimeException.java
+END
+FfmaFunctionalException.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/dme_intern/!svn/ver/158/projects/common-datamodel/src/main/java/ait/ffma/common/exception/FfmaFunctionalException.java
+END

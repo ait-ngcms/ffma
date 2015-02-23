@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/dme_intern/!svn/ver/158/projects/common-api-server/src/main/java/ait/ffma/common/dao/mongodb
+END
+MongoDbManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/dme_intern/!svn/ver/158/projects/common-api-server/src/main/java/ait/ffma/common/dao/mongodb/MongoDbManager.java
+END
+MongoDbConstants.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/dme_intern/!svn/ver/158/projects/common-api-server/src/main/java/ait/ffma/common/dao/mongodb/MongoDbConstants.java
+END
+BaseMongoDbManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/dme_intern/!svn/ver/158/projects/common-api-server/src/main/java/ait/ffma/common/dao/mongodb/BaseMongoDbManager.java
+END

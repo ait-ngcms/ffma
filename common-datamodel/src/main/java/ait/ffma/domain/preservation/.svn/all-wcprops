@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/dme_intern/!svn/ver/158/projects/common-datamodel/src/main/java/ait/ffma/domain/preservation
+END
+LinkingAgentIdentifierComplexType.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/dme_intern/!svn/ver/158/projects/common-datamodel/src/main/java/ait/ffma/domain/preservation/LinkingAgentIdentifierComplexType.java
+END
+AgentComplexType.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/dme_intern/!svn/ver/158/projects/common-datamodel/src/main/java/ait/ffma/domain/preservation/AgentComplexType.java
+END
+EventOutcomeDetailComplexType.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/dme_intern/!svn/ver/158/projects/common-datamodel/src/main/java/ait/ffma/domain/preservation/EventOutcomeDetailComplexType.java
+END
+AgentIdentifierComplexType.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/dme_intern/!svn/ver/158/projects/common-datamodel/src/main/java/ait/ffma/domain/preservation/AgentIdentifierComplexType.java
+END
+EventComplexType.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/dme_intern/!svn/ver/158/projects/common-datamodel/src/main/java/ait/ffma/domain/preservation/EventComplexType.java
+END
+EventOutcomeInformationComplexType.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/dme_intern/!svn/ver/158/projects/common-datamodel/src/main/java/ait/ffma/domain/preservation/EventOutcomeInformationComplexType.java
+END
+EventIdentifierComplexType.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/dme_intern/!svn/ver/158/projects/common-datamodel/src/main/java/ait/ffma/domain/preservation/EventIdentifierComplexType.java
+END

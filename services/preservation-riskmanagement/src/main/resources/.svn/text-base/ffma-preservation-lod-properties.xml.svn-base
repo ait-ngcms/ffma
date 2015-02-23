@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:LODProperties xmlns:tns="http://www.example.org/LODProperties" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.org/LODProperties Ffma-preservation-lod.xsd ">
+  <tns:LODProperty>
+    <tns:id>LOD_SOFTWARE_BY_FORMAT_PROPERTY_ID</tns:id>
+    <tns:name>SearchSoftwareByFileFormatExtension</tns:name>
+    <tns:lodClass>SoftwareClass</tns:lodClass>
+    <tns:qualifiedName>/DiPRec/SoftwareClass/SearchSoftwareByFileFormatExtension</tns:qualifiedName>
+    <tns:version>1.0</tns:version>
+    <tns:creationDate>2011-09-05</tns:creationDate>
+    <tns:type>IMP</tns:type>
+    <tns:datatype>STRING</tns:datatype>
+    <tns:description>Search software by file format extension. Software names contains filed "read by"</tns:description>
+    <tns:value/>
+    <tns:LODSources>
+      <tns:LODSource>
+        <tns:originalValue/>
+        <tns:query> {
+					  "type": "/computer/file_format",
+					  "id" : null,
+					  "guid" : null,
+					  "name" : null,
+					  "key" : [],
+					  "extension" : [],
+					  "genre" : [{name : null}],
+					  "mime_type" : [{id : null}],
+					  "format_creator" : null,
+					  "contained_by" : [{}],
+					  "container_for" : [{}],
+					  "read_by" : [{}],
+					  "/common/topic/webpage" : [{}],
+					  "creation_date":           null,
+					  "written_by" : [{}]  
+					}   
+        </tns:query>
+        <tns:source>Freebase</tns:source>
+        <tns:creationDate>2011-09-23</tns:creationDate>
+      </tns:LODSource>
+      <tns:LODSource>
+        <tns:originalValue/>
+        <tns:query>select+distinct+%3Fname+%3Fver+%3Fpuid+%3Fxpuid+where+{%0D%0A+%0D%0A+%3Fs+&lt;http%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23label&gt;+%3Fname+.%0D%0A+%3Fs+&lt;http%3A%2F%2Freference.data.gov.uk%2Ftechnical-registry%2Fextension&gt;+"PLACEHOLDER"+.+%0D%0A%3Fs+&lt;http%3A%2F%2Freference.data.gov.uk%2Ftechnical-registry%2Fversion&gt;+%3Fver+.%0D%0A+OPTIONAL+{+%3Fs+&lt;http%3A%2F%2Freference.data.gov.uk%2Ftechnical-registry%2FPUID&gt;+%3Fpuid+.+}%0D%0A+OPTIONAL+{+%3Fs+&lt;http%3A%2F%2Freference.data.gov.uk%2Ftechnical-registry%2FXPUID&gt;+%3Fxpuid+.+}%0D%0A+%0D%0A}%0D%0A</tns:query>
+        <tns:source>Pronom</tns:source>
+        <tns:creationDate>2011-09-23</tns:creationDate>
+      </tns:LODSource>
+      <tns:LODSource>
+        <tns:originalValue/>
+        <tns:query>select * where {?id  a  &lt;http://dbpedia.org/class/yago/GraphicsFileFormats&gt;  .  
+                               ?id  &lt;http://dbpedia.org/property/extension&gt;  ?extension   . 
+                               OPTIONAL {?id  &lt;http://dbpedia.org/property/mime&gt;  ?mime } . 
+                               OPTIONAL {?id  &lt;http://dbpedia.org/property/typeCode&gt;  ?typeCode } . 
+                               OPTIONAL {?id  &lt;http://dbpedia.org/property/name&gt;  ?name } . 
+                               OPTIONAL {?id  &lt;http://dbpedia.org/property/owner&gt;  ?owner } . 
+                               OPTIONAL {?id  &lt;http://dbpedia.org/property/standard&gt;  ?standard } . 
+                               OPTIONAL {?id  &lt;http://dbpedia.org/property/released&gt;  ?released } . 
+                               OPTIONAL {?id  &lt;http://dbpedia.org/property/latestReleaseVersion&gt;  ?latestReleaseVersion } .
+                               OPTIONAL {?id  &lt;http://dbpedia.org/ontology/abstract&gt; ?description} .
+                               FILTER langMatches( lang(?description), "en") . 
+        }</tns:query>
+        <tns:source>DBPedia</tns:source>
+        <tns:creationDate>2011-10-12</tns:creationDate>
+      </tns:LODSource>
+    </tns:LODSources>
+  </tns:LODProperty>
+  <tns:LODProperty>
+    <tns:id>LOD_SOFTWARE_BY_REPOSITORY_ID</tns:id>
+    <tns:name>SearchSoftwareByRepositoryId</tns:name>
+    <tns:lodClass>SoftwareByIdClass</tns:lodClass>
+    <tns:qualifiedName>/DiPRec/SoftwareByIdClass/SearchSoftwareByRepositoryId</tns:qualifiedName>
+    <tns:version>1.0</tns:version>
+    <tns:creationDate>2011-11-24</tns:creationDate>
+    <tns:type>IMP</tns:type>
+    <tns:datatype>STRING</tns:datatype>
+    <tns:description>Search software by repository ID. For example '/en/compuserve'</tns:description>
+    <tns:value/>
+    <tns:LODSources>
+      <tns:LODSource>
+        <tns:originalValue/>
+        <tns:query>
+        {
+            "type": "/computer/software",
+            "id" : null,
+            "name" : null,
+            "guid" : null,
+            "*" : [],
+        }
+        </tns:query>
+        <tns:source>Freebase</tns:source>
+        <tns:creationDate>2011-09-23</tns:creationDate>
+      </tns:LODSource>
+    </tns:LODSources>
+  </tns:LODProperty>
+  <tns:LODProperty>
+    <tns:id>LOD_VENDOR_BY_SOFTWARE_PROPERTY_ID</tns:id>
+    <tns:name>SearchSoftwareVendorBySoftware</tns:name>
+    <tns:lodClass>SoftwareVendorClass</tns:lodClass>
+    <tns:qualifiedName>/DiPRec/SoftwareVendorClass/SearchSoftwareVendorBySoftware</tns:qualifiedName>
+    <tns:version>1.0</tns:version>
+    <tns:creationDate>2011-09-07</tns:creationDate>
+    <tns:type>IMP</tns:type>
+    <tns:datatype>STRING</tns:datatype>
+    <tns:description>Search software vendors by software id.</tns:description>
+    <tns:value/>
+    <tns:LODSources>
+      <tns:LODSource>
+        <tns:originalValue/>
+        <tns:query> {
+					  id: null,
+					  "/computer/software/developer" : [{type : "/organization/organization", "id" : null, "name" : null, "guid" : null}]
+					}   
+        </tns:query>
+        <tns:source>Freebase</tns:source>
+        <tns:creationDate>2011-09-07</tns:creationDate>
+      </tns:LODSource>
+      <tns:LODSource>
+        <tns:originalValue/>
+        <tns:query>http://www.nationalarchives.gov.uk/PRONOM/x-sfw/PLACEHOLDER.xml</tns:query>
+        <tns:source>Pronom</tns:source>
+        <tns:creationDate>2011-10-06</tns:creationDate>
+      </tns:LODSource>
+    </tns:LODSources>
+  </tns:LODProperty>
+  <tns:LODProperty>
+    <tns:id>LOD_VENDOR_BUSINESS_STATUS_PROPERTY_ID</tns:id>
+    <tns:name>SearchBusinessStatusOfVendor</tns:name>
+    <tns:lodClass>VendorBusinessStatusClass</tns:lodClass>
+    <tns:qualifiedName>/DiPRec/VendorBusinessStatusClass/SearchBusinessStatusOfVendor</tns:qualifiedName>
+    <tns:version>1.0</tns:version>
+    <tns:creationDate>2011-09-07</tns:creationDate>
+    <tns:type>IMP</tns:type>
+    <tns:datatype>STRING</tns:datatype>
+    <tns:description>Search business status of vendor by id. The business status comprises revenue amount, currency and validity date.</tns:description>
+    <tns:value/>
+    <tns:LODSources>
+      <tns:LODSource>
+        <tns:originalValue/>
+        <tns:query> {
+					  "id": null,
+					  "/business/business_operation/revenue": [{amount : [], currency : [], valid_date : []}]
+					}   
+        </tns:query>
+        <tns:source>Freebase</tns:source>
+        <tns:creationDate>2011-09-07</tns:creationDate>
+      </tns:LODSource>
+    </tns:LODSources>
+  </tns:LODProperty>
+  <tns:LODProperty>
+    <tns:id>LOD_VENDOR_NUM_OF_EMPLOYEES_PROPERTY_ID</tns:id>
+    <tns:name>SearchNumberOfEmployeesOfVendor</tns:name>
+    <tns:lodClass>VendorNumOfEmployeesClass</tns:lodClass>
+    <tns:qualifiedName>/DiPRec/VendorNumOfEmployeesClass/SearchNumberOfEmployeesOfVendor</tns:qualifiedName>
+    <tns:version>1.0</tns:version>
+    <tns:creationDate>2011-09-07</tns:creationDate>
+    <tns:type>IMP</tns:type>
+    <tns:datatype>STRING</tns:datatype>
+    <tns:description>Search number of employees of vendor by id. Important information is number of employees and correspondent year.</tns:description>
+    <tns:value/>
+    <tns:LODSources>
+      <tns:LODSource>
+        <tns:originalValue/>
+        <tns:query> {
+					  "id": null,
+					  "/business/employer/number_of_employees": [{
+					    "number": [],
+					    "year" : []
+					  }]
+					}   
+        </tns:query>
+        <tns:source>Freebase</tns:source>
+        <tns:creationDate>2011-09-07</tns:creationDate>
+      </tns:LODSource>
+      <tns:LODSource>
+        <tns:originalValue/>
+        <tns:query>PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+					PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+					PREFIX foaf: &lt;http://xmlns.com/foaf/0.1/&gt;
+					PREFIX dbpedia2: &lt;http://dbpedia.org/property/&gt;
+
+					SELECT * 
+  					WHERE 
+    				{
+      					  ?subject  rdf:type               &lt;http://dbpedia.org/class/yago/Company108058098&gt;  .
+      					  OPTIONAL { ?subject  foaf:name              ?name }                                      .
+					      OPTIONAL { ?subject  dbpedia2:numEmployees  ?employees }                                 .
+					      OPTIONAL { ?subject  foaf:homepage          ?homepage }                                  .
+					      OPTIONAL { ?subject  rdfs:comment           ?description }                               .
+                          FILTER langMatches( lang(?description), "en") .
+         }</tns:query>
+        <tns:source>DBPedia</tns:source>
+        <tns:creationDate>2011-10-13</tns:creationDate>
+      </tns:LODSource>
+    </tns:LODSources>
+  </tns:LODProperty>
+  <tns:LODProperty>
+    <tns:id>LOD_VENDOR_LOCATION_PROPERTY_ID</tns:id>
+    <tns:name>SearchLocationOfVendor</tns:name>
+    <tns:lodClass>VendorLocationClass</tns:lodClass>
+    <tns:qualifiedName>/DiPRec/VendorLocationClass/SearchLocationOfVendor</tns:qualifiedName>
+    <tns:version>1.0</tns:version>
+    <tns:creationDate>2012-01-24</tns:creationDate>
+    <tns:type>IMP</tns:type>
+    <tns:datatype>STRING</tns:datatype>
+    <tns:description>Search location of vendor by id.</tns:description>
+    <tns:value/>
+    <tns:LODSources>
+      <tns:LODSource>
+        <tns:originalValue/>
+        <tns:query>PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+					PREFIX foaf: &lt;http://xmlns.com/foaf/0.1/&gt;
+					PREFIX dbpedia2: &lt;http://dbpedia.org/property/&gt;
+
+					SELECT * 
+  					WHERE 
+    				{
+      					  ?subject  rdf:type               &lt;http://dbpedia.org/class/yago/Company108058098&gt;  .
+      					  OPTIONAL { ?subject  foaf:name              ?name }                                      .
+					      OPTIONAL { ?subject  dbpedia2:revenue       ?revenue }                                   .
+					      OPTIONAL { ?subject  dbpedia2:location      ?location }                                  .
+					      OPTIONAL { ?subject  dbpedia2:keyPeople     ?keyPeople }                                 .
+         }</tns:query>
+        <tns:source>DBPedia</tns:source>
+        <tns:creationDate>2012-01-24</tns:creationDate>
+      </tns:LODSource>
+    </tns:LODSources>
+  </tns:LODProperty>
+  <tns:LODProperty>
+    <tns:id>LOD_VENDOR_CURRENT_Ffma_PROPERTY_ID</tns:id>
+    <tns:name>SearchCurrentFfmaOfVendor</tns:name>
+    <tns:lodClass>VendorCurrentFfmaClass</tns:lodClass>
+    <tns:qualifiedName>/DiPRec/VendorCurrentFfmaClass/SearchCurrentFfmaOfVendor</tns:qualifiedName>
+    <tns:version>1.0</tns:version>
+    <tns:creationDate>2011-09-07</tns:creationDate>
+    <tns:type>IMP</tns:type>
+    <tns:datatype>STRING</tns:datatype>
+    <tns:description>Search current Ffma of vendor by id. The current Ffma comprises amount, currency and validity date.</tns:description>
+    <tns:value/>
+    <tns:LODSources>
+      <tns:LODSource>
+        <tns:originalValue/>
+        <tns:query> {
+					  "id": null,
+					  "/business/business_operation/current_Ffma": [{amount : [], currency : [], valid_date : []}]
+					}   
+        </tns:query>
+        <tns:source>Freebase</tns:source>
+        <tns:creationDate>2011-09-07</tns:creationDate>
+      </tns:LODSource>
+    </tns:LODSources>
+  </tns:LODProperty>
+  <tns:LODProperty>
+    <tns:id>LOD_VENDOR_STOCK_ISSUES_PROPERTY_ID</tns:id>
+    <tns:name>SearchStockIssuesOfVendor</tns:name>
+    <tns:lodClass>VendorStockIssuesClass</tns:lodClass>
+    <tns:qualifiedName>/DiPRec/VendorStockIssuesClass/SearchStockIssuesOfVendor</tns:qualifiedName>
+    <tns:version>1.0</tns:version>
+    <tns:creationDate>2011-09-07</tns:creationDate>
+    <tns:type>IMP</tns:type>
+    <tns:datatype>STRING</tns:datatype>
+    <tns:description>Search stock issues of vendor by id.</tns:description>
+    <tns:value/>
+    <tns:LODSources>
+      <tns:LODSource>
+        <tns:originalValue/>
+        <tns:query> {
+					  "id": null,
+					  "/business/issuer/issue": [{"name":[]}]
+					}   
+        </tns:query>
+        <tns:source>Freebase</tns:source>
+        <tns:creationDate>2011-09-07</tns:creationDate>
+      </tns:LODSource>
+    </tns:LODSources>
+  </tns:LODProperty>
+  <tns:LODProperty>
+    <tns:id>LOD_VENDOR_RANKED_LIST_PROPERTY_ID</tns:id>
+    <tns:name>SearchRankedListOfVendor</tns:name>
+    <tns:lodClass>VendorRankedListClass</tns:lodClass>
+    <tns:qualifiedName>/DiPRec/VendorRankedListClass/SearchRankedListOfVendor</tns:qualifiedName>
+    <tns:version>1.0</tns:version>
+    <tns:creationDate>2011-09-07</tns:creationDate>
+    <tns:type>IMP</tns:type>
+    <tns:datatype>STRING</tns:datatype>
+    <tns:description>Search ranked list of vendor by id. Important values are list, rank and year.</tns:description>
+    <tns:value/>
+    <tns:LODSources>
+      <tns:LODSource>
+        <tns:originalValue/>
+        <tns:query> {
+					  "id": null,
+					  "/award/ranked_item/appears_in_ranked_lists": [{list : [], rank : [], year : []}]
+					}   
+        </tns:query>
+        <tns:source>Freebase</tns:source>
+        <tns:creationDate>2011-09-07</tns:creationDate>
+      </tns:LODSource>
+    </tns:LODSources>
+  </tns:LODProperty>
+  <tns:LODProperty>
+    <tns:id>LOD_OS_COMPUTER_ARCHITECTURE_PROPERTY_ID</tns:id>
+    <tns:name>SearchComputerArchitectureOfOS</tns:name>
+    <tns:lodClass>ComputerArchitectureClass</tns:lodClass>
+    <tns:qualifiedName>/DiPRec/ComputerArchitectureClass/SearchComputerArchitectureOfOS</tns:qualifiedName>
+    <tns:version>1.0</tns:version>
+    <tns:creationDate>2011-09-07</tns:creationDate>
+    <tns:type>IMP</tns:type>
+    <tns:datatype>STRING</tns:datatype>
+    <tns:description>Search computer architecture for operation system by id. Important values are id and name.</tns:description>
+    <tns:value/>
+    <tns:LODSources>
+      <tns:LODSource>
+        <tns:originalValue/>
+        <tns:query> {
+					  id: null,
+					  "/computer/operating_system/supported_architectures":    [{"id":[], "name":[]}]
+					}  
+        </tns:query>
+        <tns:source>Freebase</tns:source>
+        <tns:creationDate>2011-09-07</tns:creationDate>
+      </tns:LODSource>
+    </tns:LODSources>
+  </tns:LODProperty>
+  <tns:LODProperty>
+    <tns:id>LOD_OS_SUPPORTED_FILE_FORMATS_PROPERTY_ID</tns:id>
+    <tns:name>SearchSupportedFileFormatsOfOS</tns:name>
+    <tns:lodClass>SupportedFileFormatsOfOSClass</tns:lodClass>
+    <tns:qualifiedName>/DiPRec/SupportedFileFormatsOfOSClass/SearchSupportedFileFormatsOfOS</tns:qualifiedName>
+    <tns:version>1.0</tns:version>
+    <tns:creationDate>2011-09-07</tns:creationDate>
+    <tns:type>IMP</tns:type>
+    <tns:datatype>STRING</tns:datatype>
+    <tns:description>Search supported file formats for operation system by id. Important values are id, name, genre, extension and used_on.</tns:description>
+    <tns:value/>
+    <tns:LODSources>
+      <tns:LODSource>
+        <tns:originalValue/>
+        <tns:query> {
+					  id: null,
+					  "/computer/computing_platform/file_formats_supported":    
+					  [{"id":[], "name":[], "genre":[], "extension":[], "used_on":[]}]
+					}  
+        </tns:query>
+        <tns:source>Freebase</tns:source>
+        <tns:creationDate>2011-09-07</tns:creationDate>
+      </tns:LODSource>
+    </tns:LODSources>
+  </tns:LODProperty>
+  <tns:LODProperty>
+    <tns:id>LOD_SOFTWARE_PROGRAMMING_LANGUAGE_PROPERTY_ID</tns:id>
+    <tns:name>SearchProgrammingLanguageOfSoftware</tns:name>
+    <tns:lodClass>ProgrammingLanguageClass</tns:lodClass>
+    <tns:qualifiedName>/DiPRec/ProgrammingLanguageClass/SearchProgrammingLanguageOfSoftware</tns:qualifiedName>
+    <tns:version>1.0</tns:version>
+    <tns:creationDate>2011-09-07</tns:creationDate>
+    <tns:type>IMP</tns:type>
+    <tns:datatype>STRING</tns:datatype>
+    <tns:description>Search programming language for software by id.</tns:description>
+    <tns:value/>
+    <tns:LODSources>
+      <tns:LODSource>
+        <tns:originalValue/>
+        <tns:query> {
+					  "id": null,
+					  "/computer/software/languages_used": []
+					}  
+        </tns:query>
+        <tns:source>Freebase</tns:source>
+        <tns:creationDate>2011-09-07</tns:creationDate>
+      </tns:LODSource>
+      <tns:LODSource>
+        <tns:originalValue/>
+        <tns:query>PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
+		PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
+		PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+		PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+		PREFIX foaf: &lt;http://xmlns.com/foaf/0.1/&gt;
+		PREFIX dc: &lt;http://purl.org/dc/elements/1.1/&gt;
+		PREFIX : &lt;http://dbpedia.org/resource/&gt;
+		PREFIX dbpedia2: &lt;http://dbpedia.org/property/&gt;
+		PREFIX dbpedia: &lt;http://dbpedia.org/&gt;
+		PREFIX skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;
+		SELECT * WHERE {
+		?subject dbpedia2:wordnet_type &lt;http://www.w3.org/2006/03/wn/wn20/instances/synset-software-noun-1&gt;.
+		?subject rdfs:label ?label .
+		OPTIONAL { ?subject  dbpedia2:platform      ?platform} .
+		OPTIONAL { ?subject  dbpedia2:programmingLanguage     ?programmingLanguage}   .
+		?subject rdfs:comment ?abstract .
+		FILTER (lang(?label) = "en" &amp;&amp; lang(?abstract) = "en")
+		}
+        </tns:query>
+        <tns:source>DBPedia</tns:source>
+        <tns:creationDate>2011-12-10</tns:creationDate>
+      </tns:LODSource>
+    </tns:LODSources>
+  </tns:LODProperty>
+  <tns:LODProperty>
+    <tns:id>LOD_SOFTWARE_LICENSE_PROPERTY_ID</tns:id>
+    <tns:name>SearchLicenseOfSoftware</tns:name>
+    <tns:lodClass>SoftwareLicenseClass</tns:lodClass>
+    <tns:qualifiedName>/DiPRec/SoftwareLicenseClass/SearchLicenseOfSoftware</tns:qualifiedName>
+    <tns:version>1.0</tns:version>
+    <tns:creationDate>2011-09-07</tns:creationDate>
+    <tns:type>IMP</tns:type>
+    <tns:datatype>STRING</tns:datatype>
+    <tns:description>Search license for software by id.</tns:description>
+    <tns:value/>
+    <tns:LODSources>
+      <tns:LODSource>
+        <tns:originalValue/>
+        <tns:query> {
+					  "id":            null,
+					  "/computer/software/license": []
+					}  
+        </tns:query>
+        <tns:source>Freebase</tns:source>
+        <tns:creationDate>2011-09-07</tns:creationDate>
+      </tns:LODSource>
+      <tns:LODSource>
+        <tns:originalValue/>
+        <tns:query>PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
+		PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
+		PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+		PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+		PREFIX foaf: &lt;http://xmlns.com/foaf/0.1/&gt;
+		PREFIX dc: &lt;http://purl.org/dc/elements/1.1/&gt;
+		PREFIX : &lt;http://dbpedia.org/resource/&gt;
+		PREFIX dbpedia2: &lt;http://dbpedia.org/property/&gt;
+		PREFIX dbpedia: &lt;http://dbpedia.org/&gt;
+		PREFIX skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;
+		SELECT * WHERE {
+		?subject dbpedia2:wordnet_type &lt;http://www.w3.org/2006/03/wn/wn20/instances/synset-software-noun-1&gt;.
+		?subject rdfs:label ?label .
+        OPTIONAL { ?subject  foaf:homepage          ?homepage } .  
+      	OPTIONAL { ?subject  dbpedia2:license      ?license} .
+		OPTIONAL { ?subject  dbpedia2:latestReleaseVersion     ?latestReleaseVersion} .
+		?subject rdfs:comment ?abstract .
+		FILTER (lang(?label) = "en" &amp;&amp; lang(?abstract) = "en")
+		}
+		</tns:query>
+        <tns:source>DBPedia</tns:source>
+        <tns:creationDate>2011-12-10</tns:creationDate>
+      </tns:LODSource>
+    </tns:LODSources>
+  </tns:LODProperty>
+  <tns:LODProperty>
+    <tns:id>LOD_SOFTWARE_PROTOCOL_PROPERTY_ID</tns:id>
+    <tns:name>SearchProtocolOfSoftware</tns:name>
+    <tns:lodClass>SoftwareProtocolClass</tns:lodClass>
+    <tns:qualifiedName>/DiPRec/SoftwareProtocolClass/SearchProtocolOfSoftware</tns:qualifiedName>
+    <tns:version>1.0</tns:version>
+    <tns:creationDate>2011-09-07</tns:creationDate>
+    <tns:type>IMP</tns:type>
+    <tns:datatype>STRING</tns:datatype>
+    <tns:description>Search protocol for software by id.</tns:description>
+    <tns:value/>
+    <tns:LODSources>
+      <tns:LODSource>
+        <tns:originalValue/>
+        <tns:query> {
+					  "id": null,
+					  "/computer/software/protocols_used": []
+					}  
+        </tns:query>
+        <tns:source>Freebase</tns:source>
+        <tns:creationDate>2011-09-07</tns:creationDate>
+      </tns:LODSource>
+    </tns:LODSources>
+  </tns:LODProperty>
+  <tns:LODProperty>
+    <tns:id>LOD_SOFTWARE_LATEST_RELEASE_DATE_PROPERTY_ID</tns:id>
+    <tns:name>SearchLatestReleaseDateOfSoftware</tns:name>
+    <tns:lodClass>SoftwareLatestReleaseDateClass</tns:lodClass>
+    <tns:qualifiedName>/DiPRec/SoftwareLatestReleaseDateClass/SearchLatestReleaseDateOfSoftware</tns:qualifiedName>
+    <tns:version>1.0</tns:version>
+    <tns:creationDate>2011-09-08</tns:creationDate>
+    <tns:type>IMP</tns:type>
+    <tns:datatype>STRING</tns:datatype>
+    <tns:description>Search latest release date for software by id.</tns:description>
+    <tns:value/>
+    <tns:LODSources>
+      <tns:LODSource>
+        <tns:originalValue/>
+        <tns:query> {
+					  "id":            null,
+					  "/computer/software/latest_release_date": []
+					}  
+        </tns:query>
+        <tns:source>Freebase</tns:source>
+        <tns:creationDate>2011-09-08</tns:creationDate>
+      </tns:LODSource>
+      <tns:LODSource>
+        <tns:originalValue/>
+        <tns:query>PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
+		PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
+		PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+		PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+		PREFIX foaf: &lt;http://xmlns.com/foaf/0.1/&gt;
+		PREFIX dc: &lt;http://purl.org/dc/elements/1.1/&gt;
+		PREFIX : &lt;http://dbpedia.org/resource/&gt;
+		PREFIX dbpedia2: &lt;http://dbpedia.org/property/&gt;
+		PREFIX dbpedia: &lt;http://dbpedia.org/&gt;
+		PREFIX skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;
+		SELECT * WHERE {
+		?subject dbpedia2:wordnet_type &lt;http://www.w3.org/2006/03/wn/wn20/instances/synset-software-noun-1&gt;.
+		?subject rdfs:label ?label .
+        OPTIONAL { ?subject  foaf:homepage          ?homepage } .  
+      	OPTIONAL { ?subject  dbpedia2:license      ?license} .
+		OPTIONAL { ?subject  dbpedia2:latestReleaseVersion     ?latestReleaseVersion} .
+		?subject rdfs:comment ?abstract .
+		FILTER (lang(?label) = "en" &amp;&amp; lang(?abstract) = "en")
+		}
+		</tns:query>
+        <tns:source>DBPedia</tns:source>
+        <tns:creationDate>2011-12-10</tns:creationDate>
+      </tns:LODSource>
+    </tns:LODSources>
+  </tns:LODProperty>  
+  <tns:LODProperty>
+    <tns:id>LOD_SOFTWARE_LATEST_VERSION_PROPERTY_ID</tns:id>
+    <tns:name>SearchLatestVersionOfSoftware</tns:name>
+    <tns:lodClass>SoftwareLatestVersionClass</tns:lodClass>
+    <tns:qualifiedName>/DiPRec/SoftwareLatestVersionClass/SearchLatestVersionOfSoftware</tns:qualifiedName>
+    <tns:version>1.0</tns:version>
+    <tns:creationDate>2011-09-08</tns:creationDate>
+    <tns:type>IMP</tns:type>
+    <tns:datatype>STRING</tns:datatype>
+    <tns:description>Search latest version for software by id.</tns:description>
+    <tns:value/>
+    <tns:LODSources>
+      <tns:LODSource>
+        <tns:originalValue/>
+        <tns:query> {
+					  "id":            null,
+					  "/computer/software/latest_version": []
+					}  
+        </tns:query>
+        <tns:source>Freebase</tns:source>
+        <tns:creationDate>2011-09-08</tns:creationDate>
+      </tns:LODSource>
+    </tns:LODSources>
+  </tns:LODProperty>
+  <tns:LODProperty>
+    <tns:id>LOD_SOFTWARE_COMPATIBLE_OS_PROPERTY_ID</tns:id>
+    <tns:name>SearchCompatibleOSOfSoftware</tns:name>
+    <tns:lodClass>CompatibleOSClass</tns:lodClass>
+    <tns:qualifiedName>/DiPRec/CompatibleOSClass/SearchCompatibleOSOfSoftware</tns:qualifiedName>
+    <tns:version>1.0</tns:version>
+    <tns:creationDate>2011-09-09</tns:creationDate>
+    <tns:type>IMP</tns:type>
+    <tns:datatype>STRING</tns:datatype>
+    <tns:description>Search compatible operation systems for software by id.</tns:description>
+    <tns:value/>
+    <tns:LODSources>
+      <tns:LODSource>
+        <tns:originalValue/>
+        <tns:query> {
+					  "id": null,
+					  "/computer/software/compatible_oses": []
+					}  
+        </tns:query>
+        <tns:source>Freebase</tns:source>
+        <tns:creationDate>2011-09-09</tns:creationDate>
+      </tns:LODSource>
+      <tns:LODSource>
+        <tns:originalValue/>
+        <tns:query>PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
+		PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
+		PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+		PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+		PREFIX foaf: &lt;http://xmlns.com/foaf/0.1/&gt;
+		PREFIX dc: &lt;http://purl.org/dc/elements/1.1/&gt;
+		PREFIX : &lt;http://dbpedia.org/resource/&gt;
+		PREFIX dbpedia2: &lt;http://dbpedia.org/property/&gt;
+		PREFIX dbpedia: &lt;http://dbpedia.org/&gt;
+		PREFIX skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;
+		SELECT * WHERE {
+		?subject dbpedia2:wordnet_type &lt;http://www.w3.org/2006/03/wn/wn20/instances/synset-software-noun-1&gt;.
+		?subject rdfs:label ?label .
+		OPTIONAL { ?subject  dbpedia2:platform      ?platform} .
+		OPTIONAL { ?subject  dbpedia2:programmingLanguage     ?programmingLanguage}   .
+		?subject rdfs:comment ?abstract .
+		FILTER (lang(?label) = "en" &amp;&amp; lang(?abstract) = "en")
+		}
+        </tns:query>
+        <tns:source>DBPedia</tns:source>
+        <tns:creationDate>2011-12-10</tns:creationDate>
+      </tns:LODSource>
+    </tns:LODSources>
+  </tns:LODProperty>
+  <tns:LODProperty>
+    <tns:id>LOD_SOFTWARE_GENRE_PROPERTY_ID</tns:id>
+    <tns:name>SearchGenreOfSoftware</tns:name>
+    <tns:lodClass>GenreClass</tns:lodClass>
+    <tns:qualifiedName>/DiPRec/GenreClass/SearchGenreOfSoftware</tns:qualifiedName>
+    <tns:version>1.0</tns:version>
+    <tns:creationDate>2011-09-09</tns:creationDate>
+    <tns:type>IMP</tns:type>
+    <tns:datatype>STRING</tns:datatype>
+    <tns:description>Search genre for software by id.</tns:description>
+    <tns:value/>
+    <tns:LODSources>
+      <tns:LODSource>
+        <tns:originalValue/>
+        <tns:query> {
+					  "id": null,
+					  "/computer/software/software_genre": []
+					}  
+        </tns:query>
+        <tns:source>Freebase</tns:source>
+        <tns:creationDate>2011-09-09</tns:creationDate>
+      </tns:LODSource>
+      <tns:LODSource>
+        <tns:originalValue/>
+        <tns:query>PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
+		PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
+		PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+		PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+		PREFIX foaf: &lt;http://xmlns.com/foaf/0.1/&gt;
+		PREFIX dc: &lt;http://purl.org/dc/elements/1.1/&gt;
+		PREFIX : &lt;http://dbpedia.org/resource/&gt;
+		PREFIX dbpedia2: &lt;http://dbpedia.org/property/&gt;
+		PREFIX dbpedia: &lt;http://dbpedia.org/&gt;
+		PREFIX skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;
+		SELECT * WHERE {
+		?id dbpedia2:wordnet_type &lt;http://www.w3.org/2006/03/wn/wn20/instances/synset-software-noun-1&gt;.
+		?id rdfs:label ?label.
+		?id rdfs:comment ?abstract.
+		FILTER (lang(?label) = "en" &amp;&amp; lang(?abstract) = "en")
+		}</tns:query>
+        <tns:source>DBPedia</tns:source>
+        <tns:creationDate>2011-10-12</tns:creationDate>
+      </tns:LODSource>
+    </tns:LODSources>
+  </tns:LODProperty>
+  <tns:LODProperty>
+    <tns:id>LOD_VENDOR_FOUNDATION_DATE_PROPERTY_ID</tns:id>
+    <tns:name>SearchFoundationDateOfVendor</tns:name>
+    <tns:lodClass>VendorFoundationDateClass</tns:lodClass>
+    <tns:qualifiedName>/DiPRec/VendorFoundationDateClass/SearchFoundationDateOfVendor</tns:qualifiedName>
+    <tns:version>1.0</tns:version>
+    <tns:creationDate>2011-09-09</tns:creationDate>
+    <tns:type>IMP</tns:type>
+    <tns:datatype>STRING</tns:datatype>
+    <tns:description>Search foundation date for vendor by id.</tns:description>
+    <tns:value/>
+    <tns:LODSources>
+      <tns:LODSource>
+        <tns:originalValue/>
+        <tns:query> {
+					  "id": null,
+					  "/organization/organization/date_founded": []
+					}  
+        </tns:query>
+        <tns:source>Freebase</tns:source>
+        <tns:creationDate>2011-09-09</tns:creationDate>
+      </tns:LODSource>
+    </tns:LODSources>
+  </tns:LODProperty>
+  <tns:LODProperty>
+    <tns:id>LOD_FILE_FORMAT_LIST_PROPERTY_ID</tns:id>
+    <tns:name>SearchFileFormatList</tns:name>
+    <tns:lodClass>FileFormatsClass</tns:lodClass>
+    <tns:qualifiedName>/DiPRec/FileFormatsClass/SearchFileFormatList</tns:qualifiedName>
+    <tns:version>1.0</tns:version>
+    <tns:creationDate>2011-11-08</tns:creationDate>
+    <tns:type>IMP</tns:type>
+    <tns:datatype>STRING</tns:datatype>
+    <tns:description>Search file formats list</tns:description>
+    <tns:value/>
+    <tns:LODSources>
+      <tns:LODSource>
+        <tns:originalValue/>
+        <tns:query>select+distinct+%3FName+%3FExtension+%3FVersion+%3FMimetype+%3FPuid+%3FXpuid+%3FDescription+where+%7B%0D%0A+%0D%0A+%3Fs+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23label%3E+%3FName+.%0D%0A+%3Fs+%3Chttp%3A%2F%2Freference.data.gov.uk%2Ftechnical-registry%2Fextension%3E+%3FExtension+.+%0D%0A+OPTIONAL+%7B+%3Fs+%3Chttp%3A%2F%2Freference.data.gov.uk%2Ftechnical-registry%2Fversion%3E+%3FVersion+.+%7D%0D%0A+OPTIONAL+%7B+%3Fs+%3Chttp%3A%2F%2Freference.data.gov.uk%2Ftechnical-registry%2FMIMETYPE%3E+%3FMimetype+.+%7D%0D%0A+OPTIONAL+%7B+%3Fs+%3Chttp%3A%2F%2Freference.data.gov.uk%2Ftechnical-registry%2FPUID%3E+%3FPuid+.+%7D%0D%0A+OPTIONAL+%7B+%3Fs+%3Chttp%3A%2F%2Freference.data.gov.uk%2Ftechnical-registry%2FXPUID%3E+%3FXpuid+.+%7D+%0D%0AOPTIONAL+%7B+%3Fs+%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2Fdescription%3E+%3FDescription+.+%7D%0D%0A+%0D%0A%7D</tns:query> 
+        <tns:source>Pronom</tns:source>
+        <tns:creationDate>2011-11-08</tns:creationDate>
+      </tns:LODSource>
+      <tns:LODSource>
+        <tns:originalValue/>
+        <tns:query> {"type":"/computer/file_format",
+					  "creation_date":null,
+					  "id":null,
+					  "guid":null,
+					  "extension":[],
+					  "mime_type":[{"id":null}],
+					  "name":null,
+					  "key":[],
+					  "genre":[{"name":null}],
+					 }  
+        </tns:query>
+        <tns:source>Freebase</tns:source>
+        <tns:creationDate>2011-11-29</tns:creationDate>
+      </tns:LODSource>
+      <tns:LODSource>
+        <tns:originalValue/>
+        <tns:query>select * where {?id  a  &lt;http://dbpedia.org/class/yago/GraphicsFileFormats&gt;  .  
+                               ?id  &lt;http://dbpedia.org/property/extension&gt;  ?extension   . 
+                               OPTIONAL {?id  &lt;http://dbpedia.org/property/mime&gt;  ?mime } . 
+                               OPTIONAL {?id  &lt;http://dbpedia.org/property/name&gt;  ?name } . 
+                               OPTIONAL {?id  &lt;http://dbpedia.org/property/latestReleaseVersion&gt;  ?latestReleaseVersion } .
+                               OPTIONAL {?id  &lt;http://dbpedia.org/ontology/abstract&gt; ?description} .
+                               FILTER langMatches( lang(?description), "en") . 
+        }</tns:query>
+        <tns:source>DBPedia</tns:source>
+        <tns:creationDate>2011-10-12</tns:creationDate>
+      </tns:LODSource>
+    </tns:LODSources>
+  </tns:LODProperty>
+</tns:LODProperties>

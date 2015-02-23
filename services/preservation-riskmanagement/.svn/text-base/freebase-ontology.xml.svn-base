@@ -1,0 +1,1914 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<context>
+  <node id="n0" preprocessed="true">
+    <name>Top</name>
+    <label-formula>(n0.1)</label-formula>
+    <node-formula>(n0.1)</node-formula>
+    <tokens>
+      <token id="1">
+        <text>top</text>
+        <lemma>top</lemma>
+        <senses/>
+      </token>
+    </tokens>
+    <children>
+      <node id="n1" parent-id="n0" preprocessed="true">
+        <name>Computers</name>
+        <label-formula>(n1.1)</label-formula>
+        <node-formula>(n1.1) &amp; (n0.1)</node-formula>
+        <tokens>
+          <token id="1">
+            <text>computers</text>
+            <lemma>computer</lemma>
+            <senses>
+              <sense pos="n" id="3051890"/>
+            </senses>
+          </token>
+        </tokens>
+        <children>
+          <node id="n7" parent-id="n1" preprocessed="true">
+            <name>File Format</name>
+            <label-formula>(n7.1 &amp; n7.2)</label-formula>
+            <node-formula>((n7.1 &amp; n7.2)) &amp; (n1.1) &amp; (n0.1)</node-formula>
+            <tokens>
+              <token id="1">
+                <text>file</text>
+                <lemma>file</lemma>
+                <senses>
+                  <sense pos="v" id="991929"/>
+                  <sense pos="v" id="1374815"/>
+                  <sense pos="v" id="1902128"/>
+                  <sense pos="v" id="860893"/>
+                  <sense pos="v" id="991715"/>
+                  <sense pos="n" id="6422370"/>
+                  <sense pos="n" id="8314378"/>
+                  <sense pos="n" id="3301857"/>
+                  <sense pos="n" id="3301556"/>
+                </senses>
+              </token>
+              <token id="2">
+                <text>format</text>
+                <lemma>format</lemma>
+                <senses>
+                  <sense pos="v" id="1729822"/>
+                </senses>
+              </token>
+            </tokens>
+            <children>
+              <node id="n11" parent-id="n7" preprocessed="true">
+                <name>Extension</name>
+                <label-formula>(n11.1)</label-formula>
+                <node-formula>(n11.1) &amp; ((n7.1 &amp; n7.2)) &amp; (n1.1) &amp; (n0.1)</node-formula>
+                <tokens>
+                  <token id="1">
+                    <text>extension</text>
+                    <lemma>extension</lemma>
+                    <senses>
+                      <sense pos="n" id="15071721"/>
+                      <sense pos="n" id="363857"/>
+                      <sense pos="n" id="6171623"/>
+                      <sense pos="n" id="873615"/>
+                      <sense pos="n" id="365621"/>
+                      <sense pos="n" id="6250117"/>
+                      <sense pos="n" id="5847896"/>
+                      <sense pos="n" id="5152866"/>
+                      <sense pos="n" id="5073208"/>
+                      <sense pos="n" id="3271824"/>
+                      <sense pos="n" id="3247413"/>
+                      <sense pos="n" id="2688565"/>
+                    </senses>
+                  </token>
+                </tokens>
+              </node>
+              <node id="n12" parent-id="n7" preprocessed="true">
+                <name>Genre</name>
+                <label-formula>(n12.1)</label-formula>
+                <node-formula>(n12.1) &amp; ((n7.1 &amp; n7.2)) &amp; (n1.1) &amp; (n0.1)</node-formula>
+                <tokens>
+                  <token id="1">
+                    <text>genre</text>
+                    <lemma>genre</lemma>
+                    <senses>
+                      <sense pos="n" id="5772321"/>
+                      <sense pos="n" id="6994809"/>
+                      <sense pos="n" id="6975004"/>
+                      <sense pos="n" id="3398321"/>
+                    </senses>
+                  </token>
+                </tokens>
+              </node>
+              <node id="n13" parent-id="n7" preprocessed="true">
+                <name>Creation Date</name>
+                <label-formula>(n13.1 &amp; n13.2)</label-formula>
+                <node-formula>((n13.1 &amp; n13.2)) &amp; ((n7.1 &amp; n7.2)) &amp; (n1.1) &amp; (n0.1)</node-formula>
+                <tokens>
+                  <token id="1">
+                    <text>creation</text>
+                    <lemma>creation</lemma>
+                    <senses>
+                      <sense pos="n" id="895381"/>
+                      <sense pos="n" id="3097081"/>
+                      <sense pos="n" id="7228415"/>
+                      <sense pos="n" id="236350"/>
+                      <sense pos="n" id="234053"/>
+                      <sense pos="n" id="9330440"/>
+                    </senses>
+                  </token>
+                  <token id="2">
+                    <text>date</text>
+                    <lemma>date</lemma>
+                    <senses>
+                      <sense pos="v" id="2461965"/>
+                      <sense pos="v" id="727043"/>
+                      <sense pos="v" id="611389"/>
+                      <sense pos="v" id="2462353"/>
+                      <sense pos="v" id="726581"/>
+                      <sense pos="n" id="14960543"/>
+                      <sense pos="n" id="14960779"/>
+                      <sense pos="n" id="8270325"/>
+                      <sense pos="n" id="14980767"/>
+                      <sense pos="n" id="14921623"/>
+                      <sense pos="n" id="9844093"/>
+                      <sense pos="n" id="14961539"/>
+                      <sense pos="n" id="7659370"/>
+                    </senses>
+                  </token>
+                </tokens>
+              </node>
+              <node id="n14" parent-id="n7" preprocessed="true">
+                <name>Written By</name>
+                <label-formula>(n14.1)</label-formula>
+                <node-formula>(n14.1) &amp; ((n7.1 &amp; n7.2)) &amp; (n1.1) &amp; (n0.1)</node-formula>
+                <tokens>
+                  <token id="1">
+                    <text>written</text>
+                    <lemma>write</lemma>
+                    <senses>
+                      <sense pos="v" id="1683134"/>
+                      <sense pos="v" id="983252"/>
+                      <sense pos="v" id="1729292"/>
+                      <sense pos="v" id="996945"/>
+                      <sense pos="v" id="1021633"/>
+                      <sense pos="v" id="1690339"/>
+                      <sense pos="v" id="1675955"/>
+                      <sense pos="v" id="989021"/>
+                      <sense pos="v" id="1684759"/>
+                      <sense pos="v" id="1677714"/>
+                      <sense pos="a" id="2361214"/>
+                      <sense pos="a" id="2363829"/>
+                      <sense pos="a" id="2289350"/>
+                    </senses>
+                  </token>
+                </tokens>
+              </node>
+              <node id="n15" parent-id="n7" preprocessed="true">
+                <name>Read By</name>
+                <label-formula>(n15.1)</label-formula>
+                <node-formula>(n15.1) &amp; ((n7.1 &amp; n7.2)) &amp; (n1.1) &amp; (n0.1)</node-formula>
+                <tokens>
+                  <token id="1">
+                    <text>read</text>
+                    <lemma>read</lemma>
+                    <senses>
+                      <sense pos="v" id="617535"/>
+                      <sense pos="v" id="2706487"/>
+                      <sense pos="v" id="618844"/>
+                      <sense pos="v" id="619936"/>
+                      <sense pos="v" id="619507"/>
+                      <sense pos="v" id="616892"/>
+                      <sense pos="v" id="913537"/>
+                      <sense pos="v" id="592412"/>
+                      <sense pos="v" id="1703538"/>
+                      <sense pos="v" id="612463"/>
+                      <sense pos="v" id="586661"/>
+                      <sense pos="n" id="6502522"/>
+                    </senses>
+                  </token>
+                </tokens>
+              </node>
+              <node id="n16" parent-id="n7" preprocessed="true">
+                <name>Used On</name>
+                <label-formula>(n16.1)</label-formula>
+                <node-formula>(n16.1) &amp; ((n7.1 &amp; n7.2)) &amp; (n1.1) &amp; (n0.1)</node-formula>
+                <tokens>
+                  <token id="1">
+                    <text>used</text>
+                    <lemma>use</lemma>
+                    <senses>
+                      <sense pos="v" id="1147708"/>
+                      <sense pos="v" id="1153919"/>
+                      <sense pos="v" id="2575910"/>
+                      <sense pos="v" id="1147408"/>
+                      <sense pos="v" id="2537019"/>
+                      <sense pos="v" id="2347413"/>
+                      <sense pos="a" id="2578358"/>
+                      <sense pos="a" id="2579122"/>
+                      <sense pos="a" id="1699909"/>
+                    </senses>
+                  </token>
+                </tokens>
+              </node>
+              <node id="n17" parent-id="n7" preprocessed="true">
+                <name>Format Creator</name>
+                <label-formula>(n17.1 &amp; n17.2)</label-formula>
+                <node-formula>((n17.1 &amp; n17.2)) &amp; ((n7.1 &amp; n7.2)) &amp; (n1.1) &amp; (n0.1)</node-formula>
+                <tokens>
+                  <token id="1">
+                    <text>format</text>
+                    <lemma>format</lemma>
+                    <senses>
+                      <sense pos="v" id="1729822"/>
+                      <sense pos="n" id="6548555"/>
+                      <sense pos="n" id="4622308"/>
+                    </senses>
+                  </token>
+                  <token id="2">
+                    <text>creator</text>
+                    <lemma>creator</lemma>
+                    <senses>
+                      <sense pos="n" id="9399605"/>
+                      <sense pos="n" id="9477889"/>
+                    </senses>
+                  </token>
+                </tokens>
+              </node>
+              <node id="n18" parent-id="n7" preprocessed="true">
+                <name>MIME Type</name>
+                <label-formula>(n18.1 &amp; n18.2)</label-formula>
+                <node-formula>((n18.1 &amp; n18.2)) &amp; ((n7.1 &amp; n7.2)) &amp; (n1.1) &amp; (n0.1)</node-formula>
+                <tokens>
+                  <token id="1">
+                    <text>mime</text>
+                    <lemma>mime</lemma>
+                    <senses>
+                      <sense pos="v" id="1728212"/>
+                      <sense pos="v" id="1708968"/>
+                      <sense pos="n" id="10164973"/>
+                      <sense pos="n" id="544615"/>
+                    </senses>
+                  </token>
+                  <token id="2">
+                    <text>type</text>
+                    <lemma>type</lemma>
+                    <senses>
+                      <sense pos="v" id="994610"/>
+                      <sense pos="v" id="610888"/>
+                      <sense pos="n" id="5767228"/>
+                      <sense pos="n" id="9762912"/>
+                      <sense pos="n" id="8001185"/>
+                      <sense pos="n" id="6733551"/>
+                      <sense pos="n" id="4450982"/>
+                      <sense pos="n" id="6704910"/>
+                    </senses>
+                  </token>
+                </tokens>
+              </node>
+            </children>
+          </node>
+          <node id="n8" parent-id="n1" preprocessed="true">
+            <name>Software</name>
+            <label-formula>(n8.1)</label-formula>
+            <node-formula>(n8.1) &amp; (n1.1) &amp; (n0.1)</node-formula>
+            <tokens>
+              <token id="1">
+                <text>software</text>
+                <lemma>software</lemma>
+                <senses>
+                  <sense pos="n" id="6479375"/>
+                </senses>
+              </token>
+            </tokens>
+            <children>
+              <node id="n19" parent-id="n8" preprocessed="true">
+                <name>Developer</name>
+                <label-formula>(n19.1)</label-formula>
+                <node-formula>(n19.1) &amp; (n8.1) &amp; (n1.1) &amp; (n0.1)</node-formula>
+                <tokens>
+                  <token id="1">
+                    <text>developer</text>
+                    <lemma>developer</lemma>
+                    <senses>
+                      <sense pos="n" id="9861423"/>
+                      <sense pos="n" id="3150406"/>
+                    </senses>
+                  </token>
+                </tokens>
+              </node>
+              <node id="n20" parent-id="n8" preprocessed="true">
+                <name>Software Genre</name>
+                <label-formula>(n20.1 &amp; n20.2)</label-formula>
+                <node-formula>((n20.1 &amp; n20.2)) &amp; (n8.1) &amp; (n1.1) &amp; (n0.1)</node-formula>
+                <tokens>
+                  <token id="1">
+                    <text>software</text>
+                    <lemma>software</lemma>
+                    <senses>
+                      <sense pos="n" id="6479375"/>
+                    </senses>
+                  </token>
+                  <token id="2">
+                    <text>genre</text>
+                    <lemma>genre</lemma>
+                    <senses>
+                      <sense pos="n" id="5772321"/>
+                      <sense pos="n" id="6994809"/>
+                      <sense pos="n" id="6975004"/>
+                      <sense pos="n" id="3398321"/>
+                    </senses>
+                  </token>
+                </tokens>
+              </node>
+              <node id="n21" parent-id="n8" preprocessed="true">
+                <name>First Released</name>
+                <label-formula>(n21.1 &amp; n21.2)</label-formula>
+                <node-formula>((n21.1 &amp; n21.2)) &amp; (n8.1) &amp; (n1.1) &amp; (n0.1)</node-formula>
+                <tokens>
+                  <token id="1">
+                    <text>first</text>
+                    <lemma>first</lemma>
+                    <senses>
+                      <sense pos="r" id="103443"/>
+                      <sense pos="r" id="104269"/>
+                      <sense pos="r" id="510202"/>
+                      <sense pos="r" id="255703"/>
+                      <sense pos="n" id="13663014"/>
+                      <sense pos="n" id="13422480"/>
+                      <sense pos="n" id="15064913"/>
+                      <sense pos="n" id="712597"/>
+                      <sense pos="n" id="6610640"/>
+                      <sense pos="n" id="3314666"/>
+                      <sense pos="a" id="1050981"/>
+                      <sense pos="a" id="2278253"/>
+                      <sense pos="a" id="1049498"/>
+                      <sense pos="a" id="1049361"/>
+                      <sense pos="a" id="249338"/>
+                      <sense pos="a" id="1056683"/>
+                      <sense pos="a" id="224281"/>
+                    </senses>
+                  </token>
+                  <token id="2">
+                    <text>released</text>
+                    <lemma>release</lemma>
+                    <senses>
+                      <sense pos="v" id="1461709"/>
+                      <sense pos="v" id="2397810"/>
+                      <sense pos="v" id="1424032"/>
+                      <sense pos="v" id="103834"/>
+                      <sense pos="v" id="958119"/>
+                      <sense pos="v" id="68517"/>
+                      <sense pos="v" id="2469975"/>
+                      <sense pos="v" id="2294321"/>
+                      <sense pos="v" id="266303"/>
+                      <sense pos="a" id="1103828"/>
+                    </senses>
+                  </token>
+                </tokens>
+              </node>
+              <node id="n22" parent-id="n8" preprocessed="true">
+                <name>Latest Version</name>
+                <label-formula>(n22.1 &amp; n22.2)</label-formula>
+                <node-formula>((n22.1 &amp; n22.2)) &amp; (n8.1) &amp; (n1.1) &amp; (n0.1)</node-formula>
+                <tokens>
+                  <token id="1">
+                    <text>latest</text>
+                    <lemma>latest</lemma>
+                    <senses>
+                      <sense pos="n" id="6554573"/>
+                      <sense pos="a" id="701863"/>
+                      <sense pos="a" id="1011013"/>
+                    </senses>
+                  </token>
+                  <token id="2">
+                    <text>version</text>
+                    <lemma>version</lemma>
+                    <senses>
+                      <sense pos="n" id="7074944"/>
+                      <sense pos="n" id="5767672"/>
+                      <sense pos="n" id="6322957"/>
+                      <sense pos="n" id="6449729"/>
+                      <sense pos="n" id="5853462"/>
+                      <sense pos="n" id="1252048"/>
+                    </senses>
+                  </token>
+                </tokens>
+              </node>
+              <node id="n23" parent-id="n8" preprocessed="true">
+                <name>Latest Release Date</name>
+                <label-formula>(n23.1 &amp; n23.2 &amp; n23.3)</label-formula>
+                <node-formula>((n23.1 &amp; n23.2 &amp; n23.3)) &amp; (n8.1) &amp; (n1.1) &amp; (n0.1)</node-formula>
+                <tokens>
+                  <token id="1">
+                    <text>latest</text>
+                    <lemma>latest</lemma>
+                    <senses>
+                      <sense pos="n" id="6554573"/>
+                      <sense pos="a" id="701863"/>
+                      <sense pos="a" id="1011013"/>
+                    </senses>
+                  </token>
+                  <token id="2">
+                    <text>release</text>
+                    <lemma>release</lemma>
+                    <senses>
+                      <sense pos="v" id="1461709"/>
+                      <sense pos="v" id="2397810"/>
+                      <sense pos="v" id="1424032"/>
+                      <sense pos="v" id="103834"/>
+                      <sense pos="v" id="958119"/>
+                      <sense pos="v" id="68517"/>
+                      <sense pos="v" id="2469975"/>
+                      <sense pos="v" id="2294321"/>
+                      <sense pos="v" id="266303"/>
+                      <sense pos="n" id="4027395"/>
+                      <sense pos="n" id="93213"/>
+                      <sense pos="n" id="13375466"/>
+                      <sense pos="n" id="6656808"/>
+                      <sense pos="n" id="212596"/>
+                      <sense pos="n" id="7233084"/>
+                      <sense pos="n" id="6466112"/>
+                      <sense pos="n" id="4027612"/>
+                      <sense pos="n" id="1248595"/>
+                      <sense pos="n" id="326029"/>
+                      <sense pos="n" id="210116"/>
+                      <sense pos="n" id="207362"/>
+                    </senses>
+                  </token>
+                  <token id="3">
+                    <text>date</text>
+                    <lemma>date</lemma>
+                    <senses>
+                      <sense pos="v" id="2461965"/>
+                      <sense pos="v" id="727043"/>
+                      <sense pos="v" id="611389"/>
+                      <sense pos="v" id="2462353"/>
+                      <sense pos="v" id="726581"/>
+                      <sense pos="n" id="14960543"/>
+                      <sense pos="n" id="14960779"/>
+                      <sense pos="n" id="8270325"/>
+                      <sense pos="n" id="14980767"/>
+                      <sense pos="n" id="14921623"/>
+                      <sense pos="n" id="9844093"/>
+                      <sense pos="n" id="14961539"/>
+                      <sense pos="n" id="7659370"/>
+                    </senses>
+                  </token>
+                </tokens>
+              </node>
+              <node id="n24" parent-id="n8" preprocessed="true">
+                <name>License</name>
+                <label-formula>(n24.1)</label-formula>
+                <node-formula>(n24.1) &amp; (n8.1) &amp; (n1.1) &amp; (n0.1)</node-formula>
+                <tokens>
+                  <token id="1">
+                    <text>license</text>
+                    <lemma>license</lemma>
+                    <senses>
+                      <sense pos="v" id="2421003"/>
+                      <sense pos="n" id="6462952"/>
+                      <sense pos="n" id="13808741"/>
+                      <sense pos="n" id="13809313"/>
+                      <sense pos="n" id="1124204"/>
+                    </senses>
+                  </token>
+                </tokens>
+              </node>
+              <node id="n25" parent-id="n8" preprocessed="true">
+                <name>Programming languages used</name>
+                <label-formula>(n25.1 &amp; n25.2)</label-formula>
+                <node-formula>((n25.1 &amp; n25.2)) &amp; (n8.1) &amp; (n1.1) &amp; (n0.1)</node-formula>
+                <tokens>
+                  <token id="1">
+                    <text>programming language</text>
+                    <lemma>programming language</lemma>
+                    <senses>
+                      <sense pos="n" id="6805924"/>
+                    </senses>
+                  </token>
+                  <token id="2">
+                    <text>used</text>
+                    <lemma>use</lemma>
+                    <senses>
+                      <sense pos="v" id="1147708"/>
+                      <sense pos="v" id="1153919"/>
+                      <sense pos="v" id="2575910"/>
+                      <sense pos="v" id="1147408"/>
+                      <sense pos="v" id="2537019"/>
+                      <sense pos="v" id="2347413"/>
+                      <sense pos="a" id="2578358"/>
+                      <sense pos="a" id="2579122"/>
+                      <sense pos="a" id="1699909"/>
+                    </senses>
+                  </token>
+                </tokens>
+              </node>
+              <node id="n26" parent-id="n8" preprocessed="true">
+                <name>Compatible Operating Systems</name>
+                <label-formula>(n26.1 &amp; n26.2)</label-formula>
+                <node-formula>((n26.1 &amp; n26.2)) &amp; (n8.1) &amp; (n1.1) &amp; (n0.1)</node-formula>
+                <tokens>
+                  <token id="1">
+                    <text>compatible</text>
+                    <lemma>compatible</lemma>
+                    <senses>
+                      <sense pos="a" id="532877"/>
+                      <sense pos="a" id="590080"/>
+                      <sense pos="a" id="534451"/>
+                      <sense pos="a" id="1539939"/>
+                      <sense pos="a" id="534988"/>
+                    </senses>
+                  </token>
+                  <token id="2">
+                    <text>operating system</text>
+                    <lemma>operating system</lemma>
+                    <senses>
+                      <sense pos="n" id="6481432"/>
+                    </senses>
+                  </token>
+                </tokens>
+              </node>
+              <node id="n27" parent-id="n8" preprocessed="true">
+                <name>Protocols Used</name>
+                <label-formula>(n27.1 &amp; n27.2)</label-formula>
+                <node-formula>((n27.1 &amp; n27.2)) &amp; (n8.1) &amp; (n1.1) &amp; (n0.1)</node-formula>
+                <tokens>
+                  <token id="1">
+                    <text>protocols</text>
+                    <lemma>protocol</lemma>
+                    <senses>
+                      <sense pos="n" id="6576221"/>
+                      <sense pos="n" id="6576094"/>
+                      <sense pos="n" id="5598793"/>
+                    </senses>
+                  </token>
+                  <token id="2">
+                    <text>used</text>
+                    <lemma>use</lemma>
+                    <senses>
+                      <sense pos="v" id="1147708"/>
+                      <sense pos="v" id="1153919"/>
+                      <sense pos="v" id="2575910"/>
+                      <sense pos="v" id="1147408"/>
+                      <sense pos="v" id="2537019"/>
+                      <sense pos="v" id="2347413"/>
+                      <sense pos="a" id="2578358"/>
+                      <sense pos="a" id="2579122"/>
+                      <sense pos="a" id="1699909"/>
+                    </senses>
+                  </token>
+                </tokens>
+              </node>
+              <node id="n28" parent-id="n8" preprocessed="true">
+                <name>Protocols Provider</name>
+                <label-formula>(n28.1 &amp; n28.2)</label-formula>
+                <node-formula>((n28.1 &amp; n28.2)) &amp; (n8.1) &amp; (n1.1) &amp; (n0.1)</node-formula>
+                <tokens>
+                  <token id="1">
+                    <text>protocols</text>
+                    <lemma>protocol</lemma>
+                    <senses>
+                      <sense pos="n" id="6576221"/>
+                      <sense pos="n" id="6576094"/>
+                      <sense pos="n" id="5598793"/>
+                    </senses>
+                  </token>
+                  <token id="2">
+                    <text>provider</text>
+                    <lemma>provider</lemma>
+                    <senses>
+                      <sense pos="n" id="10517066"/>
+                      <sense pos="n" id="10329387"/>
+                    </senses>
+                  </token>
+                </tokens>
+              </node>
+            </children>
+          </node>
+          <node id="n9" parent-id="n1" preprocessed="true">
+            <name>Operating System</name>
+            <label-formula>(n9.1)</label-formula>
+            <node-formula>(n9.1) &amp; (n1.1) &amp; (n0.1)</node-formula>
+            <tokens>
+              <token id="1">
+                <text>operating system</text>
+                <lemma>operating system</lemma>
+                <senses>
+                  <sense pos="n" id="6481432"/>
+                </senses>
+              </token>
+            </tokens>
+            <children>
+              <node id="n29" parent-id="n9" preprocessed="true">
+                <name>Release Date</name>
+                <label-formula>(n29.1 &amp; n29.2)</label-formula>
+                <node-formula>((n29.1 &amp; n29.2)) &amp; (n9.1) &amp; (n1.1) &amp; (n0.1)</node-formula>
+                <tokens>
+                  <token id="1">
+                    <text>release</text>
+                    <lemma>release</lemma>
+                    <senses>
+                      <sense pos="v" id="1461709"/>
+                      <sense pos="v" id="2397810"/>
+                      <sense pos="v" id="1424032"/>
+                      <sense pos="v" id="103834"/>
+                      <sense pos="v" id="958119"/>
+                      <sense pos="v" id="68517"/>
+                      <sense pos="v" id="2469975"/>
+                      <sense pos="v" id="2294321"/>
+                      <sense pos="v" id="266303"/>
+                      <sense pos="n" id="4027395"/>
+                      <sense pos="n" id="93213"/>
+                      <sense pos="n" id="13375466"/>
+                      <sense pos="n" id="6656808"/>
+                      <sense pos="n" id="212596"/>
+                      <sense pos="n" id="7233084"/>
+                      <sense pos="n" id="6466112"/>
+                      <sense pos="n" id="4027612"/>
+                      <sense pos="n" id="1248595"/>
+                      <sense pos="n" id="326029"/>
+                      <sense pos="n" id="210116"/>
+                      <sense pos="n" id="207362"/>
+                    </senses>
+                  </token>
+                  <token id="2">
+                    <text>date</text>
+                    <lemma>date</lemma>
+                    <senses>
+                      <sense pos="v" id="2461965"/>
+                      <sense pos="v" id="727043"/>
+                      <sense pos="v" id="611389"/>
+                      <sense pos="v" id="2462353"/>
+                      <sense pos="v" id="726581"/>
+                      <sense pos="n" id="14960543"/>
+                      <sense pos="n" id="14960779"/>
+                      <sense pos="n" id="8270325"/>
+                      <sense pos="n" id="14980767"/>
+                      <sense pos="n" id="14921623"/>
+                      <sense pos="n" id="9844093"/>
+                      <sense pos="n" id="14961539"/>
+                      <sense pos="n" id="7659370"/>
+                    </senses>
+                  </token>
+                </tokens>
+              </node>
+              <node id="n30" parent-id="n9" preprocessed="true">
+                <name>Developer</name>
+                <label-formula>(n30.1)</label-formula>
+                <node-formula>(n30.1) &amp; (n9.1) &amp; (n1.1) &amp; (n0.1)</node-formula>
+                <tokens>
+                  <token id="1">
+                    <text>developer</text>
+                    <lemma>developer</lemma>
+                    <senses>
+                      <sense pos="n" id="9861423"/>
+                      <sense pos="n" id="3150406"/>
+                    </senses>
+                  </token>
+                </tokens>
+              </node>
+              <node id="n31" parent-id="n9" preprocessed="true">
+                <name>Parent OS</name>
+                <label-formula>(n31.1)</label-formula>
+                <node-formula>(n31.1) &amp; (n9.1) &amp; (n1.1) &amp; (n0.1)</node-formula>
+                <tokens>
+                  <token id="1">
+                    <text>parent</text>
+                    <lemma>parent</lemma>
+                    <senses>
+                      <sense pos="v" id="2515552"/>
+                      <sense pos="n" id="10244202"/>
+                    </senses>
+                  </token>
+                </tokens>
+              </node>
+              <node id="n32" parent-id="n9" preprocessed="true">
+                <name>Version Number</name>
+                <label-formula>(n32.1 &amp; n32.2)</label-formula>
+                <node-formula>((n32.1 &amp; n32.2)) &amp; (n9.1) &amp; (n1.1) &amp; (n0.1)</node-formula>
+                <tokens>
+                  <token id="1">
+                    <text>version</text>
+                    <lemma>version</lemma>
+                    <senses>
+                      <sense pos="n" id="7074944"/>
+                      <sense pos="n" id="5767672"/>
+                      <sense pos="n" id="6322957"/>
+                      <sense pos="n" id="6449729"/>
+                      <sense pos="n" id="5853462"/>
+                      <sense pos="n" id="1252048"/>
+                    </senses>
+                  </token>
+                  <token id="2">
+                    <text>number</text>
+                    <lemma>number</lemma>
+                    <senses>
+                      <sense pos="v" id="2619800"/>
+                      <sense pos="v" id="939284"/>
+                      <sense pos="v" id="937232"/>
+                      <sense pos="v" id="2707306"/>
+                      <sense pos="v" id="938520"/>
+                      <sense pos="v" id="232862"/>
+                      <sense pos="n" id="5061203"/>
+                      <sense pos="n" id="13407358"/>
+                      <sense pos="n" id="6799626"/>
+                      <sense pos="n" id="6339243"/>
+                      <sense pos="n" id="6340289"/>
+                      <sense pos="n" id="6715816"/>
+                      <sense pos="n" id="6509212"/>
+                      <sense pos="n" id="8365251"/>
+                      <sense pos="n" id="6242010"/>
+                      <sense pos="n" id="3792675"/>
+                      <sense pos="n" id="5036355"/>
+                    </senses>
+                  </token>
+                </tokens>
+              </node>
+              <node id="n33" parent-id="n9" preprocessed="true">
+                <name>Includes OS Versions</name>
+                <label-formula>(n33.1 &amp; n33.2)</label-formula>
+                <node-formula>((n33.1 &amp; n33.2)) &amp; (n9.1) &amp; (n1.1) &amp; (n0.1)</node-formula>
+                <tokens>
+                  <token id="1">
+                    <text>includes</text>
+                    <lemma>include</lemma>
+                    <senses>
+                      <sense pos="v" id="2607558"/>
+                      <sense pos="v" id="676741"/>
+                      <sense pos="v" id="181188"/>
+                      <sense pos="v" id="2426186"/>
+                    </senses>
+                  </token>
+                  <token id="2">
+                    <text>versions</text>
+                    <lemma>version</lemma>
+                    <senses>
+                      <sense pos="n" id="7074944"/>
+                      <sense pos="n" id="5767672"/>
+                      <sense pos="n" id="6322957"/>
+                      <sense pos="n" id="6449729"/>
+                      <sense pos="n" id="5853462"/>
+                      <sense pos="n" id="1252048"/>
+                    </senses>
+                  </token>
+                </tokens>
+              </node>
+              <node id="n34" parent-id="n9" preprocessed="true">
+                <name>Supported Architectures</name>
+                <label-formula>(n34.1 &amp; n34.2)</label-formula>
+                <node-formula>((n34.1 &amp; n34.2)) &amp; (n9.1) &amp; (n1.1) &amp; (n0.1)</node-formula>
+                <tokens>
+                  <token id="1">
+                    <text>supported</text>
+                    <lemma>support</lemma>
+                    <senses>
+                      <sense pos="v" id="2531812"/>
+                      <sense pos="v" id="2198519"/>
+                      <sense pos="v" id="2429972"/>
+                      <sense pos="v" id="1205723"/>
+                      <sense pos="v" id="657823"/>
+                      <sense pos="v" id="797806"/>
+                      <sense pos="v" id="2638014"/>
+                      <sense pos="v" id="885998"/>
+                      <sense pos="v" id="1705556"/>
+                      <sense pos="v" id="899324"/>
+                      <sense pos="v" id="660036"/>
+                      <sense pos="a" id="2432001"/>
+                      <sense pos="a" id="2430050"/>
+                    </senses>
+                  </token>
+                  <token id="2">
+                    <text>architectures</text>
+                    <lemma>architecture</lemma>
+                    <senses>
+                      <sense pos="n" id="2709284"/>
+                      <sense pos="n" id="6043371"/>
+                      <sense pos="n" id="605313"/>
+                      <sense pos="n" id="4876968"/>
+                    </senses>
+                  </token>
+                </tokens>
+              </node>
+            </children>
+          </node>
+          <node id="n10" parent-id="n1" preprocessed="true">
+            <name>Computing Platform</name>
+            <label-formula>(n10.1 &amp; n10.2)</label-formula>
+            <node-formula>((n10.1 &amp; n10.2)) &amp; (n1.1) &amp; (n0.1)</node-formula>
+            <tokens>
+              <token id="1">
+                <text>computing</text>
+                <lemma>compute</lemma>
+                <senses>
+                  <sense pos="v" id="629839"/>
+                </senses>
+              </token>
+              <token id="2">
+                <text>platform</text>
+                <lemma>platform</lemma>
+                <senses>
+                  <sense pos="n" id="3917825"/>
+                </senses>
+              </token>
+            </tokens>
+            <children>
+              <node id="n35" parent-id="n10" preprocessed="true">
+                <name>File Formats Supported</name>
+                <label-formula>(n35.1 &amp; n35.2 &amp; n35.3)</label-formula>
+                <node-formula>((n35.1 &amp; n35.2 &amp; n35.3)) &amp; ((n10.1 &amp; n10.2)) &amp; (n1.1) &amp; (n0.1)</node-formula>
+                <tokens>
+                  <token id="1">
+                    <text>file</text>
+                    <lemma>file</lemma>
+                    <senses>
+                      <sense pos="v" id="991929"/>
+                      <sense pos="v" id="1374815"/>
+                      <sense pos="v" id="1902128"/>
+                      <sense pos="v" id="860893"/>
+                      <sense pos="v" id="991715"/>
+                      <sense pos="n" id="6422370"/>
+                      <sense pos="n" id="8314378"/>
+                      <sense pos="n" id="3301857"/>
+                      <sense pos="n" id="3301556"/>
+                    </senses>
+                  </token>
+                  <token id="2">
+                    <text>formats</text>
+                    <lemma>format</lemma>
+                    <senses>
+                      <sense pos="v" id="1729822"/>
+                      <sense pos="v" id="692240"/>
+                      <sense pos="v" id="558121"/>
+                      <sense pos="n" id="6548555"/>
+                      <sense pos="n" id="4622308"/>
+                    </senses>
+                  </token>
+                  <token id="3">
+                    <text>supported</text>
+                    <lemma>support</lemma>
+                    <senses>
+                      <sense pos="v" id="2531812"/>
+                      <sense pos="v" id="2198519"/>
+                      <sense pos="v" id="2429972"/>
+                      <sense pos="v" id="1205723"/>
+                      <sense pos="v" id="657823"/>
+                      <sense pos="v" id="797806"/>
+                      <sense pos="v" id="2638014"/>
+                      <sense pos="v" id="885998"/>
+                      <sense pos="v" id="1705556"/>
+                      <sense pos="v" id="899324"/>
+                      <sense pos="v" id="660036"/>
+                      <sense pos="a" id="2432001"/>
+                      <sense pos="a" id="2430050"/>
+                    </senses>
+                  </token>
+                </tokens>
+              </node>
+            </children>
+          </node>
+        </children>
+      </node>
+      <node id="n2" parent-id="n0" preprocessed="true">
+        <name>Common</name>
+        <label-formula>(n2.1)</label-formula>
+        <node-formula>(n2.1) &amp; (n0.1)</node-formula>
+        <tokens>
+          <token id="1">
+            <text>common</text>
+            <lemma>common</lemma>
+            <senses>
+              <sense pos="n" id="8495199"/>
+              <sense pos="a" id="517776"/>
+              <sense pos="a" id="510922"/>
+              <sense pos="a" id="2229702"/>
+              <sense pos="a" id="1010117"/>
+              <sense pos="a" id="1086789"/>
+              <sense pos="a" id="1651586"/>
+              <sense pos="a" id="2425915"/>
+              <sense pos="a" id="2019989"/>
+              <sense pos="a" id="1735363"/>
+            </senses>
+          </token>
+        </tokens>
+        <children>
+          <node id="n36" parent-id="n2" preprocessed="true">
+            <name>Topic</name>
+            <label-formula>(n36.1)</label-formula>
+            <node-formula>(n36.1) &amp; (n2.1) &amp; (n0.1)</node-formula>
+            <tokens>
+              <token id="1">
+                <text>topic</text>
+                <lemma>topic</lemma>
+                <senses>
+                  <sense pos="n" id="6511803"/>
+                </senses>
+              </token>
+            </tokens>
+            <children>
+              <node id="n38" parent-id="n36" preprocessed="true">
+                <name>Web Link(s)</name>
+                <label-formula>(n38.1 &amp; n38.2)</label-formula>
+                <node-formula>((n38.1 &amp; n38.2)) &amp; (n36.1) &amp; (n2.1) &amp; (n0.1)</node-formula>
+                <tokens>
+                  <token id="1">
+                    <text>web</text>
+                    <lemma>web</lemma>
+                    <senses>
+                      <sense pos="v" id="1657185"/>
+                      <sense pos="n" id="9340877"/>
+                      <sense pos="n" id="4514051"/>
+                      <sense pos="n" id="1878717"/>
+                      <sense pos="n" id="8319824"/>
+                      <sense pos="n" id="4549336"/>
+                      <sense pos="n" id="4514207"/>
+                      <sense pos="n" id="1879054"/>
+                    </senses>
+                  </token>
+                  <token id="2">
+                    <text>link</text>
+                    <lemma>link</lemma>
+                    <senses>
+                      <sense pos="v" id="705069"/>
+                      <sense pos="v" id="1342435"/>
+                      <sense pos="v" id="2597114"/>
+                      <sense pos="v" id="1479126"/>
+                      <sense pos="n" id="13611598"/>
+                      <sense pos="n" id="3633148"/>
+                      <sense pos="n" id="14227502"/>
+                      <sense pos="n" id="13686605"/>
+                      <sense pos="n" id="13474814"/>
+                      <sense pos="n" id="6498931"/>
+                      <sense pos="n" id="6179321"/>
+                      <sense pos="n" id="3997504"/>
+                      <sense pos="n" id="3633447"/>
+                    </senses>
+                  </token>
+                </tokens>
+              </node>
+              <node id="n39" parent-id="n36" preprocessed="true">
+                <name>Also known as</name>
+                <label-formula>(n39.1)</label-formula>
+                <node-formula>(n39.1) &amp; (n36.1) &amp; (n2.1) &amp; (n0.1)</node-formula>
+                <tokens>
+                  <token id="1">
+                    <text>also known as</text>
+                    <lemma>also known as</lemma>
+                    <senses>
+                      <sense pos="r" id="271741"/>
+                    </senses>
+                  </token>
+                </tokens>
+              </node>
+              <node id="n40" parent-id="n36" preprocessed="true">
+                <name>Subjects</name>
+                <label-formula>(n40.1)</label-formula>
+                <node-formula>(n40.1) &amp; (n36.1) &amp; (n2.1) &amp; (n0.1)</node-formula>
+                <tokens>
+                  <token id="1">
+                    <text>subjects</text>
+                    <lemma>subject</lemma>
+                    <senses>
+                      <sense pos="n" id="6511803"/>
+                    </senses>
+                  </token>
+                </tokens>
+              </node>
+            </children>
+          </node>
+          <node id="n37" parent-id="n2" preprocessed="true">
+            <name>Webpage</name>
+            <label-formula>(n37.1)</label-formula>
+            <node-formula>(n37.1) &amp; (n2.1) &amp; (n0.1)</node-formula>
+            <tokens>
+              <token id="1">
+                <text>webpage</text>
+                <lemma>webpage</lemma>
+                <senses>
+                  <sense pos="n" id="6273399"/>
+                </senses>
+              </token>
+            </tokens>
+          </node>
+        </children>
+      </node>
+      <node id="n3" parent-id="n0" preprocessed="true">
+        <name>Organization</name>
+        <label-formula>(n3.1)</label-formula>
+        <node-formula>(n3.1) &amp; (n0.1)</node-formula>
+        <tokens>
+          <token id="1">
+            <text>organization</text>
+            <lemma>organization</lemma>
+            <senses>
+              <sense pos="n" id="7899136"/>
+              <sense pos="n" id="233278"/>
+            </senses>
+          </token>
+        </tokens>
+        <children>
+          <node id="n41" parent-id="n3" preprocessed="true">
+            <name>Organization</name>
+            <label-formula>(n41.1)</label-formula>
+            <node-formula>(n41.1) &amp; (n3.1) &amp; (n0.1)</node-formula>
+            <tokens>
+              <token id="1">
+                <text>organization</text>
+                <lemma>organization</lemma>
+                <senses>
+                  <sense pos="n" id="7899136"/>
+                </senses>
+              </token>
+            </tokens>
+            <children>
+              <node id="n42" parent-id="n41" preprocessed="true">
+                <name>Geographic scope</name>
+                <label-formula>(n42.1 &amp; n42.2)</label-formula>
+                <node-formula>((n42.1 &amp; n42.2)) &amp; (n41.1) &amp; (n3.1) &amp; (n0.1)</node-formula>
+                <tokens>
+                  <token id="1">
+                    <text>geographic</text>
+                    <lemma>geographic</lemma>
+                    <senses>
+                      <sense pos="a" id="3103750"/>
+                      <sense pos="a" id="1523975"/>
+                    </senses>
+                  </token>
+                  <token id="2">
+                    <text>scope</text>
+                    <lemma>scope</lemma>
+                    <senses>
+                      <sense pos="n" id="5065140"/>
+                      <sense pos="n" id="14320565"/>
+                      <sense pos="n" id="4351615"/>
+                      <sense pos="n" id="3814933"/>
+                    </senses>
+                  </token>
+                </tokens>
+              </node>
+              <node id="n43" parent-id="n41" preprocessed="true">
+                <name>Sectors</name>
+                <label-formula>(n43.1)</label-formula>
+                <node-formula>(n43.1) &amp; (n41.1) &amp; (n3.1) &amp; (n0.1)</node-formula>
+                <tokens>
+                  <token id="1">
+                    <text>sectors</text>
+                    <lemma>sector</lemma>
+                    <senses>
+                      <sense pos="n" id="13690791"/>
+                      <sense pos="n" id="7858542"/>
+                      <sense pos="n" id="5779802"/>
+                      <sense pos="n" id="13450967"/>
+                      <sense pos="n" id="8527917"/>
+                      <sense pos="n" id="4117995"/>
+                    </senses>
+                  </token>
+                </tokens>
+              </node>
+              <node id="n44" parent-id="n41" preprocessed="true">
+                <name>Headquartiers</name>
+                <label-formula>(n44.1)</label-formula>
+                <node-formula>(n44.1) &amp; (n41.1) &amp; (n3.1) &amp; (n0.1)</node-formula>
+                <tokens>
+                  <token id="1">
+                    <text>headquartiers</text>
+                    <lemma>headquartiers</lemma>
+                    <senses/>
+                  </token>
+                </tokens>
+              </node>
+              <node id="n45" parent-id="n41" preprocessed="true">
+                <name>Date founded</name>
+                <label-formula>(n45.1 &amp; n45.2)</label-formula>
+                <node-formula>((n45.1 &amp; n45.2)) &amp; (n41.1) &amp; (n3.1) &amp; (n0.1)</node-formula>
+                <tokens>
+                  <token id="1">
+                    <text>date</text>
+                    <lemma>date</lemma>
+                    <senses>
+                      <sense pos="v" id="2461965"/>
+                      <sense pos="v" id="727043"/>
+                      <sense pos="v" id="611389"/>
+                      <sense pos="v" id="2462353"/>
+                      <sense pos="v" id="726581"/>
+                      <sense pos="n" id="14960543"/>
+                      <sense pos="n" id="14960779"/>
+                      <sense pos="n" id="8270325"/>
+                      <sense pos="n" id="14980767"/>
+                      <sense pos="n" id="14921623"/>
+                      <sense pos="n" id="9844093"/>
+                      <sense pos="n" id="14961539"/>
+                      <sense pos="n" id="7659370"/>
+                    </senses>
+                  </token>
+                  <token id="2">
+                    <text>founded</text>
+                    <lemma>found</lemma>
+                    <senses>
+                      <sense pos="v" id="2403508"/>
+                      <sense pos="v" id="1632463"/>
+                    </senses>
+                  </token>
+                </tokens>
+              </node>
+              <node id="n46" parent-id="n41" preprocessed="true">
+                <name>Founders</name>
+                <label-formula>(n46.1)</label-formula>
+                <node-formula>(n46.1) &amp; (n41.1) &amp; (n3.1) &amp; (n0.1)</node-formula>
+                <tokens>
+                  <token id="1">
+                    <text>founders</text>
+                    <lemma>founder</lemma>
+                    <senses>
+                      <sense pos="v" id="2505783"/>
+                      <sense pos="v" id="1971843"/>
+                      <sense pos="v" id="1970728"/>
+                      <sense pos="v" id="1882812"/>
+                      <sense pos="n" id="14157624"/>
+                      <sense pos="n" id="9957085"/>
+                      <sense pos="n" id="9957560"/>
+                    </senses>
+                  </token>
+                </tokens>
+              </node>
+              <node id="n47" parent-id="n41" preprocessed="true">
+                <name>Organization type</name>
+                <label-formula>(n47.1 &amp; n47.2)</label-formula>
+                <node-formula>((n47.1 &amp; n47.2)) &amp; (n41.1) &amp; (n3.1) &amp; (n0.1)</node-formula>
+                <tokens>
+                  <token id="1">
+                    <text>organization</text>
+                    <lemma>organization</lemma>
+                    <senses>
+                      <sense pos="n" id="7899136"/>
+                    </senses>
+                  </token>
+                  <token id="2">
+                    <text>type</text>
+                    <lemma>type</lemma>
+                    <senses>
+                      <sense pos="v" id="994610"/>
+                      <sense pos="v" id="610888"/>
+                      <sense pos="n" id="5767228"/>
+                      <sense pos="n" id="9762912"/>
+                      <sense pos="n" id="8001185"/>
+                      <sense pos="n" id="6733551"/>
+                      <sense pos="n" id="4450982"/>
+                      <sense pos="n" id="6704910"/>
+                    </senses>
+                  </token>
+                </tokens>
+              </node>
+              <node id="n48" parent-id="n41" preprocessed="true">
+                <name>Place founded</name>
+                <label-formula>(n48.1 &amp; n48.2)</label-formula>
+                <node-formula>((n48.1 &amp; n48.2)) &amp; (n41.1) &amp; (n3.1) &amp; (n0.1)</node-formula>
+                <tokens>
+                  <token id="1">
+                    <text>place</text>
+                    <lemma>place</lemma>
+                    <senses>
+                      <sense pos="v" id="1481373"/>
+                      <sense pos="v" id="2369514"/>
+                      <sense pos="v" id="650026"/>
+                      <sense pos="v" id="2311450"/>
+                      <sense pos="v" id="737495"/>
+                      <sense pos="v" id="651732"/>
+                      <sense pos="v" id="1139603"/>
+                      <sense pos="v" id="611084"/>
+                      <sense pos="v" id="2513695"/>
+                      <sense pos="v" id="1696594"/>
+                      <sense pos="v" id="665396"/>
+                      <sense pos="v" id="2669863"/>
+                      <sense pos="v" id="2249766"/>
+                      <sense pos="v" id="1078166"/>
+                      <sense pos="v" id="1075974"/>
+                      <sense pos="v" id="1038740"/>
+                      <sense pos="n" id="8543623"/>
+                      <sense pos="n" id="8395821"/>
+                      <sense pos="n" id="5542326"/>
+                      <sense pos="n" id="8521498"/>
+                      <sense pos="n" id="710481"/>
+                      <sense pos="n" id="13740766"/>
+                      <sense pos="n" id="8440931"/>
+                      <sense pos="n" id="580837"/>
+                      <sense pos="n" id="8501323"/>
+                      <sense pos="n" id="13761555"/>
+                      <sense pos="n" id="8526856"/>
+                      <sense pos="n" id="6315417"/>
+                      <sense pos="n" id="13761777"/>
+                      <sense pos="n" id="8499522"/>
+                      <sense pos="n" id="6397487"/>
+                      <sense pos="n" id="6303988"/>
+                    </senses>
+                  </token>
+                  <token id="2">
+                    <text>founded</text>
+                    <lemma>found</lemma>
+                    <senses>
+                      <sense pos="v" id="2403508"/>
+                      <sense pos="v" id="1632463"/>
+                    </senses>
+                  </token>
+                </tokens>
+              </node>
+              <node id="n49" parent-id="n41" preprocessed="true">
+                <name>Previous names</name>
+                <label-formula>(n49.1 &amp; n49.2)</label-formula>
+                <node-formula>((n49.1 &amp; n49.2)) &amp; (n41.1) &amp; (n3.1) &amp; (n0.1)</node-formula>
+                <tokens>
+                  <token id="1">
+                    <text>previous</text>
+                    <lemma>previous</lemma>
+                    <senses>
+                      <sense pos="a" id="1791747"/>
+                      <sense pos="a" id="853416"/>
+                      <sense pos="a" id="145187"/>
+                    </senses>
+                  </token>
+                  <token id="2">
+                    <text>names</text>
+                    <lemma>name</lemma>
+                    <senses>
+                      <sense pos="v" id="1018451"/>
+                      <sense pos="v" id="1015995"/>
+                      <sense pos="v" id="2373391"/>
+                      <sense pos="v" id="2372880"/>
+                      <sense pos="v" id="937907"/>
+                      <sense pos="v" id="644350"/>
+                      <sense pos="v" id="1014090"/>
+                      <sense pos="v" id="936330"/>
+                      <sense pos="v" id="637804"/>
+                      <sense pos="n" id="6630265"/>
+                    </senses>
+                  </token>
+                </tokens>
+              </node>
+              <node id="n50" parent-id="n41" preprocessed="true">
+                <name>Organization locations</name>
+                <label-formula>(n50.1 &amp; n50.2)</label-formula>
+                <node-formula>((n50.1 &amp; n50.2)) &amp; (n41.1) &amp; (n3.1) &amp; (n0.1)</node-formula>
+                <tokens>
+                  <token id="1">
+                    <text>organization</text>
+                    <lemma>organization</lemma>
+                    <senses>
+                      <sense pos="n" id="7899136"/>
+                    </senses>
+                  </token>
+                  <token id="2">
+                    <text>locations</text>
+                    <lemma>location</lemma>
+                    <senses>
+                      <sense pos="n" id="26074"/>
+                      <sense pos="n" id="1037024"/>
+                      <sense pos="n" id="152507"/>
+                      <sense pos="n" id="3641365"/>
+                    </senses>
+                  </token>
+                </tokens>
+              </node>
+              <node id="n51" parent-id="n41" preprocessed="true">
+                <name>Leadership</name>
+                <label-formula>(n51.1)</label-formula>
+                <node-formula>(n51.1) &amp; (n41.1) &amp; (n3.1) &amp; (n0.1)</node-formula>
+                <tokens>
+                  <token id="1">
+                    <text>leadership</text>
+                    <lemma>leadership</lemma>
+                    <senses>
+                      <sense pos="n" id="1240715"/>
+                      <sense pos="n" id="8266752"/>
+                      <sense pos="n" id="14241611"/>
+                      <sense pos="n" id="5547779"/>
+                    </senses>
+                  </token>
+                </tokens>
+              </node>
+              <node id="n52" parent-id="n41" preprocessed="true">
+                <name>Partnerships</name>
+                <label-formula>(n52.1)</label-formula>
+                <node-formula>(n52.1) &amp; (n41.1) &amp; (n3.1) &amp; (n0.1)</node-formula>
+                <tokens>
+                  <token id="1">
+                    <text>partnerships</text>
+                    <lemma>partnership</lemma>
+                    <senses>
+                      <sense pos="n" id="7951005"/>
+                    </senses>
+                  </token>
+                </tokens>
+              </node>
+            </children>
+          </node>
+        </children>
+      </node>
+      <node id="n4" parent-id="n0" preprocessed="true">
+        <name>Business</name>
+        <label-formula>(n4.1)</label-formula>
+        <node-formula>(n4.1) &amp; (n0.1)</node-formula>
+        <tokens>
+          <token id="1">
+            <text>business</text>
+            <lemma>business</lemma>
+            <senses>
+              <sense pos="n" id="7951353"/>
+              <sense pos="n" id="1080062"/>
+            </senses>
+          </token>
+        </tokens>
+        <children>
+          <node id="n53" parent-id="n4" preprocessed="true">
+            <name>Business Operation</name>
+            <label-formula>(n53.1 &amp; n53.2)</label-formula>
+            <node-formula>((n53.1 &amp; n53.2)) &amp; (n4.1) &amp; (n0.1)</node-formula>
+            <tokens>
+              <token id="1">
+                <text>business</text>
+                <lemma>business</lemma>
+                <senses>
+                  <sense pos="n" id="7951353"/>
+                </senses>
+              </token>
+              <token id="2">
+                <text>operation</text>
+                <lemma>operation</lemma>
+                <senses>
+                  <sense pos="n" id="1081284"/>
+                </senses>
+              </token>
+            </tokens>
+            <children>
+              <node id="n56" parent-id="n53" preprocessed="true">
+                <name>Revenue</name>
+                <label-formula>(n56.1)</label-formula>
+                <node-formula>(n56.1) &amp; ((n53.1 &amp; n53.2)) &amp; (n4.1) &amp; (n0.1)</node-formula>
+                <tokens>
+                  <token id="1">
+                    <text>revenue</text>
+                    <lemma>revenue</lemma>
+                    <senses>
+                      <sense pos="n" id="13086196"/>
+                      <sense pos="n" id="13091403"/>
+                    </senses>
+                  </token>
+                </tokens>
+              </node>
+              <node id="n57" parent-id="n53" preprocessed="true">
+                <name>Operating Income</name>
+                <label-formula>(n57.1 &amp; n57.2)</label-formula>
+                <node-formula>((n57.1 &amp; n57.2)) &amp; ((n53.1 &amp; n53.2)) &amp; (n4.1) &amp; (n0.1)</node-formula>
+                <tokens>
+                  <token id="1">
+                    <text>operating</text>
+                    <lemma>operate</lemma>
+                    <senses>
+                      <sense pos="v" id="2420190"/>
+                    </senses>
+                  </token>
+                  <token id="2">
+                    <text>income</text>
+                    <lemma>income</lemma>
+                    <senses>
+                      <sense pos="n" id="13084632"/>
+                    </senses>
+                  </token>
+                </tokens>
+              </node>
+              <node id="n58" parent-id="n53" preprocessed="true">
+                <name>Net profit</name>
+                <label-formula>(n58.1)</label-formula>
+                <node-formula>(n58.1) &amp; ((n53.1 &amp; n53.2)) &amp; (n4.1) &amp; (n0.1)</node-formula>
+                <tokens>
+                  <token id="1">
+                    <text>net profit</text>
+                    <lemma>net profit</lemma>
+                    <senses>
+                      <sense pos="n" id="13087849"/>
+                    </senses>
+                  </token>
+                </tokens>
+              </node>
+              <node id="n59" parent-id="n53" preprocessed="true">
+                <name>Cash</name>
+                <label-formula>(n59.1)</label-formula>
+                <node-formula>(n59.1) &amp; ((n53.1 &amp; n53.2)) &amp; (n4.1) &amp; (n0.1)</node-formula>
+                <tokens>
+                  <token id="1">
+                    <text>cash</text>
+                    <lemma>cash</lemma>
+                    <senses>
+                      <sense pos="v" id="2235245"/>
+                      <sense pos="n" id="13214226"/>
+                      <sense pos="n" id="13214077"/>
+                      <sense pos="n" id="10724621"/>
+                    </senses>
+                  </token>
+                </tokens>
+              </node>
+              <node id="n60" parent-id="n53" preprocessed="true">
+                <name>Current Ffma</name>
+                <label-formula>(n60.1)</label-formula>
+                <node-formula>(n60.1) &amp; ((n53.1 &amp; n53.2)) &amp; (n4.1) &amp; (n0.1)</node-formula>
+                <tokens>
+                  <token id="1">
+                    <text>current Ffma</text>
+                    <lemma>current Ffma</lemma>
+                    <senses>
+                      <sense pos="n" id="13161533"/>
+                    </senses>
+                  </token>
+                </tokens>
+              </node>
+              <node id="n61" parent-id="n53" preprocessed="true">
+                <name>Total Ffma</name>
+                <label-formula>(n61.1 &amp; n61.2)</label-formula>
+                <node-formula>((n61.1 &amp; n61.2)) &amp; ((n53.1 &amp; n53.2)) &amp; (n4.1) &amp; (n0.1)</node-formula>
+                <tokens>
+                  <token id="1">
+                    <text>total</text>
+                    <lemma>total</lemma>
+                    <senses>
+                      <sense pos="v" id="2619800"/>
+                      <sense pos="v" id="939719"/>
+                      <sense pos="v" id="255997"/>
+                      <sense pos="n" id="4302138"/>
+                      <sense pos="n" id="5787170"/>
+                      <sense pos="a" id="541797"/>
+                      <sense pos="a" id="1640778"/>
+                      <sense pos="a" id="585818"/>
+                      <sense pos="a" id="549578"/>
+                    </senses>
+                  </token>
+                  <token id="2">
+                    <text>Ffma</text>
+                    <lemma>Ffma</lemma>
+                    <senses>
+                      <sense pos="n" id="13158145"/>
+                    </senses>
+                  </token>
+                </tokens>
+              </node>
+              <node id="n62" parent-id="n53" preprocessed="true">
+                <name>Current Liabilities</name>
+                <label-formula>(n62.1 &amp; n62.2)</label-formula>
+                <node-formula>((n62.1 &amp; n62.2)) &amp; ((n53.1 &amp; n53.2)) &amp; (n4.1) &amp; (n0.1)</node-formula>
+                <tokens>
+                  <token id="1">
+                    <text>current</text>
+                    <lemma>current</lemma>
+                    <senses>
+                      <sense pos="n" id="11278815"/>
+                      <sense pos="n" id="7305835"/>
+                      <sense pos="n" id="8346434"/>
+                      <sense pos="a" id="699223"/>
+                    </senses>
+                  </token>
+                  <token id="2">
+                    <text>liabilities</text>
+                    <lemma>liabilities</lemma>
+                    <senses>
+                      <sense pos="n" id="13223526"/>
+                    </senses>
+                  </token>
+                </tokens>
+              </node>
+              <node id="n63" parent-id="n53" preprocessed="true">
+                <name>Total Liabilities</name>
+                <label-formula>(n63.1 &amp; n63.2)</label-formula>
+                <node-formula>((n63.1 &amp; n63.2)) &amp; ((n53.1 &amp; n53.2)) &amp; (n4.1) &amp; (n0.1)</node-formula>
+                <tokens>
+                  <token id="1">
+                    <text>total</text>
+                    <lemma>total</lemma>
+                    <senses>
+                      <sense pos="v" id="2619800"/>
+                      <sense pos="v" id="939719"/>
+                      <sense pos="v" id="255997"/>
+                      <sense pos="n" id="4302138"/>
+                      <sense pos="n" id="5787170"/>
+                      <sense pos="a" id="541797"/>
+                      <sense pos="a" id="1640778"/>
+                      <sense pos="a" id="585818"/>
+                      <sense pos="a" id="549578"/>
+                    </senses>
+                  </token>
+                  <token id="2">
+                    <text>liabilities</text>
+                    <lemma>liabilities</lemma>
+                    <senses>
+                      <sense pos="n" id="13223526"/>
+                    </senses>
+                  </token>
+                </tokens>
+              </node>
+              <node id="n64" parent-id="n53" preprocessed="true">
+                <name>Industry</name>
+                <label-formula>(n64.1)</label-formula>
+                <node-formula>(n64.1) &amp; ((n53.1 &amp; n53.2)) &amp; (n4.1) &amp; (n0.1)</node-formula>
+                <tokens>
+                  <token id="1">
+                    <text>industry</text>
+                    <lemma>industry</lemma>
+                    <senses>
+                      <sense pos="n" id="910243"/>
+                    </senses>
+                  </token>
+                </tokens>
+              </node>
+            </children>
+          </node>
+          <node id="n54" parent-id="n4" preprocessed="true">
+            <name>Employer</name>
+            <label-formula>(n54.1)</label-formula>
+            <node-formula>(n54.1) &amp; (n4.1) &amp; (n0.1)</node-formula>
+            <tokens>
+              <token id="1">
+                <text>employer</text>
+                <lemma>employer</lemma>
+                <senses>
+                  <sense pos="n" id="9905255"/>
+                </senses>
+              </token>
+            </tokens>
+            <children>
+              <node id="n65" parent-id="n54" preprocessed="true">
+                <name>Number of employees</name>
+                <label-formula>(n65.1 &amp; n65.2)</label-formula>
+                <node-formula>((n65.1 &amp; n65.2)) &amp; (n54.1) &amp; (n4.1) &amp; (n0.1)</node-formula>
+                <tokens>
+                  <token id="1">
+                    <text>number</text>
+                    <lemma>number</lemma>
+                    <senses>
+                      <sense pos="v" id="2619800"/>
+                      <sense pos="v" id="939284"/>
+                      <sense pos="v" id="937232"/>
+                      <sense pos="v" id="2707306"/>
+                      <sense pos="v" id="938520"/>
+                      <sense pos="v" id="232862"/>
+                      <sense pos="n" id="5061203"/>
+                      <sense pos="n" id="13407358"/>
+                      <sense pos="n" id="6799626"/>
+                      <sense pos="n" id="6339243"/>
+                      <sense pos="n" id="6340289"/>
+                      <sense pos="n" id="6715816"/>
+                      <sense pos="n" id="6509212"/>
+                      <sense pos="n" id="8365251"/>
+                      <sense pos="n" id="6242010"/>
+                      <sense pos="n" id="3792675"/>
+                      <sense pos="n" id="5036355"/>
+                    </senses>
+                  </token>
+                  <token id="2">
+                    <text>employees</text>
+                    <lemma>employee</lemma>
+                    <senses>
+                      <sense pos="n" id="9904388"/>
+                    </senses>
+                  </token>
+                </tokens>
+              </node>
+            </children>
+          </node>
+          <node id="n55" parent-id="n4" preprocessed="true">
+            <name>Issue</name>
+            <label-formula>(n55.1)</label-formula>
+            <node-formula>(n55.1) &amp; (n4.1) &amp; (n0.1)</node-formula>
+            <tokens>
+              <token id="1">
+                <text>issue</text>
+                <lemma>issue</lemma>
+                <senses>
+                  <sense pos="n" id="1088898"/>
+                </senses>
+              </token>
+            </tokens>
+            <children>
+              <node id="n66" parent-id="n55" preprocessed="true">
+                <name>Issuer</name>
+                <label-formula>(n66.1)</label-formula>
+                <node-formula>(n66.1) &amp; (n55.1) &amp; (n4.1) &amp; (n0.1)</node-formula>
+                <tokens>
+                  <token id="1">
+                    <text>issuer</text>
+                    <lemma>issuer</lemma>
+                    <senses>
+                      <sense pos="n" id="7945490"/>
+                    </senses>
+                  </token>
+                </tokens>
+              </node>
+            </children>
+          </node>
+        </children>
+      </node>
+      <node id="n5" parent-id="n0" preprocessed="true">
+        <name>Measurement Unit</name>
+        <label-formula>(n5.1 &amp; n5.2)</label-formula>
+        <node-formula>((n5.1 &amp; n5.2)) &amp; (n0.1)</node-formula>
+        <tokens>
+          <token id="1">
+            <text>measurement</text>
+            <lemma>measurement</lemma>
+            <senses>
+              <sense pos="n" id="983043"/>
+            </senses>
+          </token>
+          <token id="2">
+            <text>unit</text>
+            <lemma>unit</lemma>
+            <senses>
+              <sense pos="n" id="13409055"/>
+              <sense pos="n" id="3991"/>
+            </senses>
+          </token>
+        </tokens>
+        <children>
+          <node id="n67" parent-id="n5" preprocessed="true">
+            <name>Dated Money Value</name>
+            <label-formula>(n67.1 &amp; n67.2 &amp; n67.3)</label-formula>
+            <node-formula>((n67.1 &amp; n67.2 &amp; n67.3)) &amp; ((n5.1 &amp; n5.2)) &amp; (n0.1)</node-formula>
+            <tokens>
+              <token id="1">
+                <text>dated</text>
+                <lemma>date</lemma>
+                <senses>
+                  <sense pos="v" id="2461965"/>
+                  <sense pos="v" id="727043"/>
+                  <sense pos="v" id="611389"/>
+                  <sense pos="v" id="2462353"/>
+                  <sense pos="v" id="726581"/>
+                  <sense pos="a" id="1013912"/>
+                  <sense pos="a" id="717197"/>
+                </senses>
+              </token>
+              <token id="2">
+                <text>money</text>
+                <lemma>money</lemma>
+                <senses>
+                  <sense pos="n" id="13212489"/>
+                </senses>
+              </token>
+              <token id="3">
+                <text>value</text>
+                <lemma>value</lemma>
+                <senses>
+                  <sense pos="v" id="673425"/>
+                </senses>
+              </token>
+            </tokens>
+            <children>
+              <node id="n68" parent-id="n67" preprocessed="true">
+                <name>Currency</name>
+                <label-formula>(n68.1)</label-formula>
+                <node-formula>(n68.1) &amp; ((n67.1 &amp; n67.2 &amp; n67.3)) &amp; ((n5.1 &amp; n5.2)) &amp; (n0.1)</node-formula>
+                <tokens>
+                  <token id="1">
+                    <text>currency</text>
+                    <lemma>currency</lemma>
+                    <senses>
+                      <sense pos="n" id="13213525"/>
+                    </senses>
+                  </token>
+                </tokens>
+              </node>
+              <node id="n69" parent-id="n67" preprocessed="true">
+                <name>Amount</name>
+                <label-formula>(n69.1)</label-formula>
+                <node-formula>(n69.1) &amp; ((n67.1 &amp; n67.2 &amp; n67.3)) &amp; ((n5.1 &amp; n5.2)) &amp; (n0.1)</node-formula>
+                <tokens>
+                  <token id="1">
+                    <text>amount</text>
+                    <lemma>amount</lemma>
+                    <senses>
+                      <sense pos="n" id="32028"/>
+                    </senses>
+                  </token>
+                </tokens>
+              </node>
+              <node id="n70" parent-id="n67" preprocessed="true">
+                <name>Valid Date</name>
+                <label-formula>(n70.1 &amp; n70.2)</label-formula>
+                <node-formula>((n70.1 &amp; n70.2)) &amp; ((n67.1 &amp; n67.2 &amp; n67.3)) &amp; ((n5.1 &amp; n5.2)) &amp; (n0.1)</node-formula>
+                <tokens>
+                  <token id="1">
+                    <text>valid</text>
+                    <lemma>valid</lemma>
+                    <senses>
+                      <sense pos="a" id="2582328"/>
+                      <sense pos="a" id="978306"/>
+                    </senses>
+                  </token>
+                  <token id="2">
+                    <text>date</text>
+                    <lemma>date</lemma>
+                    <senses>
+                      <sense pos="n" id="7659370"/>
+                    </senses>
+                  </token>
+                </tokens>
+              </node>
+            </children>
+          </node>
+        </children>
+      </node>
+      <node id="n6" parent-id="n0" preprocessed="true">
+        <name>Awards</name>
+        <label-formula>(n6.1)</label-formula>
+        <node-formula>(n6.1) &amp; (n0.1)</node-formula>
+        <tokens>
+          <token id="1">
+            <text>awards</text>
+            <lemma>award</lemma>
+            <senses>
+              <sense pos="v" id="2240699"/>
+              <sense pos="v" id="2241089"/>
+              <sense pos="n" id="85363"/>
+              <sense pos="n" id="6606972"/>
+              <sense pos="n" id="13097609"/>
+            </senses>
+          </token>
+        </tokens>
+        <children>
+          <node id="n71" parent-id="n6" preprocessed="true">
+            <name>Ranked item</name>
+            <label-formula>(n71.1 &amp; n71.2)</label-formula>
+            <node-formula>((n71.1 &amp; n71.2)) &amp; (n6.1) &amp; (n0.1)</node-formula>
+            <tokens>
+              <token id="1">
+                <text>ranked</text>
+                <lemma>rank</lemma>
+                <senses>
+                  <sense pos="v" id="652058"/>
+                </senses>
+              </token>
+              <token id="2">
+                <text>item</text>
+                <lemma>item</lemma>
+                <senses>
+                  <sense pos="n" id="6396434"/>
+                </senses>
+              </token>
+            </tokens>
+            <children>
+              <node id="n73" parent-id="n71" preprocessed="true">
+                <name>Appears in ranked lists</name>
+                <label-formula>(n73.1 &amp; n73.2 &amp; n73.3)</label-formula>
+                <node-formula>((n73.1 &amp; n73.2 &amp; n73.3)) &amp; ((n71.1 &amp; n71.2)) &amp; (n6.1) &amp; (n0.1)</node-formula>
+                <tokens>
+                  <token id="1">
+                    <text>appears</text>
+                    <lemma>appear</lemma>
+                    <senses>
+                      <sense pos="v" id="2113647"/>
+                      <sense pos="v" id="417790"/>
+                      <sense pos="v" id="421667"/>
+                      <sense pos="v" id="2114884"/>
+                      <sense pos="v" id="420771"/>
+                      <sense pos="v" id="1705952"/>
+                      <sense pos="v" id="2573182"/>
+                    </senses>
+                  </token>
+                  <token id="2">
+                    <text>ranked</text>
+                    <lemma>rank</lemma>
+                    <senses>
+                      <sense pos="v" id="652058"/>
+                    </senses>
+                  </token>
+                  <token id="3">
+                    <text>lists</text>
+                    <lemma>list</lemma>
+                    <senses>
+                      <sense pos="n" id="6395353"/>
+                    </senses>
+                  </token>
+                </tokens>
+              </node>
+            </children>
+          </node>
+          <node id="n72" parent-id="n6" preprocessed="true">
+            <name>Ranking</name>
+            <label-formula>(n72.1)</label-formula>
+            <node-formula>(n72.1) &amp; (n6.1) &amp; (n0.1)</node-formula>
+            <tokens>
+              <token id="1">
+                <text>ranking</text>
+                <lemma>rank</lemma>
+                <senses>
+                  <sense pos="v" id="652058"/>
+                </senses>
+              </token>
+            </tokens>
+            <children>
+              <node id="n74" parent-id="n72" preprocessed="true">
+                <name>Item</name>
+                <label-formula>(n74.1)</label-formula>
+                <node-formula>(n74.1) &amp; (n72.1) &amp; (n6.1) &amp; (n0.1)</node-formula>
+                <tokens>
+                  <token id="1">
+                    <text>item</text>
+                    <lemma>item</lemma>
+                    <senses>
+                      <sense pos="r" id="257395"/>
+                      <sense pos="n" id="6396434"/>
+                      <sense pos="n" id="3548833"/>
+                      <sense pos="n" id="13628791"/>
+                      <sense pos="n" id="5745084"/>
+                      <sense pos="n" id="6704689"/>
+                    </senses>
+                  </token>
+                </tokens>
+              </node>
+              <node id="n75" parent-id="n72" preprocessed="true">
+                <name>List</name>
+                <label-formula>(n75.1)</label-formula>
+                <node-formula>(n75.1) &amp; (n72.1) &amp; (n6.1) &amp; (n0.1)</node-formula>
+                <tokens>
+                  <token id="1">
+                    <text>list</text>
+                    <lemma>list</lemma>
+                    <senses>
+                      <sense pos="v" id="936330"/>
+                      <sense pos="v" id="2448344"/>
+                      <sense pos="v" id="937232"/>
+                      <sense pos="v" id="2020709"/>
+                      <sense pos="v" id="2020487"/>
+                      <sense pos="n" id="6395353"/>
+                      <sense pos="n" id="5009052"/>
+                    </senses>
+                  </token>
+                </tokens>
+              </node>
+              <node id="n76" parent-id="n72" preprocessed="true">
+                <name>Rank</name>
+                <label-formula>(n76.1)</label-formula>
+                <node-formula>(n76.1) &amp; (n72.1) &amp; (n6.1) &amp; (n0.1)</node-formula>
+                <tokens>
+                  <token id="1">
+                    <text>rank</text>
+                    <lemma>rank</lemma>
+                    <senses>
+                      <sense pos="v" id="652058"/>
+                      <sense pos="n" id="14238305"/>
+                    </senses>
+                  </token>
+                </tokens>
+              </node>
+              <node id="n77" parent-id="n72" preprocessed="true">
+                <name>Year</name>
+                <label-formula>(n77.1)</label-formula>
+                <node-formula>(n77.1) &amp; (n72.1) &amp; (n6.1) &amp; (n0.1)</node-formula>
+                <tokens>
+                  <token id="1">
+                    <text>year</text>
+                    <lemma>year</lemma>
+                    <senses>
+                      <sense pos="n" id="15004692"/>
+                      <sense pos="n" id="15005198"/>
+                      <sense pos="n" id="15002401"/>
+                      <sense pos="n" id="8125440"/>
+                    </senses>
+                  </token>
+                </tokens>
+              </node>
+              <node id="n78" parent-id="n72" preprocessed="true">
+                <name>Note</name>
+                <label-formula>(n78.1)</label-formula>
+                <node-formula>(n78.1) &amp; (n72.1) &amp; (n6.1) &amp; (n0.1)</node-formula>
+                <tokens>
+                  <token id="1">
+                    <text>note</text>
+                    <lemma>note</lemma>
+                    <senses>
+                      <sense pos="v" id="1009923"/>
+                      <sense pos="v" id="2098934"/>
+                      <sense pos="v" id="2099391"/>
+                      <sense pos="v" id="1010852"/>
+                      <sense pos="n" id="6538053"/>
+                      <sense pos="n" id="6418196"/>
+                      <sense pos="n" id="4672309"/>
+                      <sense pos="n" id="13221270"/>
+                      <sense pos="n" id="6773228"/>
+                      <sense pos="n" id="6672526"/>
+                      <sense pos="n" id="14243695"/>
+                      <sense pos="n" id="6985524"/>
+                      <sense pos="n" id="13225928"/>
+                    </senses>
+                  </token>
+                </tokens>
+              </node>
+              <node id="n79" parent-id="n72" preprocessed="true">
+                <label-formula>(n79.1)</label-formula>
+                <node-formula>(n79.1) &amp; (n72.1) &amp; (n6.1) &amp; (n0.1)</node-formula>
+                <tokens>
+                  <token id="1">
+                    <senses/>
+                  </token>
+                </tokens>
+              </node>
+            </children>
+          </node>
+        </children>
+      </node>
+    </children>
+  </node>
+</context>

@@ -1,0 +1,36 @@
+GraphicsFileFormats
+	extension
+	mime
+	typeCode
+	name
+	owner
+	standard
+	released
+	latestReleaseVersion
+	abstract
+Company108058098
+	name
+	numEmployees
+	homepage
+	comment
+	description
+	revenue
+	location
+	keyPeople
+synset-software-noun-1
+	label
+	platform
+	programmingLanguage
+	comment
+	homepage
+	license
+	lastReleaseVersion
+	genre
+Organization
+	developer
+	numEmployees
+Software
+WorkingGroup
+	homepage
+	
+	

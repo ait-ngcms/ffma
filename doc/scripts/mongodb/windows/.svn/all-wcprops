@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/dme_intern/!svn/ver/158/projects/doc/scripts/mongodb/windows
+END
+remove_AssetsFullDocImpl.bat
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/dme_intern/!svn/ver/158/projects/doc/scripts/mongodb/windows/remove_AssetsFullDocImpl.bat
+END
+export_collection.bat
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/dme_intern/!svn/ver/158/projects/doc/scripts/mongodb/windows/export_collection.bat
+END
+export_AssetsFullDocImpl.bat
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/dme_intern/!svn/ver/158/projects/doc/scripts/mongodb/windows/export_AssetsFullDocImpl.bat
+END
+import_collection.bat
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/dme_intern/!svn/ver/158/projects/doc/scripts/mongodb/windows/import_collection.bat
+END
+import_AssetsFullDocImpl.bat
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/dme_intern/!svn/ver/158/projects/doc/scripts/mongodb/windows/import_AssetsFullDocImpl.bat
+END
+remove_collection.bat
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/dme_intern/!svn/ver/158/projects/doc/scripts/mongodb/windows/remove_collection.bat
+END
+run_mongodb.bat
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/dme_intern/!svn/ver/158/projects/doc/scripts/mongodb/windows/run_mongodb.bat
+END

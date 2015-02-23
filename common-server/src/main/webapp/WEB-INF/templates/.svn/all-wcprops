@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/dme_intern/!svn/ver/158/projects/common-server/src/main/webapp/WEB-INF/templates
+END
+check.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/dme_intern/!svn/ver/158/projects/common-server/src/main/webapp/WEB-INF/templates/check.ftl
+END
+overview.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/dme_intern/!svn/ver/158/projects/common-server/src/main/webapp/WEB-INF/templates/overview.ftl
+END

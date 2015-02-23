@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/svn/dme_intern/!svn/ver/158/projects/services/preservation-riskmanagement/src/main/java/ait/ffma/service/preservation/riskmanagement/api/riskanalysis/risk/riskmodel
+END
+Metric.java
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/svn/dme_intern/!svn/ver/158/projects/services/preservation-riskmanagement/src/main/java/ait/ffma/service/preservation/riskmanagement/api/riskanalysis/risk/riskmodel/Metric.java
+END
+RiskClassification.java
+K 25
+svn:wc:ra_dav:version-url
+V 189
+/svn/dme_intern/!svn/ver/158/projects/services/preservation-riskmanagement/src/main/java/ait/ffma/service/preservation/riskmanagement/api/riskanalysis/risk/riskmodel/RiskClassification.java
+END
+package-info.java
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/svn/dme_intern/!svn/ver/158/projects/services/preservation-riskmanagement/src/main/java/ait/ffma/service/preservation/riskmanagement/api/riskanalysis/risk/riskmodel/package-info.java
+END
+RiskPropertySet.java
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/svn/dme_intern/!svn/ver/158/projects/services/preservation-riskmanagement/src/main/java/ait/ffma/service/preservation/riskmanagement/api/riskanalysis/risk/riskmodel/RiskPropertySet.java
+END
+RiskAnalysis.java
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/svn/dme_intern/!svn/ver/158/projects/services/preservation-riskmanagement/src/main/java/ait/ffma/service/preservation/riskmanagement/api/riskanalysis/risk/riskmodel/RiskAnalysis.java
+END
+RiskProperty.java
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/svn/dme_intern/!svn/ver/158/projects/services/preservation-riskmanagement/src/main/java/ait/ffma/service/preservation/riskmanagement/api/riskanalysis/risk/riskmodel/RiskProperty.java
+END
+ObjectFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 184
+/svn/dme_intern/!svn/ver/158/projects/services/preservation-riskmanagement/src/main/java/ait/ffma/service/preservation/riskmanagement/api/riskanalysis/risk/riskmodel/ObjectFactory.java
+END

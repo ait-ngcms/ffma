@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.example.org/RiskAnalysis" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.example.org/RiskAnalysis">
+
+   <element name="RiskAnalysis">
+    	<complexType>
+			<sequence>
+				<element name="RiskFactors" type="tns:RiskPropertySet"></element>
+			</sequence>
+		</complexType>
+    </element>
+    
+    <complexType name="RiskPropertySet">
+    	<sequence>
+    		<element name="id" type="string" default=""></element>
+    		<element name="name" type="string" default="empty"></element>
+    		<element name="version" type="string" default="1.0"></element>
+    		<element name="weight" type="double"  default="1.0"></element>
+    		<element name="riskScore" type="int" default="0"></element>
+    		<element name="propertyIDs">
+    			<complexType>
+    				<sequence>
+    					<element name="propertyIDs" type="string" minOccurs="1" maxOccurs="unbounded" ></element>
+    				</sequence>
+    			</complexType>
+    		</element>
+    		<element name="propertySetIDs">
+    			<complexType>
+    				<sequence>
+    					<element name="propertySetIDs" type="string" minOccurs="1" maxOccurs="unbounded" ></element>
+    				</sequence>
+    			</complexType>
+    		</element>    
+    		<element name="properties">
+    			<complexType>
+    				<sequence>
+    					<element name="property" type="tns:RiskProperty" minOccurs="1" maxOccurs="unbounded" ></element>
+    				</sequence>
+    			</complexType>
+    		</element>
+    		<element name="propertySets">
+    			<complexType>
+    				<sequence>
+						<element name="propertySet" type="tns:RiskPropertySet" minOccurs="0" maxOccurs="unbounded"></element>
+    				</sequence>
+    			</complexType>
+    		</element>
+    	</sequence>
+    </complexType>
+    
+   <complexType name="RiskProperty">
+    	<sequence>
+    		<element name="id" type="string" default="" >
+    			<unique name="uniqueNum">
+					<selector xpath="id"/>
+					<field xpath="."/>
+				</unique> 
+			</element>
+    		<element name="name" type="string" default="empty"></element>
+    		<element name="version" type="string" default="1.0"></element>
+    		<element name="description" type="string" default="empty"></element>
+    		<element name="metric" type="tns:Metric" default="STRING"></element>
+    		<element name="value" type="string" nillable="true" default=""></element>
+    		<element name="query" type="string" default=""></element>
+    		<element name="group" type="string"></element> 
+    		<element name="riskClassification"
+    			type="tns:RiskClassification">
+    		</element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="RiskClassification">
+    	<sequence>
+    		<element name="weight" type="double"></element>
+    		<element name="agent" type="string"></element>
+    		<element name="creationDate" type="date"></element>
+    		<element name="riskFactors">
+    			<complexType>
+    				<sequence>
+    					<element name="riskFactor" maxOccurs="unbounded" minOccurs="1">
+    						<complexType>
+    							<sequence>
+    								<element name="minValue"
+    									type="string" nillable="true" default="">
+    								</element>
+    								<element name="maxValue"
+    									type="string" nillable="true" default="">
+    								</element>
+    								<element name="riskScore"
+    									type="int" default="0">
+    								</element>
+    							</sequence>
+    						</complexType></element>
+    				</sequence>
+    			</complexType></element>
+    	</sequence>
+    </complexType>
+
+    <simpleType name="Metric">
+    	<restriction base="string">
+    		<enumeration value="STRING"></enumeration>
+    		<enumeration value="INTEGER"></enumeration>
+    		<enumeration value="DOUBLE"></enumeration>
+    		<enumeration value="DATE"></enumeration>
+    		<enumeration value="BOOLEAN"></enumeration>
+    	</restriction>
+    </simpleType>
+
+</schema>

@@ -1,0 +1,24 @@
+FILE FORMAT DESCRIPTION
+FORMAT NAME;CURRENT VERSION RELEASE DATE;SOFTWARE COUNT;SOFTWARE;CURRENT FORMAT VERSION;FORMAT LICENSE;LIMITATIONS;PUID;FORMAT HOMEPAGE;MIME TYPE;FORMAT GENRE;FORMAT CREATOR;OPEN FORMAT;FILE EXTENSIONS;VENDORS;STANDARDS
+Microsoft Windows bitmap;;1;;;;;;http://www.fileformat.info/format/bmp/egff.htm;;;Microsoft Corporation;;bmp;Microsoft Corporation;;
+Microsoft Windows bitmap2;;1;;;;;;http://www.fileformat.info/format/bmp/egff.htm;;;Microsoft Corporation;;bmp2;Microsoft Corporation;;
+Microsoft Windows bitmap3;;1;;;;;;http://www.fileformat.info/format/bmp/egff.htm;;;Microsoft Corporation;;bmp3;Microsoft Corporation;;
+CompuServe Graphics Interchange Format;;1;;;;;;http://www.fileformat.info/format/gif/egff.htm;;;CompuServe, Inc.;;gif;CompuServe, Inc.;;
+Portable Document Format;1993;1;;1.7;;;;http://www.adobe.com/devnet/pdf/pdf_reference_archive.html;;;Adobe Systems;;pdf;Adobe Systems;;
+Audio Video Interleaved;November 1992;1;;;;;;http://en.wikipedia.org/wiki/Audio_Video_Interleave;;;Microsoft;;avi;Microsoft Corporation;;
+Flash Video;2008;1;;;;;;http://en.wikipedia.org/wiki/FLV;;;Adobe Systems;;flv, f4v, f4p, f4a, f4b;Adobe Systems;;
+MPEG program stream;1993;1;;;;;;http://en.wikipedia.org/wiki/MPEG_program_stream;;;MPEG;;mpg, mpeg, ps;Moving Picture Experts Group;;
+
+SOFTWARE DESCRIPTION
+SOFTWARE NAME;SOFTWARE LICENSE;SOFTWARE HOMEPAGE;GENRE;OPERATING SYSTEM;PROTOCOLS;PROGRAMMING LANGUAGE;SOFTWARE LATEST VERSION;SOFTWARE RELEASE DATE
+ImageMagick;free software - Apache 2.0 license;http://www.imagemagick.org/script/formats.php;Image manipulation, software suite to create, edit, compose, or convert bitmap images;Unix, GNU/Linux, Mac OS X, iOS, OS/2, Windows;;C for G2F (Ada), MagickCore (C), MagickWand (C), ChMagick (Ch), ImageMagickObject (COM+), Magick++ (C++), JMagick (Java), L-Magick (Lisp), NMagick (Neko/haXe), MagickNet (.NET), PascalMagick (Pascal), PerlMagick (Perl), MagickWand for PHP (PHP), IMagick (PHP), PythonMagick (Python), RMagick (Ruby), or TclMagick (Tcl/TK);6.7.4.4;01-Jan-2012;
+FFMPEG;GNU LGPL 2.1+, GNU GPL 2+, Unredistributable if compiled as such;ffmpeg.org;Multimedia framework;Cross-platform, Mac OS X, Microsoft Windows, AmigaOS, MorphOS;TCP, UDP, Gopher, HTTP, RTP, RTSP, SDP, HTTP Live Streaming, RealMedia RTSP/RDT, RTMP, RTMPT (via librtmp), RTMPE (via librtmp), RTMPTE (via librtmp), RTMPS (via librtmp), MMS over TCP, MMS over HTTP;C;0.9.1;January 5, 2012;
+
+VENDOR DESCRIPTION
+ORGANISATION NAME;NUMBER OF EMPLOYEES;BUSINESS STATUS;CURRENT Ffma;STOCK ISSUES;RANKED LIST;COUNTRY;FOUNDATION DATE;HOMEPAGE
+ImageMagick Studio LLC;;;;;;P.O. Box 40, Landenberg, PA 19350, United States, Phone Number: 302-695-1159;2005-08-30;http://www.imagemagick.org;
+Microsoft Corporation;92000;;;;;One Microsoft Way, Redmond, Washington, U.S.;April 4, 1975;http://www.microsoft.com/en-us/default.aspx;
+CompuServe, Inc.;;;;;;Columbus, Ohio, USA;http://webcenters.netscape.compuserve.com/menu/;
+Adobe Systems;9117;;;;;Adobe Systems complex, San Jose, California, U.S.;1982;http://www.adobe.com/;
+Libav;;;;;;;2007;http://libav.org/;
+Moving Picture Experts Group;;;;;;;1988;http://en.wikipedia.org/wiki/MPEG;

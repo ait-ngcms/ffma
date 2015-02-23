@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.example.org/LODProperties" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.example.org/LODProperties">
+   <element name="LODProperties">
+    	<complexType>
+			<sequence>
+				<element name="LODProperty" type="tns:LODProperty" minOccurs="1" maxOccurs="unbounded"></element>
+			</sequence>
+		</complexType>
+   </element>
+    
+   <complexType name="LODProperty">
+    	<sequence>
+    		<element name="id" type="string" default=""></element>
+    		<element name="name" type="string" default="empty"></element>
+    		<element name="lodClass" type="string" default="empty"></element>
+    		<element name="qualifiedName" type="string" default="/DiPRec/LODClassName/LODPropertyName"></element>
+    		<element name="version" type="string" default="1.0"></element>
+    		<element name="creationDate" type="date"></element>
+    		<element name="type" type="tns:LODType" default="IMP"></element>
+    		<element name="datatype" type="tns:Datatype" default="STRING"></element>
+    		<element name="description" type="string" default="empty"></element>
+    		<element name="value">
+    			<complexType>
+    				<sequence>
+    					<element name="values" type="string" minOccurs="0" maxOccurs="unbounded" ></element>
+    				</sequence>
+    			</complexType>
+    		</element>        		
+    		<element name="LODSources"> 
+    		    <complexType>
+    				<sequence>
+    					<element name="LODSource" type="tns:LODSource" minOccurs="1" maxOccurs="unbounded"></element>
+					</sequence>
+				</complexType>
+    		</element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="LODSource">
+    	<sequence>
+    		<element name="originalValue">
+    			<complexType>
+    				<sequence>
+    					<element name="originalValues" type="string" minOccurs="0" maxOccurs="unbounded" ></element>
+    				</sequence>
+    			</complexType>
+    		</element>        		
+    		<element name="query" type="string" default=""></element>
+    		<element name="source" type="string" default=""></element>
+    		<element name="creationDate" type="date"></element>
+    	</sequence>
+    </complexType>
+
+    <simpleType name="LODType">
+    	<restriction base="string">
+    		<enumeration value="IMP"></enumeration>
+    		<enumeration value="AGG"></enumeration>
+    		<enumeration value="EXP"></enumeration>
+    	</restriction>
+    </simpleType>
+
+    <simpleType name="Datatype">
+    	<restriction base="string">
+    		<enumeration value="STRING"></enumeration>
+    		<enumeration value="INTEGER"></enumeration>
+    		<enumeration value="DOUBLE"></enumeration>
+    		<enumeration value="DATE"></enumeration>
+    		<enumeration value="BOOLEAN"></enumeration>
+    	</restriction>
+    </simpleType>
+
+</schema>

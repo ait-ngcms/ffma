@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/dme_intern/!svn/ver/158/projects/common-datamodel/src/main/java/ait/ffma/domain/preservation/riskmanagement
+END
+RiskScoreReport.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/dme_intern/!svn/ver/158/projects/common-datamodel/src/main/java/ait/ffma/domain/preservation/riskmanagement/RiskScoreReport.java
+END
+DBPediaFileFormat.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/dme_intern/!svn/ver/158/projects/common-datamodel/src/main/java/ait/ffma/domain/preservation/riskmanagement/DBPediaFileFormat.java
+END
+DipFormatId.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/dme_intern/!svn/ver/158/projects/common-datamodel/src/main/java/ait/ffma/domain/preservation/riskmanagement/DipFormatId.java
+END
+FileFormatStatistics.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/dme_intern/!svn/ver/158/projects/common-datamodel/src/main/java/ait/ffma/domain/preservation/riskmanagement/FileFormatStatistics.java
+END
+DipSoftwareId.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/dme_intern/!svn/ver/158/projects/common-datamodel/src/main/java/ait/ffma/domain/preservation/riskmanagement/DipSoftwareId.java
+END
+AudioFileDescription.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/dme_intern/!svn/ver/158/projects/common-datamodel/src/main/java/ait/ffma/domain/preservation/riskmanagement/AudioFileDescription.java
+END
+DipVendorId.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/dme_intern/!svn/ver/158/projects/common-datamodel/src/main/java/ait/ffma/domain/preservation/riskmanagement/DipVendorId.java
+END
+PreservationDimensions.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/dme_intern/!svn/ver/158/projects/common-datamodel/src/main/java/ait/ffma/domain/preservation/riskmanagement/PreservationDimensions.java
+END
+VideoFileDescription.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/dme_intern/!svn/ver/158/projects/common-datamodel/src/main/java/ait/ffma/domain/preservation/riskmanagement/VideoFileDescription.java
+END
+FormatRiskAnalysisReport.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/dme_intern/!svn/ver/175/projects/common-datamodel/src/main/java/ait/ffma/domain/preservation/riskmanagement/FormatRiskAnalysisReport.java
+END
+FileDescription.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/dme_intern/!svn/ver/158/projects/common-datamodel/src/main/java/ait/ffma/domain/preservation/riskmanagement/FileDescription.java
+END
+PronomFileFormat.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/dme_intern/!svn/ver/158/projects/common-datamodel/src/main/java/ait/ffma/domain/preservation/riskmanagement/PronomFileFormat.java
+END
+OverallRiskScoreReport.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/dme_intern/!svn/ver/158/projects/common-datamodel/src/main/java/ait/ffma/domain/preservation/riskmanagement/OverallRiskScoreReport.java
+END
+FreebaseFileFormat.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/dme_intern/!svn/ver/158/projects/common-datamodel/src/main/java/ait/ffma/domain/preservation/riskmanagement/FreebaseFileFormat.java
+END
+AitFileFormat.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/dme_intern/!svn/ver/158/projects/common-datamodel/src/main/java/ait/ffma/domain/preservation/riskmanagement/AitFileFormat.java
+END
+ImageFileDescription.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/dme_intern/!svn/ver/158/projects/common-datamodel/src/main/java/ait/ffma/domain/preservation/riskmanagement/ImageFileDescription.java
+END
+PreservationDimension.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/dme_intern/!svn/ver/158/projects/common-datamodel/src/main/java/ait/ffma/domain/preservation/riskmanagement/PreservationDimension.java
+END
+LODFormat.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/dme_intern/!svn/ver/158/projects/common-datamodel/src/main/java/ait/ffma/domain/preservation/riskmanagement/LODFormat.java
+END
+LODSoftware.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/dme_intern/!svn/ver/158/projects/common-datamodel/src/main/java/ait/ffma/domain/preservation/riskmanagement/LODSoftware.java
+END
+LODVendor.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/dme_intern/!svn/ver/158/projects/common-datamodel/src/main/java/ait/ffma/domain/preservation/riskmanagement/LODVendor.java
+END

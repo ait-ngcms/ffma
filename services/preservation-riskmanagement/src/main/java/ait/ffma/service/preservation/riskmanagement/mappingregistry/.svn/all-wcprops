@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/dme_intern/!svn/ver/158/projects/services/preservation-riskmanagement/src/main/java/ait/ffma/service/preservation/riskmanagement/mappingregistry
+END
+DBPediaRegistry.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/svn/dme_intern/!svn/ver/158/projects/services/preservation-riskmanagement/src/main/java/ait/ffma/service/preservation/riskmanagement/mappingregistry/DBPediaRegistry.java
+END
+BaseRegistry.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svn/dme_intern/!svn/ver/158/projects/services/preservation-riskmanagement/src/main/java/ait/ffma/service/preservation/riskmanagement/mappingregistry/BaseRegistry.java
+END
+PronomRegistry.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/svn/dme_intern/!svn/ver/158/projects/services/preservation-riskmanagement/src/main/java/ait/ffma/service/preservation/riskmanagement/mappingregistry/PronomRegistry.java
+END
+MappingRegistry.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/svn/dme_intern/!svn/ver/158/projects/services/preservation-riskmanagement/src/main/java/ait/ffma/service/preservation/riskmanagement/mappingregistry/MappingRegistry.java
+END

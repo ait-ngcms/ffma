@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/dme_intern/!svn/ver/158/projects/common-api-server/src/main/java/ait/ffma/common/bootstrap
+END
+BaseFfmaServerStarter.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/dme_intern/!svn/ver/158/projects/common-api-server/src/main/java/ait/ffma/common/bootstrap/BaseFfmaServerStarter.java
+END
+FFSolrStarter.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/dme_intern/!svn/ver/158/projects/common-api-server/src/main/java/ait/ffma/common/bootstrap/FFSolrStarter.java
+END
+FfmaBackendStarter.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/dme_intern/!svn/ver/158/projects/common-api-server/src/main/java/ait/ffma/common/bootstrap/FfmaBackendStarter.java
+END
+FfmaSolrStarter.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/dme_intern/!svn/ver/158/projects/common-api-server/src/main/java/ait/ffma/common/bootstrap/FfmaSolrStarter.java
+END

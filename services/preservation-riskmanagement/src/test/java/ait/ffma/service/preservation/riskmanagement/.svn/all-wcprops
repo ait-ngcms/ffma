@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/dme_intern/!svn/ver/158/projects/services/preservation-riskmanagement/src/test/java/ait/ffma/service/preservation/riskmanagement
+END
+TestService.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/dme_intern/!svn/ver/158/projects/services/preservation-riskmanagement/src/test/java/ait/ffma/service/preservation/riskmanagement/TestService.java
+END
+TestRiskScore.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/dme_intern/!svn/ver/158/projects/services/preservation-riskmanagement/src/test/java/ait/ffma/service/preservation/riskmanagement/TestRiskScore.java
+END
+TestSoftwareProperties.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svn/dme_intern/!svn/ver/158/projects/services/preservation-riskmanagement/src/test/java/ait/ffma/service/preservation/riskmanagement/TestSoftwareProperties.java
+END
+TestStatisticsCalculation.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/dme_intern/!svn/ver/158/projects/services/preservation-riskmanagement/src/test/java/ait/ffma/service/preservation/riskmanagement/TestStatisticsCalculation.java
+END
+TestVendorProperties.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/dme_intern/!svn/ver/158/projects/services/preservation-riskmanagement/src/test/java/ait/ffma/service/preservation/riskmanagement/TestVendorProperties.java
+END
+TestFreebase.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/dme_intern/!svn/ver/158/projects/services/preservation-riskmanagement/src/test/java/ait/ffma/service/preservation/riskmanagement/TestFreebase.java
+END
+TestSearchFormat.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/dme_intern/!svn/ver/158/projects/services/preservation-riskmanagement/src/test/java/ait/ffma/service/preservation/riskmanagement/TestSearchFormat.java
+END
+TestLOD.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/dme_intern/!svn/ver/158/projects/services/preservation-riskmanagement/src/test/java/ait/ffma/service/preservation/riskmanagement/TestLOD.java
+END
+TestLODPronomRetrieve.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/dme_intern/!svn/ver/158/projects/services/preservation-riskmanagement/src/test/java/ait/ffma/service/preservation/riskmanagement/TestLODPronomRetrieve.java
+END
+TestSearchSoftware.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/dme_intern/!svn/ver/158/projects/services/preservation-riskmanagement/src/test/java/ait/ffma/service/preservation/riskmanagement/TestSearchSoftware.java
+END
+TestLODFreebaseRetrieve.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/dme_intern/!svn/ver/158/projects/services/preservation-riskmanagement/src/test/java/ait/ffma/service/preservation/riskmanagement/TestLODFreebaseRetrieve.java
+END
+TestSearchVendor.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/dme_intern/!svn/ver/158/projects/services/preservation-riskmanagement/src/test/java/ait/ffma/service/preservation/riskmanagement/TestSearchVendor.java
+END
+TestRiskmanagementService.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/dme_intern/!svn/ver/158/projects/services/preservation-riskmanagement/src/test/java/ait/ffma/service/preservation/riskmanagement/TestRiskmanagementService.java
+END
+TestGenerateReport.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/dme_intern/!svn/ver/158/projects/services/preservation-riskmanagement/src/test/java/ait/ffma/service/preservation/riskmanagement/TestGenerateReport.java
+END
+TestInternalMapping.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/dme_intern/!svn/ver/158/projects/services/preservation-riskmanagement/src/test/java/ait/ffma/service/preservation/riskmanagement/TestInternalMapping.java
+END
+TestPronomSparql.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/dme_intern/!svn/ver/158/projects/services/preservation-riskmanagement/src/test/java/ait/ffma/service/preservation/riskmanagement/TestPronomSparql.java
+END
+TestLODDBPediaRetrieve.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svn/dme_intern/!svn/ver/158/projects/services/preservation-riskmanagement/src/test/java/ait/ffma/service/preservation/riskmanagement/TestLODDBPediaRetrieve.java
+END

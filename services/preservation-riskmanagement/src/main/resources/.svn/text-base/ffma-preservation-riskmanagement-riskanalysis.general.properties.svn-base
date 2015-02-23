@@ -1,0 +1,14 @@
+# xml file name
+Riskanalysis.XML=Ffma-preservation-riskmanagement-riskanalysis.xml
+
+# flag indicating that the xml file has to be reloaded
+RiskAnalysis.ReloadXML=true
+
+# flag indicating that the properties file containing the profile property key names has to be reloaded
+RiskAnalysis.ReloadRiskProperties=true
+
+# Linked open data xml file name
+LODProperties.XML=Ffma-preservation-lod-properties.xml
+
+# flag indicates that the xml file has to be reloaded
+LODProperties.ReloadXML=true

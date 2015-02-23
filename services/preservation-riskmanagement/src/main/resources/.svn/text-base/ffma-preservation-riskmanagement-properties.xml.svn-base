@@ -1,0 +1,832 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:RiskAnalysis xmlns:tns="http://www.example.org/RiskAnalysis" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <tns:RiskFactors>
+    <tns:id></tns:id>
+    <tns:name>empty</tns:name>
+    <tns:version>1.0</tns:version>
+    <tns:weight>1.0</tns:weight>
+    <tns:riskScore>0</tns:riskScore>
+    <tns:propertyIDs>
+      <tns:propertyIDs>tns:propertyIDs</tns:propertyIDs>
+    </tns:propertyIDs>
+    <tns:propertySetIDs>
+      <tns:propertySetIDs>tns:propertySetIDs</tns:propertySetIDs>
+    </tns:propertySetIDs>
+    <tns:properties>
+      <tns:property>
+        <tns:id>SOFTWARE_VENDOR_PROPERTY_ID</tns:id>
+        <tns:name>SoftwareVendor</tns:name>
+        <tns:version>1.0</tns:version>
+        <tns:description>this property manages software vendors</tns:description>
+        <tns:metric>STRING</tns:metric>
+        <tns:value></tns:value>
+        <tns:query>select * where {
+		?company  a                                              &lt;http://dbpedia.org/ontology/Organisation&gt;  .  
+		?product  &lt;http://dbpedia.org/ontology/developer&gt;        ?company                                    . 
+		?product  a                                              &lt;http://dbpedia.org/ontology/Software&gt;
+		}</tns:query>
+        <tns:group>tns:group</tns:group>
+      </tns:property>
+      <tns:property>
+        <tns:id>VENDOR_PROPERTY_ID</tns:id>
+        <tns:name>Vendor</tns:name>
+        <tns:version>1.0</tns:version>
+        <tns:description>this property manages vendors</tns:description>
+        <tns:metric>INTEGER</tns:metric>
+        <tns:value></tns:value>
+        <tns:query>select * where {
+		?company  a                                              &lt;http://dbpedia.org/ontology/Organisation&gt;  .  
+ 		OPTIONAL {?company &lt;http://dbpedia.org/property/numEmployees&gt; ?numEmployees } .
+        }</tns:query>
+        <tns:group>tns:group</tns:group>
+      </tns:property>
+      <tns:property>
+        <tns:id>VENDOR_DBPEDIA2_PROPERTY_ID</tns:id>
+        <tns:name>VendorEmployeesDBPedia</tns:name>
+        <tns:version>1.0</tns:version>
+        <tns:description>this property manages vendors employees number and uses yago namespace from dbpedia</tns:description>
+        <tns:metric>INTEGER</tns:metric>
+        <tns:value></tns:value>
+        <tns:query> PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
+				    PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
+					PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+					PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+					PREFIX foaf: &lt;http://xmlns.com/foaf/0.1/&gt;
+					PREFIX dc: &lt;http://purl.org/dc/elements/1.1/&gt;
+					PREFIX : &lt;http://dbpedia.org/resource/&gt;
+					PREFIX dbpedia2: &lt;http://dbpedia.org/property/&gt;
+					PREFIX dbpedia: &lt;http://dbpedia.org/&gt;
+					PREFIX skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;
+
+					SELECT DISTINCT ?subject 
+                					?employees 
+  					WHERE 
+    				{
+      					?subject  rdf:type               &lt;http://dbpedia.org/class/yago/Company108058098&gt;  .
+      					?subject  dbpedia2:numEmployees  ?employees                                        .
+    				}   
+        </tns:query>
+        <tns:group>tns:group</tns:group>
+      </tns:property>
+      <tns:property>
+        <tns:id>VENDOR_DBPEDIA_YAGO_PROPERTY_ID</tns:id>
+        <tns:name>VendorDBPediaYago</tns:name>
+        <tns:version>1.0</tns:version>
+        <tns:description>this property manages vendors with all necessary fields and uses yago namespace from dbpedia</tns:description>
+        <tns:metric>STRING</tns:metric>
+        <tns:value></tns:value>
+        <tns:query> PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
+				    PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
+					PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+					PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+					PREFIX foaf: &lt;http://xmlns.com/foaf/0.1/&gt;
+					PREFIX dc: &lt;http://purl.org/dc/elements/1.1/&gt;
+					PREFIX : &lt;http://dbpedia.org/resource/&gt;
+					PREFIX dbpedia2: &lt;http://dbpedia.org/property/&gt;
+					PREFIX dbpedia: &lt;http://dbpedia.org/&gt;
+					PREFIX skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;
+
+					SELECT * 
+  					WHERE 
+    				{
+      					  ?subject  rdf:type               &lt;http://dbpedia.org/class/yago/Company108058098&gt;  .
+      					  OPTIONAL { ?subject  foaf:name              ?name }                                      .
+					      OPTIONAL { ?subject  dbpedia2:numEmployees  ?employees }                                 .
+					      OPTIONAL { ?subject  foaf:homepage          ?homepage }                                  .
+					      OPTIONAL { ?subject  dbpedia2:revenue       ?revenue }                                   .
+					      OPTIONAL { ?subject  dbpedia2:location      ?location }                                  .
+					      OPTIONAL { ?subject  dbpedia2:keyPeople     ?keyPeople }                                 .
+					      OPTIONAL { ?subject  rdfs:comment           ?abstract }                                  .
+    				}   
+        </tns:query>
+        <tns:group>tns:group</tns:group>
+      </tns:property>
+      <tns:property>
+        <tns:id>GRAPHICS_FILE_FORMATS_PROPERTY_ID</tns:id>
+        <tns:name>GraphicsFileFormats</tns:name>
+        <tns:version>1.0</tns:version>
+        <tns:description>this property manages graphics file formats</tns:description>
+        <tns:metric>STRING</tns:metric>
+        <tns:value></tns:value>
+        <tns:query>select * where {?software  a  &lt;http://dbpedia.org/class/yago/GraphicsFileFormats&gt;  .  
+                               ?software  &lt;http://dbpedia.org/property/extension&gt;  ?extension   . 
+                               OPTIONAL {?software  &lt;http://dbpedia.org/property/mime&gt;  ?mime } . 
+                               OPTIONAL {?software  &lt;http://dbpedia.org/property/typeCode&gt;  ?typeCode } . 
+                               OPTIONAL {?software  &lt;http://dbpedia.org/property/name&gt;  ?name } . 
+                               OPTIONAL {?software  &lt;http://dbpedia.org/property/owner&gt;  ?owner } . 
+                               OPTIONAL {?software  &lt;http://dbpedia.org/property/standard&gt;  ?standard } . 
+                               OPTIONAL {?software  &lt;http://dbpedia.org/property/released&gt;  ?released } . 
+                               OPTIONAL {?software  &lt;http://dbpedia.org/property/latestReleaseVersion&gt;  ?latestReleaseVersion } . 
+        }</tns:query>
+        <tns:group>tns:group</tns:group>
+      </tns:property>
+      <tns:property>
+        <tns:id>FILE_SIZE_PROPERTY_ID</tns:id>
+        <tns:name>filesize</tns:name>
+        <tns:version>1.0</tns:version>
+        <tns:description>the file size of the data item in bytes</tns:description>
+        <tns:metric>INTEGER</tns:metric>
+        <tns:value></tns:value>        
+        <tns:query></tns:query>        
+        <tns:group></tns:group>
+      </tns:property>
+      <tns:property>
+      	<tns:id>LAST_MODIFICATION_DATE_PROPERTY_ID</tns:id>
+      	<tns:name>lastModificationDate</tns:name>
+        <tns:version>1.0</tns:version>
+      	<tns:description>date when the file was modified</tns:description>
+      	<tns:metric>DATE</tns:metric>
+      	<tns:value></tns:value>
+        <tns:query></tns:query>        
+        <tns:group></tns:group>
+      </tns:property>
+      <tns:property>
+  		<tns:id>PRONOM_UID_PROPERTY_ID</tns:id>
+  		<tns:name>pronomUID</tns:name>
+	    <tns:version>1.0</tns:version>
+  		<tns:description>this property manages risks estimations for PRONOM IDs</tns:description>
+  		<tns:metric>STRING</tns:metric>
+  		<tns:value></tns:value>
+	    <tns:query></tns:query>        
+	    <tns:group></tns:group>
+  	  </tns:property>
+  	  <tns:property>
+  		<tns:id>STANDARD_PROPERTY_ID</tns:id>
+  		<tns:name>standard</tns:name>
+	    <tns:version>1.0</tns:version>
+  		<tns:description>this property is customer specific</tns:description>
+  		<tns:metric>STRING</tns:metric>
+  		<tns:value></tns:value>
+	    <tns:query></tns:query>        
+	    <tns:group></tns:group>
+  	  </tns:property>
+      <tns:property>
+    	<tns:id>LICENSE_PROPERTY_ID</tns:id>
+    	<tns:name>license</tns:name>
+		<tns:version>1.0</tns:version>
+    	<tns:description>this property defines risks for different license standards</tns:description>
+    	<tns:metric>STRING</tns:metric>
+    	<tns:value></tns:value>
+		<tns:query></tns:query>        
+		<tns:group></tns:group>
+      </tns:property>
+      <tns:property>
+    	<tns:id>NAME_PROPERTY_ID</tns:id>
+    	<tns:name>name</tns:name>
+		<tns:version>1.0</tns:version>
+    	<tns:description>this property defines risk analysis criteria for different names</tns:description>
+    	<tns:metric>STRING</tns:metric>
+    	<tns:value></tns:value>
+		<tns:query></tns:query>        
+		<tns:group></tns:group>
+      </tns:property>
+      <tns:property>
+    	<tns:id>RELEASE_DATE_PROPERTY_ID</tns:id>
+    	<tns:name>releaseDate</tns:name>
+		<tns:version>1.0</tns:version>
+    	<tns:description>this property describes release date estimation</tns:description>
+    	<tns:metric>DATE</tns:metric>
+    	<tns:value></tns:value>
+		<tns:query></tns:query>        
+		<tns:group></tns:group>
+      </tns:property>
+      <tns:property>
+    	<tns:id>VERSION_PROPERTY_ID</tns:id>
+    	<tns:name>version</tns:name>
+		<tns:version>1.0</tns:version>
+    	<tns:description>this property manages versions estimation</tns:description>
+    	<tns:metric>STRING</tns:metric>
+    	<tns:value></tns:value>
+		<tns:query></tns:query>        
+		<tns:group></tns:group>
+      </tns:property>
+      <tns:property>
+    	<tns:id>FORMATS_PROPERTY_ID</tns:id>
+    	<tns:name>formats</tns:name>
+		<tns:version>1.0</tns:version>
+    	<tns:description>this property manages formats estimation</tns:description>
+    	<tns:metric>STRING</tns:metric>
+    	<tns:value></tns:value>
+		<tns:query></tns:query>        
+		<tns:group></tns:group>
+      </tns:property>
+      <tns:property>
+    	<tns:id>FORMATS_EXTENSIONS_PROPERTY_ID</tns:id>
+    	<tns:name>formatsExtensions</tns:name>
+		<tns:version>1.0</tns:version>
+    	<tns:description>this property manages formats extensions estimation</tns:description>
+    	<tns:metric>STRING</tns:metric>
+    	<tns:value></tns:value>
+		<tns:query></tns:query>        
+		<tns:group></tns:group>
+      </tns:property>
+      <tns:property>
+    	<tns:id>SOFTWARE_PROPERTY_ID</tns:id>
+    	<tns:name>software</tns:name>
+		<tns:version>1.0</tns:version>
+    	<tns:description>this property manages software with all necessary fields and uses synset namespace from dbpedia2:wordnet_type</tns:description>
+    	<tns:metric>STRING</tns:metric>
+    	<tns:value></tns:value>
+		<tns:query>
+		PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
+		PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
+		PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+		PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+		PREFIX foaf: &lt;http://xmlns.com/foaf/0.1/&gt;
+		PREFIX dc: &lt;http://purl.org/dc/elements/1.1/&gt;
+		PREFIX : &lt;http://dbpedia.org/resource/&gt;
+		PREFIX dbpedia2: &lt;http://dbpedia.org/property/&gt;
+		PREFIX dbpedia: &lt;http://dbpedia.org/&gt;
+		PREFIX skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;
+		SELECT * WHERE {
+		?subject dbpedia2:wordnet_type &lt;http://www.w3.org/2006/03/wn/wn20/instances/synset-software-noun-1&gt;.
+		?subject rdfs:label ?label.
+		?subject rdfs:comment ?abstract.
+		FILTER (lang(?label) = "en" &amp;&amp; lang(?abstract) = "en")
+		}
+		</tns:query>        
+		<tns:group></tns:group>
+      </tns:property>
+      <tns:property>
+    	<tns:id>SOFTWARE_PLATFORM_PROPERTY_ID</tns:id>
+    	<tns:name>softwarePlatform</tns:name>
+		<tns:version>1.0</tns:version>
+    	<tns:description>this property manages software with platform and programming language property fields and uses synset namespace from dbpedia2:wordnet_type</tns:description>
+    	<tns:metric>STRING</tns:metric>
+    	<tns:value></tns:value>
+		<tns:query>
+		PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
+		PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
+		PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+		PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+		PREFIX foaf: &lt;http://xmlns.com/foaf/0.1/&gt;
+		PREFIX dc: &lt;http://purl.org/dc/elements/1.1/&gt;
+		PREFIX : &lt;http://dbpedia.org/resource/&gt;
+		PREFIX dbpedia2: &lt;http://dbpedia.org/property/&gt;
+		PREFIX dbpedia: &lt;http://dbpedia.org/&gt;
+		PREFIX skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;
+		SELECT * WHERE {
+		?subject dbpedia2:wordnet_type &lt;http://www.w3.org/2006/03/wn/wn20/instances/synset-software-noun-1&gt;.
+		?subject rdfs:label ?label .
+		OPTIONAL { ?subject  dbpedia2:platform      ?platform} .
+		OPTIONAL { ?subject  dbpedia2:programmingLanguage     ?programmingLanguage}   .
+		?subject rdfs:comment ?abstract .
+		FILTER (lang(?label) = "en" &amp;&amp; lang(?abstract) = "en")
+		}
+		</tns:query>        
+		<tns:group></tns:group>
+      </tns:property>
+      <tns:property>
+    	<tns:id>SOFTWARE_LICENSE_PROPERTY_ID</tns:id>
+    	<tns:name>softwareLicense</tns:name>
+		<tns:version>1.0</tns:version>
+    	<tns:description>this property manages software with license and latest release version property fields and uses synset namespace from dbpedia2:wordnet_type</tns:description>
+    	<tns:metric>STRING</tns:metric>
+    	<tns:value></tns:value>
+		<tns:query>
+		PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
+		PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
+		PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+		PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+		PREFIX foaf: &lt;http://xmlns.com/foaf/0.1/&gt;
+		PREFIX dc: &lt;http://purl.org/dc/elements/1.1/&gt;
+		PREFIX : &lt;http://dbpedia.org/resource/&gt;
+		PREFIX dbpedia2: &lt;http://dbpedia.org/property/&gt;
+		PREFIX dbpedia: &lt;http://dbpedia.org/&gt;
+		PREFIX skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;
+		SELECT * WHERE {
+		?subject dbpedia2:wordnet_type &lt;http://www.w3.org/2006/03/wn/wn20/instances/synset-software-noun-1&gt;.
+		?subject rdfs:label ?label .
+        OPTIONAL { ?subject  foaf:homepage          ?homepage } .  
+      	OPTIONAL { ?subject  dbpedia2:license      ?license} .
+		OPTIONAL { ?subject  dbpedia2:latestReleaseVersion     ?latestReleaseVersion} .
+		?subject rdfs:comment ?abstract .
+		FILTER (lang(?label) = "en" &amp;&amp; lang(?abstract) = "en")
+		}
+		</tns:query>        
+		<tns:group></tns:group>
+      </tns:property>
+      <tns:property>
+    	<tns:id>SOFTWARE_DEVELOPER_PROPERTY_ID</tns:id>
+    	<tns:name>softwareDeveloper</tns:name>
+		<tns:version>1.0</tns:version>
+    	<tns:description>this property manages software with developer and genre property fields and uses synset namespace from dbpedia2:wordnet_type</tns:description>
+    	<tns:metric>STRING</tns:metric>
+    	<tns:value></tns:value>
+		<tns:query>
+		PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
+		PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
+		PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+		PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+		PREFIX foaf: &lt;http://xmlns.com/foaf/0.1/&gt;
+		PREFIX dc: &lt;http://purl.org/dc/elements/1.1/&gt;
+		PREFIX : &lt;http://dbpedia.org/resource/&gt;
+		PREFIX dbpedia2: &lt;http://dbpedia.org/property/&gt;
+		PREFIX dbpedia: &lt;http://dbpedia.org/&gt;
+		PREFIX skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;
+		SELECT * WHERE {
+		?subject dbpedia2:wordnet_type &lt;http://www.w3.org/2006/03/wn/wn20/instances/synset-software-noun-1&gt;.
+		?subject rdfs:label ?label .
+		OPTIONAL { ?subject  dbpedia2:developer     ?developer }   .
+        OPTIONAL { ?subject  dbpedia2:genre         ?genre }       .
+		?subject rdfs:comment ?abstract .
+		FILTER (lang(?label) = "en" &amp;&amp; lang(?abstract) = "en")
+		}
+		</tns:query>        
+		<tns:group></tns:group>
+      </tns:property>
+      <tns:property>
+    	<tns:id>MIME_TYPE_PROPERTY_ID</tns:id>
+    	<tns:name>mimeType</tns:name>
+		<tns:version>1.0</tns:version>
+    	<tns:description>this property handles mime types</tns:description>
+    	<tns:metric>STRING</tns:metric>
+    	<tns:value></tns:value>
+		<tns:query></tns:query>        
+		<tns:group></tns:group>
+      </tns:property>
+      <tns:property>
+    	<tns:id>COMPRESSION_TYPE_PROPERTY_ID</tns:id>
+    	<tns:name>compressionType</tns:name>
+		<tns:version>1.0</tns:version>
+    	<tns:description>this property handles compression types</tns:description>
+    	<tns:metric>STRING</tns:metric>
+    	<tns:value></tns:value>
+		<tns:query></tns:query>        
+		<tns:group></tns:group>
+      </tns:property>
+      <tns:property>
+    	<tns:id>IMAGE_WIDTH_PROPERTY_ID</tns:id>
+    	<tns:name>imageWidth</tns:name>
+		<tns:version>1.0</tns:version>
+    	<tns:description>this property manages image size</tns:description>
+    	<tns:metric>INTEGER</tns:metric>
+    	<tns:value></tns:value>
+		<tns:query></tns:query>        
+		<tns:group></tns:group>
+      </tns:property>
+      <tns:property>
+    	<tns:id>IMAGE_HIGHT_PROPERTY_ID</tns:id>
+    	<tns:name>imageHight</tns:name>
+		<tns:version>1.0</tns:version>
+    	<tns:description>this property manages image size</tns:description>
+    	<tns:metric>INTEGER</tns:metric>
+    	<tns:value></tns:value>
+		<tns:query></tns:query>        
+		<tns:group></tns:group>
+      </tns:property>
+      <tns:property>
+    	<tns:id>COLOR_PROPERTY_ID</tns:id>
+    	<tns:name>color</tns:name>
+		<tns:version>1.0</tns:version>
+    	<tns:description>this property handles possible risks regarding color spaces (see http://en.wikipedia.org/wiki/Color_space)</tns:description>
+    	<tns:metric>STRING</tns:metric>
+    	<tns:value></tns:value>
+		<tns:query></tns:query>        
+		<tns:group></tns:group>
+      </tns:property>
+      <tns:property>
+    	<tns:id>BYTE_ORDER_PROPERTY_ID</tns:id>
+    	<tns:name>byteOrder</tns:name>
+		<tns:version>1.0</tns:version>
+    	<tns:description>this means big- and little-endian byte order</tns:description>
+    	<tns:metric>STRING</tns:metric>
+    	<tns:value></tns:value>
+		<tns:query></tns:query>        
+		<tns:group></tns:group>
+      </tns:property>
+      <tns:property>
+    	<tns:id>ORIENTATION_PROPERTY_ID</tns:id>
+    	<tns:name>orientation</tns:name>
+		<tns:version>1.0</tns:version>
+    	<tns:description>orientation means for example binary or text file orientation</tns:description>
+    	<tns:metric>STRING</tns:metric>
+    	<tns:value></tns:value>
+		<tns:query></tns:query>        
+		<tns:group></tns:group>
+      </tns:property>
+      <tns:property>
+    	<tns:id>PROGRAMMING_LANGUAGE_PROPERTY_ID</tns:id>
+    	<tns:name>programmingLanguage</tns:name>
+		<tns:version>1.0</tns:version>
+    	<tns:description>programming language like Java, C, C++</tns:description>
+    	<tns:metric>STRING</tns:metric>
+    	<tns:value></tns:value>
+		<tns:query></tns:query>        
+		<tns:group></tns:group>
+      </tns:property>
+      <tns:property>
+    	<tns:id>REVENUE_PROPERTY_ID</tns:id>
+    	<tns:name>revenue</tns:name>
+		<tns:version>1.0</tns:version>
+    	<tns:description>company revenue</tns:description>
+    	<tns:metric>INTEGER</tns:metric>
+    	<tns:value></tns:value>
+		<tns:query></tns:query>        
+		<tns:group></tns:group>
+      </tns:property>
+      <tns:property>
+    	<tns:id>GENRE_PROPERTY_ID</tns:id>
+    	<tns:name>genre</tns:name>
+		<tns:version>1.0</tns:version>
+    	<tns:description>genre of company business</tns:description>
+    	<tns:metric>STRING</tns:metric>
+    	<tns:value></tns:value>
+		<tns:query></tns:query>        
+		<tns:group></tns:group>
+      </tns:property>
+      <tns:property>
+    	<tns:id>HOMEPAGE_PROPERTY_ID</tns:id>
+    	<tns:name>homepage</tns:name>
+		<tns:version>1.0</tns:version>
+    	<tns:description>path to the company homepage in internet</tns:description>
+    	<tns:metric>STRING</tns:metric>
+    	<tns:value></tns:value>
+		<tns:query></tns:query>        
+		<tns:group></tns:group>
+      </tns:property>
+      <tns:property>
+        <tns:id>WORKING_GROUPS_PROPERTY_ID</tns:id>
+        <tns:name>WorkingGroups</tns:name>
+        <tns:version>1.0</tns:version>
+        <tns:description>this property manages working groups like Joint Photographic Experts Group for JPEG from dbpedia</tns:description>
+        <tns:metric>STRING</tns:metric>
+        <tns:value></tns:value>
+        <tns:query> PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
+				    PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
+					PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+					PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+					PREFIX foaf: &lt;http://xmlns.com/foaf/0.1/&gt;
+					PREFIX dc: &lt;http://purl.org/dc/elements/1.1/&gt;
+					PREFIX : &lt;http://dbpedia.org/resource/&gt;
+					PREFIX dbpedia2: &lt;http://dbpedia.org/property/&gt;
+					PREFIX dbpedia: &lt;http://dbpedia.org/&gt;
+					PREFIX skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;
+
+					SELECT * 
+  					WHERE 
+    				{
+      					  ?subject  rdf:type               &lt;http://dbpedia.org/class/yago/WorkingGroups&gt;  .
+					      OPTIONAL { ?subject  foaf:homepage          ?homepage }                                  .
+    				}   
+        </tns:query>
+        <tns:group>tns:group</tns:group>
+      </tns:property>
+      <tns:property>
+        <tns:id>FB_SOFTWARE_PROPERTY_ID</tns:id>
+        <tns:name>FreebaseSoftware</tns:name>
+        <tns:version>1.0</tns:version>
+        <tns:description>this property manages software from Freebase repository</tns:description>
+        <tns:metric>STRING</tns:metric>
+        <tns:value></tns:value>
+        <tns:query> {
+					  "type": "/computer/software",
+					  "developer": [],
+					  "/common/topic/alias" : [],
+					  "id" : null,
+					  "name" : null,
+					  "key" : [],
+					  "/common/topic/subjects" : [],					  
+					}   
+        </tns:query>
+        <tns:group>tns:group</tns:group>
+      </tns:property>
+      <tns:property>
+        <tns:id>FB_FILE_FORMAT_PROPERTY_ID</tns:id>
+        <tns:name>FreebaseFileFormat</tns:name>
+        <tns:version>1.0</tns:version>
+        <tns:description>this property manages file formats from Freebase repository</tns:description>
+        <tns:metric>STRING</tns:metric>
+        <tns:value></tns:value>
+        <tns:query> {
+					  "type": "/computer/file_format",
+					  "id" : null,
+					  "name" : null,
+					  "key" : [],
+					  "extension" : [],
+					  "mime_type" : [],
+					  "creator" : null,
+					  "format_creator" : [{}],
+					  "contained_by" : [{}],
+					  "container_for" : [{}],
+					  "read_by" : [{}],
+					  "/common/topic/webpage" : [{}],
+					  "written_by" : [{}]  
+					}   
+        </tns:query>
+        <tns:group>tns:group</tns:group>
+      </tns:property>
+      <tns:property>
+        <tns:id>FB_SOFTWARE_OS_PLATFORM_PROPERTY_ID</tns:id>
+        <tns:name>FreebaseSoftwareOSPlatform</tns:name>
+        <tns:version>1.0</tns:version>
+        <tns:description>this property retrieves software OS platforms from Freebase repository</tns:description>
+        <tns:metric>STRING</tns:metric>
+        <tns:value></tns:value>
+        <tns:query> {
+					  "type": "/computer/software",
+					  "developer": [],
+					  "/common/topic/alias" : [],
+					  "id" : null,
+					  "name" : null,
+					  "key" : [],
+					  "languages_used": [],			  
+					  "compatible_oses": []			  
+					}   
+        </tns:query>
+        <tns:group>tns:group</tns:group>
+      </tns:property>
+      <tns:property>
+    	<tns:id>IS_SUPPORTED_BY_IMPORTANT_SOFTWARE_VENDORS_PROPERTY_ID</tns:id>
+    	<tns:name>Is Supported By Important Software Vendors</tns:name>
+		<tns:version>1.0</tns:version>
+    	<tns:description>Is file format supported by important software vendors? (yes/no)</tns:description>
+    	<tns:metric>BOOLEAN</tns:metric>
+    	<tns:value></tns:value>
+		<tns:query></tns:query>        
+		<tns:group></tns:group>
+      </tns:property>
+      <tns:property>
+    	<tns:id>IS_OPEN_FILE_FORMAT_PROPERTY_ID</tns:id>
+    	<tns:name>isOpenFileFormat</tns:name>
+		<tns:version>1.0</tns:version>
+    	<tns:description>Is it an open file format? (yes/no)</tns:description>
+    	<tns:metric>STRING</tns:metric>
+    	<tns:value></tns:value>
+		<tns:query></tns:query>        
+		<tns:group></tns:group>
+      </tns:property>
+      <tns:property>
+    	<tns:id>IS_SUPPORTED_BY_WEB_BROWSERS_PROPERTY_ID</tns:id>
+    	<tns:name>Is Supported By Web Browsers</tns:name>
+		<tns:version>1.0</tns:version>
+    	<tns:description>Is file format supported by web browsers? (yes/no)</tns:description>
+    	<tns:metric>BOOLEAN</tns:metric>
+    	<tns:value></tns:value>
+		<tns:query></tns:query>        
+		<tns:group></tns:group>
+      </tns:property>
+      <tns:property>
+    	<tns:id>HAS_HOMEPAGE_SCORE_PROPERTY_ID</tns:id>
+    	<tns:name>Has Homepage</tns:name>
+		<tns:version>1.0</tns:version>
+    	<tns:description>Is file format represented by a homepage? (yes/no)</tns:description>
+    	<tns:metric>BOOLEAN</tns:metric>
+    	<tns:value></tns:value>
+		<tns:query></tns:query>        
+		<tns:group></tns:group>
+      </tns:property>
+      <tns:property>
+    	<tns:id>IS_OUTDATED_PROPERTY_ID</tns:id>
+    	<tns:name>Format is Outdated or Deprecated</tns:name>
+		<tns:version>1.0</tns:version>
+    	<tns:description>Is file format outdated or deprecated? (yes/no)</tns:description>
+    	<tns:metric>BOOLEAN</tns:metric>
+    	<tns:value></tns:value>
+		<tns:query></tns:query>        
+		<tns:group></tns:group>
+      </tns:property>
+      <tns:property>
+    	<tns:id>IS_STANDARDISED_PROPERTY_ID</tns:id>
+    	<tns:name>Format is Open (standardised)</tns:name>
+		<tns:version>1.0</tns:version>
+    	<tns:description>Is file format standardised (open)? (yes/no)</tns:description>
+    	<tns:metric>BOOLEAN</tns:metric>
+    	<tns:value></tns:value>
+		<tns:query></tns:query>        
+		<tns:group></tns:group>
+      </tns:property>
+      <tns:property>
+    	<tns:id>IS_DISSEMINATED_PROPERTY_ID</tns:id>
+    	<tns:name>Format is Wide Disseminated</tns:name>
+		<tns:version>1.0</tns:version>
+    	<tns:description>Is file format disseminated? (yes/no)</tns:description>
+    	<tns:metric>BOOLEAN</tns:metric>
+    	<tns:value></tns:value>
+		<tns:query></tns:query>        
+		<tns:group></tns:group>
+      </tns:property>
+      <tns:property>
+    	<tns:id>COMPLEXITY_PROPERTY_ID</tns:id>
+    	<tns:name>Format is Complex</tns:name>
+		<tns:version>1.0</tns:version>
+    	<tns:description>Is file format rendering, using and documentation complex? (yes/no)</tns:description>
+    	<tns:metric>BOOLEAN</tns:metric>
+    	<tns:value></tns:value>
+		<tns:query></tns:query>        
+		<tns:group></tns:group>
+      </tns:property>
+      <tns:property>
+    	<tns:id>EXISTENCE_PERIOD_PROPERTY_ID</tns:id>
+    	<tns:name>Format Existence Period</tns:name>
+		<tns:version>1.0</tns:version>
+    	<tns:description>Does file format exists for long time? (yes/no)</tns:description>
+    	<tns:metric>BOOLEAN</tns:metric>
+    	<tns:value></tns:value>
+		<tns:query></tns:query>        
+		<tns:group></tns:group>
+      </tns:property>
+      <tns:property>
+    	<tns:id>HAS_MIME_TYPE_PROPERTY_ID</tns:id>
+    	<tns:name>Has MIME Type</tns:name>
+		<tns:version>1.0</tns:version>
+    	<tns:description>Has file format the MIME type information? (yes/no)</tns:description>
+    	<tns:metric>BOOLEAN</tns:metric>
+    	<tns:value></tns:value>
+		<tns:query></tns:query>        
+		<tns:group></tns:group>
+      </tns:property>
+      <tns:property>
+    	<tns:id>HAS_GENRE_SCORE_PROPERTY_ID</tns:id>
+    	<tns:name>Has Genre</tns:name>
+		<tns:version>1.0</tns:version>
+    	<tns:description>Is file format associated with particular genre? (yes/no)</tns:description>
+    	<tns:metric>BOOLEAN</tns:metric>
+    	<tns:value></tns:value>
+		<tns:query></tns:query>        
+		<tns:group></tns:group>
+      </tns:property>
+      <tns:property>
+    	<tns:id>WHICH_VERSION_OFFICIALLY_SUPPORTED_BY_VENDOR_PROPERTY_ID</tns:id>
+    	<tns:name>Version Officially Supported By Vendor</tns:name>
+		<tns:version>1.0</tns:version>
+    	<tns:description>Which versions of file format are officially supported by vendor? (versions numbers)</tns:description>
+    	<tns:metric>STRING</tns:metric>
+    	<tns:value></tns:value>
+		<tns:query></tns:query>        
+		<tns:group></tns:group>
+      </tns:property>
+      <tns:property>
+    	<tns:id>WHICH_VERSION_FREQUENTLY_USED_PROPERTY_ID</tns:id>
+    	<tns:name>Frequently Used (popular)</tns:name>
+		<tns:version>1.0</tns:version>
+    	<tns:description>Which versions of file format are frequently used? (versions numbers)</tns:description>
+    	<tns:metric>BOOLEAN</tns:metric>
+    	<tns:value></tns:value>
+		<tns:query></tns:query>        
+		<tns:group></tns:group>
+      </tns:property>
+      <tns:property>
+    	<tns:id>IS_COMPRESSED_FILE_FORMAT_PROPERTY_ID</tns:id>
+    	<tns:name>Is Compressed File Format</tns:name>
+		<tns:version>1.0</tns:version>
+    	<tns:description>Is it compressed file format? (yes/no/optional)</tns:description>
+    	<tns:metric>BOOLEAN</tns:metric>
+    	<tns:value></tns:value>
+		<tns:query></tns:query>        
+		<tns:group></tns:group>
+      </tns:property>
+      <tns:property>
+    	<tns:id>HAS_CREATOR_INFORMATION_PROPERTY_ID</tns:id>
+    	<tns:name>Has Creator Information</tns:name>
+		<tns:version>1.0</tns:version>
+    	<tns:description>Has file format creator information? (yes/no)</tns:description>
+    	<tns:metric>BOOLEAN</tns:metric>
+    	<tns:value></tns:value>
+		<tns:query></tns:query>        
+		<tns:group></tns:group>
+      </tns:property>
+      <tns:property>
+    	<tns:id>HAS_PUBLISHER_INFORMATION_PROPERTY_ID</tns:id>
+    	<tns:name>Has Publisher Information</tns:name>
+		<tns:version>1.0</tns:version>
+    	<tns:description>Has file format publisher information? (yes/no)</tns:description>
+    	<tns:metric>BOOLEAN</tns:metric>
+    	<tns:value></tns:value>
+		<tns:query></tns:query>        
+		<tns:group></tns:group>
+      </tns:property>
+      <tns:property>
+    	<tns:id>HAS_DIGITAL_RIGHTS_INFORMATION_PROPERTY_ID</tns:id>
+    	<tns:name>Has Digital Rights Information</tns:name>
+		<tns:version>1.0</tns:version>
+    	<tns:description>Has file format digital rights information? (yes/no)</tns:description>
+    	<tns:metric>BOOLEAN</tns:metric>
+    	<tns:value></tns:value>
+		<tns:query></tns:query>        
+		<tns:group></tns:group>
+      </tns:property>
+      <tns:property>
+    	<tns:id>IS_FILE_MIGRATION_ALLOWED_PROPERTY_ID</tns:id>
+    	<tns:name>Is File Migration Supported</tns:name>
+		<tns:version>1.0</tns:version>
+    	<tns:description>Is file migration allowed? (yes/no)</tns:description>
+    	<tns:metric>BOOLEAN</tns:metric>
+    	<tns:value></tns:value>
+		<tns:query></tns:query>        
+		<tns:group></tns:group>
+      </tns:property>
+      <tns:property>
+    	<tns:id>HAS_CREATION_DATE_INFORMATION_PROPERTY_ID</tns:id>
+    	<tns:name>Has Creation Date Information</tns:name>
+		<tns:version>1.0</tns:version>
+    	<tns:description>Has file format creation date information?</tns:description>
+    	<tns:metric>BOOLEAN</tns:metric>
+    	<tns:value></tns:value>
+		<tns:query></tns:query>        
+		<tns:group></tns:group>
+      </tns:property>
+      <tns:property>
+    	<tns:id>LAST_UPDATE_PROPERTY_ID</tns:id>
+    	<tns:name>Last Update</tns:name>
+		<tns:version>1.0</tns:version>
+    	<tns:description>Has file format last update date information?</tns:description>
+    	<tns:metric>DATE</tns:metric>
+    	<tns:value></tns:value>
+		<tns:query></tns:query>        
+		<tns:group></tns:group>
+      </tns:property>
+      <tns:property>
+    	<tns:id>HAS_OBJECT_PREVIEW_PROPERTY_ID</tns:id>
+    	<tns:name>Has Object Preview</tns:name>
+		<tns:version>1.0</tns:version>
+    	<tns:description>Has file format object preview? (URL)</tns:description>
+    	<tns:metric>BOOLEAN</tns:metric>
+    	<tns:value></tns:value>
+		<tns:query></tns:query>        
+		<tns:group></tns:group>
+      </tns:property>
+      <tns:property>
+    	<tns:id>SOFTWARE_COUNT_SCORE_PROPERTY_ID</tns:id>VERSIONS_COUNT_SCORE_PROPERTY_ID
+    	<tns:name>Software Count</tns:name>
+		<tns:version>1.0</tns:version>
+    	<tns:description>Defines software count preservation score for file format</tns:description>
+    	<tns:metric>INTEGER</tns:metric>
+    	<tns:value></tns:value>
+		<tns:query></tns:query>        
+		<tns:group></tns:group>
+      </tns:property>
+      <tns:property>
+    	<tns:id>VENDORS_COUNT_SCORE_PROPERTY_ID</tns:id>
+    	<tns:name>Vendors Count</tns:name>
+		<tns:version>1.0</tns:version>
+    	<tns:description>Defines vendors count preservation score for file format</tns:description>
+    	<tns:metric>DOUBLE</tns:metric>
+    	<tns:value></tns:value>
+		<tns:query></tns:query>        
+		<tns:group></tns:group>
+      </tns:property>
+      <tns:property>
+    	<tns:id>VERSIONS_COUNT_SCORE_PROPERTY_ID</tns:id>
+    	<tns:name>Versions Count</tns:name>
+		<tns:version>1.0</tns:version>
+    	<tns:description>Defines versions count preservation score for file format</tns:description>
+    	<tns:metric>INTEGER</tns:metric>
+    	<tns:value></tns:value>
+		<tns:query></tns:query>        
+		<tns:group></tns:group>
+      </tns:property>
+      <tns:property>
+    	<tns:id>HAS_DESCRIPTION_SCORE_PROPERTY_ID</tns:id>
+    	<tns:name>Has Description</tns:name>
+		<tns:version>1.0</tns:version>
+    	<tns:description>Evaluates descriptions quality and quantity regarding preservation for file format</tns:description>
+    	<tns:metric>INTEGER</tns:metric>
+    	<tns:value></tns:value>
+		<tns:query></tns:query>        
+		<tns:group></tns:group>
+      </tns:property>
+      <tns:property>
+    	<tns:id>BROKEN_OBJECTS_SCORE_PROPERTY_ID</tns:id>
+    	<tns:name>BrokenObjectsScore</tns:name>
+		<tns:version>1.0</tns:version>
+    	<tns:description>Defines preservation score</tns:description>
+    	<tns:metric>DOUBLE</tns:metric>
+    	<tns:value></tns:value>
+		<tns:query></tns:query>        
+		<tns:group></tns:group>
+      </tns:property>
+      <tns:property>
+    	<tns:id>PROVENANCE_SCORE_PROPERTY_ID</tns:id>
+    	<tns:name>ProvenanceScore</tns:name>
+		<tns:version>1.0</tns:version>
+    	<tns:description>Defines preservation score for provenance dimension</tns:description>
+    	<tns:metric>DOUBLE</tns:metric>
+    	<tns:value></tns:value>
+		<tns:query></tns:query>        
+		<tns:group></tns:group>
+      </tns:property>
+      <tns:property>
+    	<tns:id>CONTEXT_SCORE_PROPERTY_ID</tns:id>
+    	<tns:name>ContextScore</tns:name>
+		<tns:version>1.0</tns:version>
+    	<tns:description>Defines preservation score for context dimension</tns:description>
+    	<tns:metric>DOUBLE</tns:metric>
+    	<tns:value></tns:value>
+		<tns:query></tns:query>        
+		<tns:group></tns:group>
+      </tns:property>
+      <tns:property>
+    	<tns:id>ACCESSIBILITY_SCORE_PROPERTY_ID</tns:id>
+    	<tns:name>AccessibilityScore</tns:name>
+		<tns:version>1.0</tns:version>
+    	<tns:description>Defines preservation score for accessibility dimension</tns:description>
+    	<tns:metric>DOUBLE</tns:metric>
+    	<tns:value></tns:value>
+		<tns:query></tns:query>        
+		<tns:group></tns:group>
+      </tns:property>
+    </tns:properties>
+    <tns:propertySets/>
+  </tns:RiskFactors>
+</tns:RiskAnalysis>

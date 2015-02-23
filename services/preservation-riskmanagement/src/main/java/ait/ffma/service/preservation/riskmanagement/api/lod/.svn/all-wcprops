@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/dme_intern/!svn/ver/158/projects/services/preservation-riskmanagement/src/main/java/ait/ffma/service/preservation/riskmanagement/api/lod
+END
+LODModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/dme_intern/!svn/ver/158/projects/services/preservation-riskmanagement/src/main/java/ait/ffma/service/preservation/riskmanagement/api/lod/LODModel.java
+END
+LODUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/dme_intern/!svn/ver/175/projects/services/preservation-riskmanagement/src/main/java/ait/ffma/service/preservation/riskmanagement/api/lod/LODUtils.java
+END
+LODReportGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/svn/dme_intern/!svn/ver/214/projects/services/preservation-riskmanagement/src/main/java/ait/ffma/service/preservation/riskmanagement/api/lod/LODReportGenerator.java
+END
+LODStatisticsDBPediaUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svn/dme_intern/!svn/ver/158/projects/services/preservation-riskmanagement/src/main/java/ait/ffma/service/preservation/riskmanagement/api/lod/LODStatisticsDBPediaUtils.java
+END
+LODStatisticsPronomUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/svn/dme_intern/!svn/ver/158/projects/services/preservation-riskmanagement/src/main/java/ait/ffma/service/preservation/riskmanagement/api/lod/LODStatisticsPronomUtils.java
+END
+LODStatisticsFreebaseUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/svn/dme_intern/!svn/ver/158/projects/services/preservation-riskmanagement/src/main/java/ait/ffma/service/preservation/riskmanagement/api/lod/LODStatisticsFreebaseUtils.java
+END
+LODStatisticsAitUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svn/dme_intern/!svn/ver/158/projects/services/preservation-riskmanagement/src/main/java/ait/ffma/service/preservation/riskmanagement/api/lod/LODStatisticsAitUtils.java
+END
+LODStatisticsUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/svn/dme_intern/!svn/ver/158/projects/services/preservation-riskmanagement/src/main/java/ait/ffma/service/preservation/riskmanagement/api/lod/LODStatisticsUtils.java
+END
+LODConstants.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/dme_intern/!svn/ver/158/projects/services/preservation-riskmanagement/src/main/java/ait/ffma/service/preservation/riskmanagement/api/lod/LODConstants.java
+END
+LODCalculationModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svn/dme_intern/!svn/ver/158/projects/services/preservation-riskmanagement/src/main/java/ait/ffma/service/preservation/riskmanagement/api/lod/LODCalculationModel.java
+END
+LODCreator.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/dme_intern/!svn/ver/158/projects/services/preservation-riskmanagement/src/main/java/ait/ffma/service/preservation/riskmanagement/api/lod/LODCreator.java
+END

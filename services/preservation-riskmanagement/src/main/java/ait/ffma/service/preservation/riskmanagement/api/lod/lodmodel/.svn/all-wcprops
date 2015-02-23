@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/dme_intern/!svn/ver/158/projects/services/preservation-riskmanagement/src/main/java/ait/ffma/service/preservation/riskmanagement/api/lod/lodmodel
+END
+LODSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/svn/dme_intern/!svn/ver/158/projects/services/preservation-riskmanagement/src/main/java/ait/ffma/service/preservation/riskmanagement/api/lod/lodmodel/LODSource.java
+END
+LODType.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svn/dme_intern/!svn/ver/158/projects/services/preservation-riskmanagement/src/main/java/ait/ffma/service/preservation/riskmanagement/api/lod/lodmodel/LODType.java
+END
+LODProperty.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svn/dme_intern/!svn/ver/158/projects/services/preservation-riskmanagement/src/main/java/ait/ffma/service/preservation/riskmanagement/api/lod/lodmodel/LODProperty.java
+END
+LODPronomSoftware.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/svn/dme_intern/!svn/ver/158/projects/services/preservation-riskmanagement/src/main/java/ait/ffma/service/preservation/riskmanagement/api/lod/lodmodel/LODPronomSoftware.java
+END
+package-info.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svn/dme_intern/!svn/ver/158/projects/services/preservation-riskmanagement/src/main/java/ait/ffma/service/preservation/riskmanagement/api/lod/lodmodel/package-info.java
+END
+Datatype.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/dme_intern/!svn/ver/158/projects/services/preservation-riskmanagement/src/main/java/ait/ffma/service/preservation/riskmanagement/api/lod/lodmodel/Datatype.java
+END
+LODProperties.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/svn/dme_intern/!svn/ver/158/projects/services/preservation-riskmanagement/src/main/java/ait/ffma/service/preservation/riskmanagement/api/lod/lodmodel/LODProperties.java
+END
+ObjectFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/svn/dme_intern/!svn/ver/158/projects/services/preservation-riskmanagement/src/main/java/ait/ffma/service/preservation/riskmanagement/api/lod/lodmodel/ObjectFactory.java
+END

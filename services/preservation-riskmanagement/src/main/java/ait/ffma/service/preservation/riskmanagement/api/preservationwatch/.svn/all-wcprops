@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/dme_intern/!svn/ver/158/projects/services/preservation-riskmanagement/src/main/java/ait/ffma/service/preservation/riskmanagement/api/preservationwatch
+END
+SPARQLClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/svn/dme_intern/!svn/ver/158/projects/services/preservation-riskmanagement/src/main/java/ait/ffma/service/preservation/riskmanagement/api/preservationwatch/SPARQLClient.java
+END
+DBPediaConnector.java
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/svn/dme_intern/!svn/ver/158/projects/services/preservation-riskmanagement/src/main/java/ait/ffma/service/preservation/riskmanagement/api/preservationwatch/DBPediaConnector.java
+END
+RepositoryDescription.java
+K 25
+svn:wc:ra_dav:version-url
+V 182
+/svn/dme_intern/!svn/ver/158/projects/services/preservation-riskmanagement/src/main/java/ait/ffma/service/preservation/riskmanagement/api/preservationwatch/RepositoryDescription.java
+END
+RepositoryRegistryManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/svn/dme_intern/!svn/ver/158/projects/services/preservation-riskmanagement/src/main/java/ait/ffma/service/preservation/riskmanagement/api/preservationwatch/RepositoryRegistryManager.java
+END
+PronomConnector.java
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/svn/dme_intern/!svn/ver/158/projects/services/preservation-riskmanagement/src/main/java/ait/ffma/service/preservation/riskmanagement/api/preservationwatch/PronomConnector.java
+END
+FreebaseConnector.java
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/svn/dme_intern/!svn/ver/161/projects/services/preservation-riskmanagement/src/main/java/ait/ffma/service/preservation/riskmanagement/api/preservationwatch/FreebaseConnector.java
+END
+PronomSparqlConnector.java
+K 25
+svn:wc:ra_dav:version-url
+V 182
+/svn/dme_intern/!svn/ver/165/projects/services/preservation-riskmanagement/src/main/java/ait/ffma/service/preservation/riskmanagement/api/preservationwatch/PronomSparqlConnector.java
+END
+PreservationWatchSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 184
+/svn/dme_intern/!svn/ver/158/projects/services/preservation-riskmanagement/src/main/java/ait/ffma/service/preservation/riskmanagement/api/preservationwatch/PreservationWatchSource.java
+END
+PronomSparqlClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/svn/dme_intern/!svn/ver/175/projects/services/preservation-riskmanagement/src/main/java/ait/ffma/service/preservation/riskmanagement/api/preservationwatch/PronomSparqlClient.java
+END

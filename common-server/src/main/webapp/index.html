@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <title>Ffma Common Application</title>
+</head>
+<body>
+<h1>Ffma Common Application</h1>
+
+<p>
+<table cellpadding="20" border="1">
+    <tr>
+        <th>Method</th>
+        <th>Response type</th>
+        <th>Path</th>
+        <th>Function</th>
+    </tr>
+    <tr>
+        <td>GET</td>
+        <td>TEXT</td>
+        <td>/Ffma/common/rest/collection/count</td>
+        <td>Count the number of collections available in the database</td>
+    </tr>
+    <tr>
+        <td>GET</td>
+        <td>XML/JSON</td>
+        <td>/Ffma/common/rest/collection/list</td>
+        <td>List all collections available in the database</td>
+    </tr>
+    <tr>
+        <td>GET</td>
+        <td>XML/JSON</td>
+        <td>/Ffma/common/rest/collection/{id}</td>
+        <td>Display the collection identified by the given id</td>
+    </tr>
+    <tr>
+        <td>GET</td>
+        <td>XML/JSON</td>
+        <td>/Ffma/common/rest/collection/{id}/objects</td>
+        <td>List all collection objects (Europeana ID) for the given collection id </td>
+    </tr>
+    <tr>
+        <td>GET</td>
+        <td>XML/JSON</td>
+        <td>/Ffma/common/rest/object/{id}</td>
+        <td>Display the collection object identified by the given id </td>
+    </tr>
+    <tr>
+        <td>GET</td>
+        <td>XML/JSON</td>
+        <td>/Ffma/common/rest/object/{id}/metadata</td>
+        <td>Display the metadata of the object identified by the given id</td>
+    </tr>
+</table>
+</p>
+
+
+</body>
+</html>

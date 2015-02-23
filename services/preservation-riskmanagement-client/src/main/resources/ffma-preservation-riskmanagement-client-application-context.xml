@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+       			http://www.springframework.org/schema/beans/spring-beans.xsd">
+    
+    <!--  sample client beans -->
+    <bean id="configuration" class="ait.ffma.preservation.riskmanagement.PreservationRiskmanagementClientConfiguration"  init-method="init"/>
+    
+    <bean id="preservationRiskmanagement" class="ait.ffma.preservation.riskmanagement.client.PreservationRiskmanagementImpl" />
+    
+    <bean id="preservationRiskmanagementLodDataAnalysis" class="ait.ffma.preservation.riskmanagement.client.PreservationRiskmanagementLodDataAnalysisImpl" />
+    
+</beans>

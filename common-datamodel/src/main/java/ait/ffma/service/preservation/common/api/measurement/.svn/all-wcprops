@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/dme_intern/!svn/ver/158/projects/common-datamodel/src/main/java/ait/ffma/service/preservation/common/api/measurement
+END
+MeasurementAgent.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/dme_intern/!svn/ver/158/projects/common-datamodel/src/main/java/ait/ffma/service/preservation/common/api/measurement/MeasurementAgent.java
+END
+Measurement.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/dme_intern/!svn/ver/158/projects/common-datamodel/src/main/java/ait/ffma/service/preservation/common/api/measurement/Measurement.java
+END
+MeasurementEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/dme_intern/!svn/ver/158/projects/common-datamodel/src/main/java/ait/ffma/service/preservation/common/api/measurement/MeasurementEvent.java
+END
+MeasurementImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/dme_intern/!svn/ver/158/projects/common-datamodel/src/main/java/ait/ffma/service/preservation/common/api/measurement/MeasurementImpl.java
+END

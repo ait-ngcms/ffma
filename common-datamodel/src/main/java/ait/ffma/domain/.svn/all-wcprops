@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/dme_intern/!svn/ver/158/projects/common-datamodel/src/main/java/ait/ffma/domain
+END
+BaseFfmaDomainObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/dme_intern/!svn/ver/158/projects/common-datamodel/src/main/java/ait/ffma/domain/BaseFfmaDomainObject.java
+END
+MongoDbDomainObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/dme_intern/!svn/ver/158/projects/common-datamodel/src/main/java/ait/ffma/domain/MongoDbDomainObject.java
+END
+FieldDefEnum.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/dme_intern/!svn/ver/158/projects/common-datamodel/src/main/java/ait/ffma/domain/FieldDefEnum.java
+END
+FfmaDomainObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/dme_intern/!svn/ver/158/projects/common-datamodel/src/main/java/ait/ffma/domain/FfmaDomainObject.java
+END
+ClassDefEnum.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/dme_intern/!svn/ver/158/projects/common-datamodel/src/main/java/ait/ffma/domain/ClassDefEnum.java
+END

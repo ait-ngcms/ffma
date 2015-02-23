@@ -1,0 +1,67 @@
+File Format
+	Name
+	Version
+	Other names
+	Identifiers
+		MIME
+		Apple Uniform Type Identifier
+		PUID
+	Family
+	Classification
+	Disclosure
+	Description
+	Orientation
+	Byte order
+	Related file formats
+	Technical Environment
+	Released
+	Supported until
+	Format Risk
+	Developed By
+	Supported By
+	Source
+	Source date
+	Source description
+	Last updated
+	Note
+	Extension
+Software
+	Software name
+	Version
+	Other names
+	Identifiers
+		PUID
+	Family
+	Description
+	Type
+	Operating systems
+	Software requirements
+	Hardware requirements
+	Default file format
+	Media format
+	Language
+	Related software
+	Released
+	Supported until
+	Developed by
+	Supported by
+	Source
+	Source date
+	Source description
+	Last updated 
+	Note
+	Vendor
+	Processes
+	Invariance
+Vendor
+	Organisation name
+	Name
+	Address
+	Address Country
+	Telephone
+	Support website
+	Company website
+	Contact 
+	Source
+	Source date
+	Source description

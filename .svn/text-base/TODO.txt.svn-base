@@ -1,0 +1,17 @@
+// Open_Format extract from DBPedia for e.g.PDF
+
+// Aggregate data form www.fileinfo.com/extension/db and parse data from this Open Repository
+
+// Analyse subset of 100 by hand created formats that are most often used
+
+// Search all of rule factors automatically
+
+// Improve requests to LOD repositories
+
+// Create FFMA ontology using S-Match tool
+
+// Build Histogram for risks
+
+// Apache Stanbol tool to create RDF ...
+
+// Google refine in order to extract semantic

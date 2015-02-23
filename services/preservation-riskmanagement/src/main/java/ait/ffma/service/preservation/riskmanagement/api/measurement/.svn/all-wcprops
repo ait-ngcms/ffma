@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/dme_intern/!svn/ver/158/projects/services/preservation-riskmanagement/src/main/java/ait/ffma/service/preservation/riskmanagement/api/measurement
+END
+Cluster.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/dme_intern/!svn/ver/158/projects/services/preservation-riskmanagement/src/main/java/ait/ffma/service/preservation/riskmanagement/api/measurement/Cluster.java
+END
+DbscanObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svn/dme_intern/!svn/ver/158/projects/services/preservation-riskmanagement/src/main/java/ait/ffma/service/preservation/riskmanagement/api/measurement/DbscanObject.java
+END
+Node.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/dme_intern/!svn/ver/158/projects/services/preservation-riskmanagement/src/main/java/ait/ffma/service/preservation/riskmanagement/api/measurement/Node.java
+END
+Neighborhood.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svn/dme_intern/!svn/ver/158/projects/services/preservation-riskmanagement/src/main/java/ait/ffma/service/preservation/riskmanagement/api/measurement/Neighborhood.java
+END
+Neighbor.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svn/dme_intern/!svn/ver/158/projects/services/preservation-riskmanagement/src/main/java/ait/ffma/service/preservation/riskmanagement/api/measurement/Neighbor.java
+END

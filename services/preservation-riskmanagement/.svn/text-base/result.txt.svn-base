@@ -1,0 +1,198 @@
+\Top	=	\Top
+\Top	>	\Top\GraphicsFileFormats
+\Top	>	\Top\Company108058098
+\Top	>	\Top\synset-software-noun-1
+\Top	>	\Top\Organization
+\Top	>	\Top\Software
+\Top	>	\Top\WorkingGroup
+\Top	>	\Top\GraphicsFileFormats\extension
+\Top	>	\Top\GraphicsFileFormats\mime
+\Top	>	\Top\GraphicsFileFormats\typeCode
+\Top	>	\Top\GraphicsFileFormats\name
+\Top	>	\Top\GraphicsFileFormats\owner
+\Top	>	\Top\GraphicsFileFormats\standard
+\Top	>	\Top\GraphicsFileFormats\released
+\Top	>	\Top\GraphicsFileFormats\latestReleaseVersion
+\Top	>	\Top\GraphicsFileFormats\abstract
+\Top	>	\Top\Company108058098\name
+\Top	>	\Top\Company108058098\numEmployees
+\Top	>	\Top\Company108058098\homepage
+\Top	>	\Top\Company108058098\comment
+\Top	>	\Top\Company108058098\description
+\Top	>	\Top\Company108058098\revenue
+\Top	>	\Top\Company108058098\location
+\Top	>	\Top\Company108058098\keyPeople
+\Top	>	\Top\synset-software-noun-1\label
+\Top	>	\Top\synset-software-noun-1\platform
+\Top	>	\Top\synset-software-noun-1\programmingLanguage
+\Top	>	\Top\synset-software-noun-1\comment
+\Top	>	\Top\synset-software-noun-1\homepage
+\Top	>	\Top\synset-software-noun-1\license
+\Top	>	\Top\synset-software-noun-1\lastReleaseVersion
+\Top	>	\Top\synset-software-noun-1\genre
+\Top	>	\Top\Organization\developer
+\Top	>	\Top\Organization\numEmployees
+\Top	>	\Top\WorkingGroup\homepage
+\Top	>	\Top\WorkingGroup\
+\Top	>	\Top\WorkingGroup\
+\Top\Computers	<	\Top
+\Top\Common	<	\Top
+\Top\Common	>	\Top\GraphicsFileFormats\standard
+\Top\Organization	<	\Top
+\Top\Organization	>	\Top\Company108058098
+\Top\Organization	=	\Top\Organization
+\Top\Organization	>	\Top\WorkingGroup
+\Top\Organization	>	\Top\Company108058098\name
+\Top\Organization	>	\Top\Company108058098\numEmployees
+\Top\Organization	>	\Top\Company108058098\homepage
+\Top\Organization	>	\Top\Company108058098\comment
+\Top\Organization	>	\Top\Company108058098\description
+\Top\Organization	>	\Top\Company108058098\revenue
+\Top\Organization	>	\Top\Company108058098\location
+\Top\Organization	>	\Top\Company108058098\keyPeople
+\Top\Organization	>	\Top\Organization\developer
+\Top\Organization	>	\Top\Organization\numEmployees
+\Top\Organization	>	\Top\WorkingGroup\homepage
+\Top\Organization	>	\Top\WorkingGroup\
+\Top\Organization	>	\Top\WorkingGroup\
+\Top\Business	<	\Top
+\Top\Business	<	\Top\Organization
+\Top\Measurement Unit	<	\Top
+\Top\Awards	<	\Top
+\Top\Computers\File Format	<	\Top
+\Top\Computers\Software	<	\Top
+\Top\Computers\Software	<	\Top\Software
+\Top\Computers\Operating System	<	\Top
+\Top\Computers\Operating System	<	\Top\Software
+\Top\Computers\Computing Platform	<	\Top
+\Top\Computers\File Format\Extension	<	\Top
+\Top\Computers\File Format\Genre	<	\Top
+\Top\Computers\File Format\Creation Date	<	\Top
+\Top\Computers\File Format\Written By	<	\Top
+\Top\Computers\File Format\Read By	<	\Top
+\Top\Computers\File Format\Used On	<	\Top
+\Top\Computers\File Format\Format Creator	<	\Top
+\Top\Computers\File Format\MIME Type	<	\Top
+\Top\Computers\Software\Developer	<	\Top
+\Top\Computers\Software\Developer	<	\Top\Software
+\Top\Computers\Software\Software Genre	<	\Top
+\Top\Computers\Software\Software Genre	<	\Top\Software
+\Top\Computers\Software\First Released	<	\Top
+\Top\Computers\Software\First Released	<	\Top\Software
+\Top\Computers\Software\Latest Version	<	\Top
+\Top\Computers\Software\Latest Version	<	\Top\Software
+\Top\Computers\Software\Latest Release Date	<	\Top
+\Top\Computers\Software\Latest Release Date	<	\Top\Software
+\Top\Computers\Software\License	<	\Top
+\Top\Computers\Software\License	<	\Top\Software
+\Top\Computers\Software\Programming languages used	<	\Top
+\Top\Computers\Software\Programming languages used	<	\Top\Software
+\Top\Computers\Software\Compatible Operating Systems	<	\Top
+\Top\Computers\Software\Compatible Operating Systems	<	\Top\Software
+\Top\Computers\Software\Protocols Used	<	\Top
+\Top\Computers\Software\Protocols Used	<	\Top\Software
+\Top\Computers\Software\Protocols Provider	<	\Top
+\Top\Computers\Software\Protocols Provider	<	\Top\Software
+\Top\Computers\Operating System\Release Date	<	\Top
+\Top\Computers\Operating System\Release Date	<	\Top\Software
+\Top\Computers\Operating System\Developer	<	\Top
+\Top\Computers\Operating System\Developer	<	\Top\Software
+\Top\Computers\Operating System\Parent OS	<	\Top
+\Top\Computers\Operating System\Parent OS	<	\Top\Software
+\Top\Computers\Operating System\Version Number	<	\Top
+\Top\Computers\Operating System\Version Number	<	\Top\Company108058098
+\Top\Computers\Operating System\Version Number	<	\Top\Software
+\Top\Computers\Operating System\Version Number	<	\Top\Company108058098\name
+\Top\Computers\Operating System\Includes OS Versions	<	\Top
+\Top\Computers\Operating System\Includes OS Versions	<	\Top\Software
+\Top\Computers\Operating System\Supported Architectures	<	\Top
+\Top\Computers\Operating System\Supported Architectures	<	\Top\Software
+\Top\Computers\Computing Platform\File Formats Supported	<	\Top
+\Top\Common\Topic	<	\Top
+\Top\Common\Webpage	<	\Top
+\Top\Common\Topic\Web Link(s)	<	\Top
+\Top\Common\Topic\Also known as	<	\Top
+\Top\Common\Topic\Subjects	<	\Top
+\Top\Organization\Organization	<	\Top
+\Top\Organization\Organization	>	\Top\Company108058098
+\Top\Organization\Organization	=	\Top\Organization
+\Top\Organization\Organization	>	\Top\WorkingGroup
+\Top\Organization\Organization	>	\Top\Company108058098\name
+\Top\Organization\Organization	>	\Top\Company108058098\numEmployees
+\Top\Organization\Organization	>	\Top\Company108058098\homepage
+\Top\Organization\Organization	>	\Top\Company108058098\comment
+\Top\Organization\Organization	>	\Top\Company108058098\description
+\Top\Organization\Organization	>	\Top\Company108058098\revenue
+\Top\Organization\Organization	>	\Top\Company108058098\location
+\Top\Organization\Organization	>	\Top\Company108058098\keyPeople
+\Top\Organization\Organization	>	\Top\Organization\developer
+\Top\Organization\Organization	>	\Top\Organization\numEmployees
+\Top\Organization\Organization	>	\Top\WorkingGroup\homepage
+\Top\Organization\Organization	>	\Top\WorkingGroup\
+\Top\Organization\Organization	>	\Top\WorkingGroup\
+\Top\Organization\Organization\Geographic scope	<	\Top
+\Top\Organization\Organization\Geographic scope	<	\Top\Organization
+\Top\Organization\Organization\Sectors	<	\Top
+\Top\Organization\Organization\Sectors	<	\Top\Organization
+\Top\Organization\Organization\Headquartiers	<	\Top
+\Top\Organization\Organization\Headquartiers	<	\Top\Organization
+\Top\Organization\Organization\Date founded	<	\Top
+\Top\Organization\Organization\Date founded	<	\Top\Organization
+\Top\Organization\Organization\Founders	<	\Top
+\Top\Organization\Organization\Founders	<	\Top\Organization
+\Top\Organization\Organization\Organization type	<	\Top
+\Top\Organization\Organization\Organization type	<	\Top\Organization
+\Top\Organization\Organization\Place founded	<	\Top
+\Top\Organization\Organization\Place founded	<	\Top\Organization
+\Top\Organization\Organization\Previous names	<	\Top
+\Top\Organization\Organization\Previous names	<	\Top\Organization
+\Top\Organization\Organization\Organization locations	<	\Top
+\Top\Organization\Organization\Organization locations	<	\Top\Organization
+\Top\Organization\Organization\Organization locations	>	\Top\Company108058098\location
+\Top\Organization\Organization\Leadership	<	\Top
+\Top\Organization\Organization\Leadership	<	\Top\Organization
+\Top\Organization\Organization\Partnerships	<	\Top
+\Top\Organization\Organization\Partnerships	<	\Top\Organization
+\Top\Business\Business Operation	<	\Top
+\Top\Business\Business Operation	<	\Top\Organization
+\Top\Business\Employer	<	\Top
+\Top\Business\Employer	<	\Top\Organization
+\Top\Business\Issue	<	\Top
+\Top\Business\Issue	<	\Top\Organization
+\Top\Business\Business Operation\Revenue	<	\Top
+\Top\Business\Business Operation\Revenue	<	\Top\Organization
+\Top\Business\Business Operation\Operating Income	<	\Top
+\Top\Business\Business Operation\Operating Income	<	\Top\Organization
+\Top\Business\Business Operation\Net profit	<	\Top
+\Top\Business\Business Operation\Net profit	<	\Top\Organization
+\Top\Business\Business Operation\Cash	<	\Top
+\Top\Business\Business Operation\Cash	<	\Top\Organization
+\Top\Business\Business Operation\Current Ffma	<	\Top
+\Top\Business\Business Operation\Current Ffma	<	\Top\Organization
+\Top\Business\Business Operation\Total Ffma	<	\Top
+\Top\Business\Business Operation\Total Ffma	<	\Top\Organization
+\Top\Business\Business Operation\Current Liabilities	<	\Top
+\Top\Business\Business Operation\Current Liabilities	<	\Top\Organization
+\Top\Business\Business Operation\Total Liabilities	<	\Top
+\Top\Business\Business Operation\Total Liabilities	<	\Top\Organization
+\Top\Business\Business Operation\Industry	<	\Top
+\Top\Business\Business Operation\Industry	<	\Top\Organization
+\Top\Business\Employer\Number of employees	<	\Top
+\Top\Business\Employer\Number of employees	<	\Top\Company108058098
+\Top\Business\Employer\Number of employees	<	\Top\Organization
+\Top\Business\Employer\Number of employees	<	\Top\Company108058098\name
+\Top\Business\Issue\Issuer	<	\Top
+\Top\Business\Issue\Issuer	<	\Top\Organization
+\Top\Measurement Unit\Dated Money Value	<	\Top
+\Top\Measurement Unit\Dated Money Value\Currency	<	\Top
+\Top\Measurement Unit\Dated Money Value\Amount	<	\Top
+\Top\Measurement Unit\Dated Money Value\Valid Date	<	\Top
+\Top\Awards\Ranked item	<	\Top
+\Top\Awards\Ranking	<	\Top
+\Top\Awards\Ranked item\Appears in ranked lists	<	\Top
+\Top\Awards\Ranking\Item	<	\Top
+\Top\Awards\Ranking\List	<	\Top
+\Top\Awards\Ranking\Rank	<	\Top
+\Top\Awards\Ranking\Year	<	\Top
+\Top\Awards\Ranking\Note	<	\Top
+\Top\Awards\Ranking\	<	\Top

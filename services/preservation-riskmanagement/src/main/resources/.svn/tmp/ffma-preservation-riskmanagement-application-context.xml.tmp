@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright 2007 EDL FOUNDATION
+  ~
+  ~  Licensed under the EUPL, Version 1.1 or as soon they
+  ~  will be approved by the European Commission - subsequent
+  ~  versions of the EUPL (the "Licence");
+  ~  you may not use this work except in compliance with the
+  ~  Licence.
+  ~  You may obtain a copy of the Licence at:
+  ~
+  ~  http://ec.europa.eu/idabc/eupl
+  ~
+  ~  Unless required by applicable law or agreed to in
+  ~  writing, software distributed under the Licence is
+  ~  distributed on an "AS IS" BASIS,
+  ~  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either
+  ~  express or implied.
+  ~  See the Licence for the specific language governing
+  ~  permissions and limitations under the Licence.
+  -->
+<beans:beans
+        xmlns:beans="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:util="http://www.springframework.org/schema/util"
+        xmlns="http://www.springframework.org/schema/security"
+        xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://www.springframework.org/schema/util
+        http://www.springframework.org/schema/util/spring-util-3.0.xsd
+        http://www.springframework.org/schema/security
+        http://www.springframework.org/schema/security/spring-security-3.0.xsd
+        ">
+
+    <beans:import resource="classpath:/common-client-application-context.xml"/>
+ 	<beans:import resource="classpath:/ffma-common-api-server-application-context.xml"/>  
+ 	    
+ 	<!--  Ffma integration beans -->
+    <!-- <beans:bean id="preservationRiskmanagementDao" class="ait.ffma.service.preservation.riskmanagement.dao.PreservationRiskmanagementDaoImpl"/>--> 
+    <beans:bean id="preservationRiskmanagementDao" class="ait.ffma.service.preservation.riskmanagement.dao.PreservationRiskmanagementDaoImpl"> 
+    	<beans:property name="dataStoreDao" ref="dataStoreDao"/>
+    </beans:bean>
+    
+    
+    <beans:bean id="preservationRiskmanagementConfiguration" class="ait.ffma.service.preservation.riskmanagement.PreservationRiskmanagementConfiguration"  init-method="init"/>
+    	   
+    <beans:bean id="lodCreator" class="ait.ffma.service.preservation.riskmanagement.api.lod.LODCreator">
+    	<beans:property name="preservationRiskmanagementDao" ref="preservationRiskmanagementDao"/>
+    </beans:bean>	
+    
+
+    <beans:bean id="lodReportGenerator" class="ait.ffma.service.preservation.riskmanagement.api.lod.LODReportGenerator">
+    	<beans:property name="preservationRiskmanagementDao" ref="preservationRiskmanagementDao"/>
+    </beans:bean>	
+    
+<<<<<<< .mine
+    <beans:bean id="riskReportGenerator" class="ait.ffma.service.preservation.riskmanagement.api.riskanalysis.risk.RiskReportGenerator">
+    	<beans:property name="preservationRiskmanagementDao" ref="preservationRiskmanagementDao"/>
+    </beans:bean>
+    	
+=======
+    <beans:bean id="riskReportGenerator" class="ait.ffma.service.preservation.riskmanagement.api.riskanalysis.risk.RiskReportGenerator">
+    	<beans:property name="preservationRiskmanagementDao" ref="preservationRiskmanagementDao"/>
+    </beans:bean>	
+    
+	
+>>>>>>> .r165
+    <beans:bean id="preservationRiskmanagementService" class="ait.ffma.service.preservation.riskmanagement.api.PreservationRiskmanagementServiceImpl">
+    	<beans:property name="preservationRiskmanagementDao" ref="preservationRiskmanagementDao"/>
+    	<beans:property name="configuration" ref="preservationRiskmanagementConfiguration"/>
+    	<beans:property name="lodCreator" ref="lodCreator"/>
+    	<beans:property name="lodReportGenerator" ref="lodReportGenerator"/>
+    	<beans:property name="riskReportGenerator" ref="riskReportGenerator"/>
+    </beans:bean>
+    
+    <beans:bean id="preservationRiskmanagementRest" class="ait.ffma.service.preservation.riskmanagement.web.rest.PreservationRiskmanagementRest">
+		<beans:property name="preservationRiskmanagementService" ref="preservationRiskmanagementService"/>
+		<beans:property name="configuration" ref="preservationRiskmanagementConfiguration"/>
+    </beans:bean>	
+    
+    <!-- <beans:bean id="ffServer" class="eu.europeana.core.SolrServer">
+        <beans:constructor-arg value=" http://localhost:8989/solr/fileformat"/>
+        <beans:property name="soTimeout" value="2000"/>
+        <beans:property name="connectionTimeout" value="10000"/>
+        <beans:property name="suspendAfterTimeout"  value="1000" />
+        <beans:property name="defaultMaxConnectionsPerHost" value="64"/>
+        <beans:property name="maxTotalConnections" value="125"/>
+        <beans:property name="followRedirects" value="false"/>
+        <beans:property name="maxRetries" value="10"/>       
+    </beans:bean>
+     
+    <beans:bean id="lodFormatServer" class="eu.europeana.core.SolrServer">
+        <beans:constructor-arg value=" http://localhost:8989/solr/lodformat"/>
+        <beans:property name="soTimeout" value="2000"/>
+        <beans:property name="connectionTimeout" value="10000"/>
+        <beans:property name="suspendAfterTimeout"  value="1000" />
+        <beans:property name="defaultMaxConnectionsPerHost" value="64"/>
+        <beans:property name="maxTotalConnections" value="125"/>
+        <beans:property name="followRedirects" value="false"/>
+        <beans:property name="maxRetries" value="10"/>       
+    </beans:bean>
+    
+    <beans:bean id="dipFormatIdServer" class="eu.europeana.core.SolrServer">
+        <beans:constructor-arg value=" http://localhost:8989/solr/dipformatid"/>
+        <beans:property name="soTimeout" value="2000"/>
+        <beans:property name="connectionTimeout" value="10000"/>
+        <beans:property name="suspendAfterTimeout"  value="1000" />
+        <beans:property name="defaultMaxConnectionsPerHost" value="64"/>
+        <beans:property name="maxTotalConnections" value="125"/>
+        <beans:property name="followRedirects" value="false"/>
+        <beans:property name="maxRetries" value="10"/>       
+    </beans:bean>
+     
+    <beans:bean id="ffDocIndexer" class="ait.ffma.common.server.api.FFSynchronizerImpl">
+    		<beans:property name="solrServer" ref="ffServer" />
+    </beans:bean>    		  
+    		    
+    <beans:bean id="lodFormatIndexer" class="ait.ffma.common.server.api.LODFormatSynchronizerImpl">
+    		<beans:property name="solrServer" ref="lodFormatServer" />    		
+    </beans:bean>
+
+    <beans:bean id="dipFormatIdIndexer" class="ait.ffma.common.server.api.DipFormatIdSynchronizerImpl">
+    		<beans:property name="solrServer" ref="dipFormatIdServer" />    		
+    </beans:bean>
+  -->
+  
+	<!--  own beans -->
+	<!-- 
+    <beans:bean id="myBean" class="com.mycompany.myservice.MyBean"/>
+     -->
+	
+</beans:beans>

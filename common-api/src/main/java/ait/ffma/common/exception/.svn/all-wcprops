@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/dme_intern/!svn/ver/158/projects/common-api/src/main/java/ait/ffma/common/exception
+END
+PropertyNotFoundException.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/dme_intern/!svn/ver/158/projects/common-api/src/main/java/ait/ffma/common/exception/PropertyNotFoundException.java
+END
+FfmaCommonException.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/dme_intern/!svn/ver/158/projects/common-api/src/main/java/ait/ffma/common/exception/FfmaCommonException.java
+END
+ObjectNotFoundException.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/dme_intern/!svn/ver/158/projects/common-api/src/main/java/ait/ffma/common/exception/ObjectNotFoundException.java
+END
+ObjectTooLargeException.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/dme_intern/!svn/ver/158/projects/common-api/src/main/java/ait/ffma/common/exception/ObjectTooLargeException.java
+END
+ObjectNotStoredException.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/dme_intern/!svn/ver/158/projects/common-api/src/main/java/ait/ffma/common/exception/ObjectNotStoredException.java
+END
+ObjectNotRemovedException.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/dme_intern/!svn/ver/158/projects/common-api/src/main/java/ait/ffma/common/exception/ObjectNotRemovedException.java
+END
+CollectionNotRemovedException.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/dme_intern/!svn/ver/158/projects/common-api/src/main/java/ait/ffma/common/exception/CollectionNotRemovedException.java
+END
+ObjectNotUpdatedException.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/dme_intern/!svn/ver/158/projects/common-api/src/main/java/ait/ffma/common/exception/ObjectNotUpdatedException.java
+END

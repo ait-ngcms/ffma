@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright 2007 EDL FOUNDATION
+  ~
+  ~  Licensed under the EUPL, Version 1.1 or as soon they
+  ~  will be approved by the European Commission - subsequent
+  ~  versions of the EUPL (the "Licence");
+  ~  you may not use this work except in compliance with the
+  ~  Licence.
+  ~  You may obtain a copy of the Licence at:
+  ~
+  ~  http://ec.europa.eu/idabc/eupl
+  ~
+  ~  Unless required by applicable law or agreed to in
+  ~  writing, software distributed under the Licence is
+  ~  distributed on an "AS IS" BASIS,
+  ~  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either
+  ~  express or implied.
+  ~  See the Licence for the specific language governing
+  ~  permissions and limitations under the Licence.
+  -->
+<beans:beans
+        xmlns:beans="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:util="http://www.springframework.org/schema/util"
+        xmlns="http://www.springframework.org/schema/security"
+        xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://www.springframework.org/schema/util
+        http://www.springframework.org/schema/util/spring-util-3.0.xsd
+        http://www.springframework.org/schema/security
+        http://www.springframework.org/schema/security/spring-security-3.0.xsd
+        ">
+
+    <beans:import resource="classpath:/ffma-common-datamodel-application-context.xml"/>
+    
+ 	<!--  FfFfmaegration beans -->
+    <beans:bean id="commonApiServerConfiguration" class="ait.ffma.common.CommonApiServerConfigurationImpl"  init-method="init" scope="singleton" />
+    <beans:bean id="mongoDbManager" class="ait.ffma.common.dao.mongodb.MongoDbManager" init-method="init" scope="singleton" >
+    	<beans:property name="objectFactory" ref="objectFactory"/>
+    	<beans:property name="commonApiServerConfiguration" ref="commonApiServerConfiguration"/>
+    </beans:bean>
+    
+    <beans:bean id="dataStoreDao" class="ait.ffma.common.dao.DataStoreDaoImpl">     
+    	<beans:property name="mongoDbManager" ref="mongoDbManager"/>
+    </beans:bean>    
+    	
+</beans:beans>
