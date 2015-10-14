@@ -20,9 +20,9 @@ To install you need:
 
 | Version | Size   | SHA1                                                    |                      |
 |---------|--------|---------------------------------------------------------|----------------------|
-| v1.0    | 23.6 MB| <small>1b34d11f66fe4b847f271a5aaaabb02c7917690c</small> |[download](https://github.com/ait-ngcms/ffma/archive/master.zip)            |
+| v1.0    | 23.6 MB| <small>8c0f0fcb635e6bcc7b619be8031ddb3fd5f3a832</small> |[download](https://github.com/ait-ngcms/ffma/archive/master.zip)            |
 
-### Installing Fingerdet
+### Installing FFMA
 
 #### Use Eclipse to create Java Maven project from github sources.
 1. Check out project sources from github e.g. using TortoiseGit
