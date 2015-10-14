@@ -906,21 +906,65 @@ public abstract class BaseMongoDbManager {
 	 * @return the list of the objects found in database
 	 */
 	public List<BasicDBObject> getDbObjectsList(DBCollection coll, String fieldName, String queryStr, List<String> values) {
-		List<BasicDBObject> res = new ArrayList<BasicDBObject>();
-		
+
 		BasicDBObject query = new BasicDBObject();
 		if (fieldName != null) {
 			query.put(fieldName, new BasicDBObject(queryStr, values));
 		}
 		log.trace(query);
+		return findListForQuery(coll, query);
+	}
+
+	/**
+	 * This method creates connection to the Mongo database,
+	 * executes find method for given query and closes this connection.
+	 * @param coll
+	 * @param query
+	 * @return list of results
+	 */
+	private List<BasicDBObject> findListForQuery(DBCollection coll, BasicDBObject query) {
+
+		List<BasicDBObject> res = new ArrayList<BasicDBObject>();
+		
 		DBCursor cur = coll.find(query);
 		
 		if (cur != null && cur.size() == 0) {
 			log.debug("object not found in database. query result size is 0.");
 		}
 
-		while (cur.hasNext()) {
-			res.add((BasicDBObject) cur.next());
+		try {
+			while (cur.hasNext()) {
+				res.add((BasicDBObject) cur.next());
+			}
+		} finally {
+		    cur.close();
+		}
+		
+		return res;
+	}
+	
+	/**
+	 * This method creates connection to the Mongo database,
+	 * executes find method for given query and closes this connection.
+	 * @param coll
+	 * @param query
+	 * @return single result 
+	 */
+	private BasicDBObject findSingleForQuery(DBCollection coll, BasicDBObject query) {
+
+		BasicDBObject res = null;
+
+		DBCursor cur = coll.find(query);
+		if (cur != null && cur.size() == 0) {
+			log.info("object not found in database. query result size is 0.");
+		}
+
+		try {
+			if (cur.hasNext()) {
+				res = (BasicDBObject) cur.next();
+			}
+		} finally {
+		    cur.close();
 		}
 
 		return res;
@@ -944,7 +988,6 @@ public abstract class BaseMongoDbManager {
 	public List<BasicDBObject> getDbObjectsListExt(DBCollection coll,
 			String fieldName, String queryStr, List<String> values,
 			Map<String, String> addFieldsMap) {
-		List<BasicDBObject> res = new ArrayList<BasicDBObject>();
 		
 		BasicDBObject query = new BasicDBObject();
 		if (fieldName != null) {
@@ -957,17 +1000,7 @@ public abstract class BaseMongoDbManager {
 			}
 		}
 		log.trace(query);
-		DBCursor cur = coll.find(query);
-		
-		if (cur != null && cur.size() == 0) {
-			log.debug("object not found in database. query result size is 0.");
-		}
-
-		while (cur.hasNext()) {
-			res.add((BasicDBObject) cur.next());
-		}
-
-		return res;
+		return findListForQuery(coll, query);
 	}
 	
 	/**
@@ -980,7 +1013,6 @@ public abstract class BaseMongoDbManager {
 	 */
 	@SuppressWarnings("rawtypes")
 	public List<BasicDBObject> getDbObjectsListByQueryObject(DBCollection coll, BasicDBObject queryObject) {
-		List<BasicDBObject> res = new ArrayList<BasicDBObject>();
 		
 		BasicDBObject query = new BasicDBObject();
 		
@@ -990,17 +1022,7 @@ public abstract class BaseMongoDbManager {
 			query.remove(value.name());
 	    }
 		log.debug("query: " + query);
-		DBCursor cur = coll.find(query);
-		
-		if (cur != null && cur.size() == 0) {
-			log.error("object not found in database. query result size is 0.");
-		}
-
-		while (cur.hasNext()) {
-			res.add((BasicDBObject) cur.next());
-		}
-
-		return res;
+		return findListForQuery(coll, query);
 	}
 	
 	/**
@@ -1017,7 +1039,6 @@ public abstract class BaseMongoDbManager {
 	 */
 	@SuppressWarnings("rawtypes")
 	public List<BasicDBObject> getDbObjectsListByQueryObjectExt(DBCollection coll, BasicDBObject queryObject, List<String> exclusionsList) {
-		List<BasicDBObject> res = new ArrayList<BasicDBObject>();
 		
 		BasicDBObject query = new BasicDBObject();
 		
@@ -1029,17 +1050,7 @@ public abstract class BaseMongoDbManager {
 	    	}
 	    }
 		log.info("query: " + query);
-		DBCursor cur = coll.find(query);
-		
-		if (cur != null && cur.size() == 0) {
-			log.info("object not found in database. query result size is 0.");
-		}
-
-		while (cur.hasNext()) {
-			res.add((BasicDBObject) cur.next());
-		}
-
-		return res;
+		return findListForQuery(coll, query);
 	}
 	
 	/**
@@ -1090,20 +1101,11 @@ public abstract class BaseMongoDbManager {
 	 * @return object from database that matches query parameters
 	 */
 	public BasicDBObject getDbObject(String id, DBCollection coll) {
-		BasicDBObject res = null;
+		
 		BasicDBObject query = new BasicDBObject();
 		query.put(CommonFieldsEnum._id.name(), new ObjectId(id));
 
-		DBCursor cur = coll.find(query);
-		if (cur != null && cur.size() == 0) {
-			log.info("object not found in database. query result size is 0.");
-		}
-
-		if (cur.hasNext()) {
-			res = (BasicDBObject) cur.next();
-		}
-
-		return res;
+		return findSingleForQuery(coll, query);
 	}
 
 	/**
@@ -1117,20 +1119,11 @@ public abstract class BaseMongoDbManager {
 	 * @return object from database that matches query parameters
 	 */
 	public BasicDBObject getDbObjectByField(String id, DBCollection coll, String fieldName) {
-		BasicDBObject res = null;
+
 		BasicDBObject query = new BasicDBObject();
 		query.put(fieldName, id);
 
-		DBCursor cur = coll.find(query);
-		if (cur != null && cur.size() == 0) {
-			log.info("object not found in database. query result size is 0.");
-		}
-
-		if (cur.hasNext()) {
-			res = (BasicDBObject) cur.next();
-		}
-
-		return res;
+		return findSingleForQuery(coll, query);
 	}
 	
 	public abstract FfmaAbstractFactory getObjectFactory();
@@ -1172,12 +1165,15 @@ public abstract class BaseMongoDbManager {
 			log.info("return keys: " + returnKeys);
 			DBCursor cur = mongoCollection.find(query, returnKeys);
 			
-			//List<BasicDBObject> mongoObjList = getDbObjectsList(mongoCollection, fieldName, atttibuteName, values);
-			Iterator<DBObject> iter = cur.iterator();
-			while (iter.hasNext()) {
-				res.add((String)iter.next().get(returnFieldName));
-			}
-		
+			try {
+				//List<BasicDBObject> mongoObjList = getDbObjectsList(mongoCollection, fieldName, atttibuteName, values);
+				Iterator<DBObject> iter = cur.iterator();
+				while (iter.hasNext()) {
+					res.add((String)iter.next().get(returnFieldName));
+				}
+			} finally {
+			    cur.close();
+			}		
 			return res;		
 	}
 	
